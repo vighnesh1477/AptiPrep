@@ -1,0 +1,13 @@
+{
+  "companies": {
+    "infosys": {
+      "infosys_trial": []
+    },
+    "tcs": {
+      "tcs_nqt": []
+    },
+    "accenture": {
+      "accenture_aptitude": []
+    }
+  }
+}

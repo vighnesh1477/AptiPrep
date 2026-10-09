@@ -1,0 +1,35 @@
+/* ============================================
+   Splash Screen — logo intro on Home load
+   ============================================ */
+
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-toast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary); /* same as page → seamless blend */
+  animation: splash-fade var(--splash-duration, 1500ms) ease forwards;
+}
+
+.splash-logo {
+  width: 170px;
+  height: auto;
+  will-change: transform, opacity;
+  animation: splash-zoom var(--splash-duration, 1500ms)
+    cubic-bezier(0.33, 0, 0.2, 1) forwards;
+}
+
+@keyframes splash-fade {
+  0%   { opacity: 1; }
+  60%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes splash-zoom {
+  0%   { transform: scale(0.75); opacity: 0; }
+  25%  { transform: scale(1);    opacity: 1; }
+  55%  { transform: scale(1);    opacity: 1; }
+  100% { transform: scale(2.6);  opacity: 0; }
+}

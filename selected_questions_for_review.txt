@@ -1,0 +1,824 @@
+APTIPREP - SELECTED QUESTIONS FOR REVIEW
+====================================================================================================
+
+This document contains extracted questions for verification.
+The original JSON files have NOT been modified.
+
+====================================================================================================
+QUESTION 1
+====================================================================================================
+
+Topic           : Number and Letter Series
+Question Number : 52
+Question ID     : LR-NLS-0052
+
+Question:
+Find the next term: 9, 18, 20, 60, 63, 252, ?.
+
+Options:
+A. 255
+B. 260
+C. 315
+D. 256
+
+Correct Option  : D
+Correct Answer  : 256
+
+Explanation:
+Multiply by 2,3,4,... and then add the same multiplier? 9×2=18; +2=20; ×3=60; +3=63; ×4=252; next +4=256. The paired cycle uses ×n,+n.
+
+====================================================================================================
+QUESTION 2
+====================================================================================================
+
+Topic           : Number and Letter Series
+Question Number : 69
+Question ID     : LR-NLS-0069
+
+Question:
+Find the first term: ?, 7, 19, 43, 91.
+
+Options:
+A. 1
+B. 0
+C. 2
+D. 3
+
+Correct Option  : A
+Correct Answer  : 1
+
+Explanation:
+Each term is twice the previous term plus 5: 1×2+5=7, 7×2+5=19. Reversing, (7-5)÷2=1.
+
+====================================================================================================
+QUESTION 3
+====================================================================================================
+
+Topic           : Number and Letter Series
+Question Number : 119
+Question ID     : LR-NLS-0119
+
+Question:
+Find the next pair: AB, CE, FI, JM, ?.
+
+Options:
+A. OR
+B. PS
+C. OS
+D. OT
+
+Correct Option  : C
+Correct Answer  : OS
+
+Explanation:
+First-letter shifts are +2,+3,+4, so next +5 gives O. Second-letter shifts are +3,+4,+5, so next +6 gives S. Hence OS.
+
+====================================================================================================
+QUESTION 4
+====================================================================================================
+
+Topic           : Number and Letter Series
+Question Number : 242
+Question ID     : LR-NLS-0242
+
+Question:
+Find the wrong term: 10, 12, 17, 25, 35, 48.
+
+Options:
+A. 17
+B. 25
+C. 35
+D. 48
+
+Correct Option  : B
+Correct Answer  : 25
+
+Explanation:
+Adding consecutive primes 2,5,7,11,13 gives 10,12,17,24,35,48. Thus 25 is wrong; it should be 24.
+
+====================================================================================================
+QUESTION 5
+====================================================================================================
+
+Topic           : Number and Letter Series
+Question Number : 244
+Question ID     : LR-NLS-0244
+
+Question:
+Find the next term: 2, 3, 7, 12, 21, 35, ?.
+
+Options:
+A. 56
+B. 57
+C. 60
+D. 58
+
+Correct Option  : D
+Correct Answer  : 58
+
+Explanation:
+Each term from the third onward is the sum of the previous two plus 2:2+3+2=7, 3+7+2=12, 7+12+2=21. Thus 21+35+2=58.
+
+====================================================================================================
+QUESTION 6
+====================================================================================================
+
+Topic           : Number and Letter Series
+Question Number : 260
+Question ID     : LR-NLS-0260
+
+Question:
+Find the next term: 2, 3, 6, 5, 18, 7, 54, ?.
+
+Options:
+A. 9
+B. 10
+C. 13
+D. 11
+
+Correct Option  : D
+Correct Answer  : 11
+
+Explanation:
+Odd positions are 2,6,18,54 (×3). Even positions are consecutive primes 3,5,7,11. Hence 11.
+
+====================================================================================================
+QUESTION 7
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 14
+Question ID     : LR-CD-0014
+
+Question:
+If FROG is coded as BNKC, what is the code for BEAR under the same rule?
+
+Options:
+A. XAWN
+B. FIEV
+C. WZVM
+D. YBXO
+
+Correct Option  : A
+Correct Answer  : XAWN
+
+Explanation:
+Each letter of FROG is moved 4 position(s) backward (F → B, R → N, O → K, G → C). Applying it to BEAR gives B → X, E → A, A → W, R → N, so the code is XAWN.
+
+====================================================================================================
+QUESTION 8
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 19
+Question ID     : LR-CD-0019
+
+Question:
+If NURSE is coded as LSPQC, what is the code for DOCTOR under the same rule?
+
+Options:
+A. BMARMP
+B. ALZQLO
+C. FQEVQT
+D. CNBSNQ
+
+Correct Option  : A
+Correct Answer  : BMARMP
+
+Explanation:
+Each letter of NURSE is moved 2 position(s) backward (N → L, U → S, R → P, S → Q, E → C). Applying it to DOCTOR gives D → B, O → M, C → A, T → R, O → M, R → P, so the code is BMARMP.
+
+====================================================================================================
+QUESTION 9
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 52
+Question ID     : LR-CD-0052
+
+Question:
+In a certain code, the letters in odd positions of a word are moved one step forward and the letters in even positions are moved one step backward. What is the code for GARDEN?
+
+Options:
+A. FBQEDO
+B. HBSEFO
+C. FZQCDM
+D. HZSCFM
+
+Correct Option  : D
+Correct Answer  : HZSCFM
+
+Explanation:
+Positions 1, 3, 5 ... move +1 and positions 2, 4, 6 ... move -1: G(+1) → H, A(-1) → Z, R(+1) → S, D(-1) → C, E(+1) → F, N(-1) → M. The code is therefore HZSCFM.
+
+====================================================================================================
+QUESTION 10
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 97
+Question ID     : LR-CD-0097
+
+Question:
+In a certain code, every vowel of a word is moved 3 place(s) forward and every consonant is moved 2 place(s) backward. What is the code for SILVER?
+
+Options:
+A. VLOYHU
+B. QLJTHP
+C. UFNXBT
+D. QGJTCP
+
+Correct Option  : B
+Correct Answer  : QLJTHP
+
+Explanation:
+Vowels (+3) and consonants (-2): S → Q, I → L, L → J, V → T, E → H, R → P. Therefore SILVER is coded as QLJTHP.
+
+====================================================================================================
+QUESTION 11
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 117
+Question ID     : LR-CD-0117
+
+Question:
+A number is coded by first reversing its digits and then adding 11 to the result. What is the code for 324?
+
+Options:
+A. 434
+B. 335
+C. 533
+D. 423
+
+Correct Option  : A
+Correct Answer  : 434
+
+Explanation:
+Reversing 324 gives 423. Adding 11: 423 + 11 = 434. So the code is 434.
+
+====================================================================================================
+QUESTION 12
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 120
+Question ID     : LR-CD-0120
+
+Question:
+A number is coded by first reversing its digits and then adding 15 to the result. What is the code for 263?
+
+Options:
+A. 377
+B. 872
+C. 278
+D. 362
+
+Correct Option  : A
+Correct Answer  : 377
+
+Explanation:
+Reversing 263 gives 362. Adding 15: 362 + 15 = 377. So the code is 377.
+
+====================================================================================================
+QUESTION 13
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 182
+Question ID     : LR-CD-0182
+
+Question:
+A word is coded by first replacing every letter with its opposite letter in the alphabet (A ↔ Z, B ↔ Y, ...) and then shifting each resulting letter 1 place(s) forward. What is the code for LAMP?
+
+Options:
+A. OZNK
+B. PAOL
+C. MBNQ
+D. NYMJ
+
+Correct Option  : B
+Correct Answer  : PAOL
+
+Explanation:
+Step 1 – mirror letters: LAMP → OZNK. Step 2 – shift 1 forward: OZNK → PAOL. Hence the code is PAOL.
+
+====================================================================================================
+QUESTION 14
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 183
+Question ID     : LR-CD-0183
+
+Question:
+A word is coded by first replacing every letter with its opposite letter in the alphabet (A ↔ Z, B ↔ Y, ...) and then shifting each resulting letter 2 place(s) forward. What is the code for DESK?
+
+Options:
+A. UTFN
+B. WVHP
+C. FGUM
+D. YXJR
+
+Correct Option  : D
+Correct Answer  : YXJR
+
+Explanation:
+Step 1 – mirror letters: DESK → WVHP. Step 2 – shift 2 forward: WVHP → YXJR. Hence the code is YXJR.
+
+====================================================================================================
+QUESTION 15
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 184
+Question ID     : LR-CD-0184
+
+Question:
+A word is coded by first replacing every letter with its opposite letter in the alphabet (A ↔ Z, B ↔ Y, ...) and then shifting each resulting letter 3 place(s) forward. What is the code for FORK?
+
+Options:
+A. ULIP
+B. XOLS
+C. IRUN
+D. RIFM
+
+Correct Option  : B
+Correct Answer  : XOLS
+
+Explanation:
+Step 1 – mirror letters: FORK → ULIP. Step 2 – shift 3 forward: ULIP → XOLS. Hence the code is XOLS.
+
+====================================================================================================
+QUESTION 16
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 185
+Question ID     : LR-CD-0185
+
+Question:
+A word is coded by first replacing every letter with its opposite letter in the alphabet (A ↔ Z, B ↔ Y, ...) and then shifting each resulting letter 1 place(s) forward. What is the code for BEAM?
+
+Options:
+A. ZWAO
+B. CFBN
+C. YVZN
+D. XUYM
+
+Correct Option  : A
+Correct Answer  : ZWAO
+
+Explanation:
+Step 1 – mirror letters: BEAM → YVZN. Step 2 – shift 1 forward: YVZN → ZWAO. Hence the code is ZWAO.
+
+====================================================================================================
+QUESTION 17
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 186
+Question ID     : LR-CD-0186
+
+Question:
+A word is coded by first replacing every letter with its opposite letter in the alphabet (A ↔ Z, B ↔ Y, ...) and then shifting each resulting letter 2 place(s) forward. What is the code for HOST?
+
+Options:
+A. SLHG
+B. JQUV
+C. QJFE
+D. UNJI
+
+Correct Option  : D
+Correct Answer  : UNJI
+
+Explanation:
+Step 1 – mirror letters: HOST → SLHG. Step 2 – shift 2 forward: SLHG → UNJI. Hence the code is UNJI.
+
+====================================================================================================
+QUESTION 18
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 187
+Question ID     : LR-CD-0187
+
+Question:
+A word is coded by first replacing every letter with its opposite letter in the alphabet (A ↔ Z, B ↔ Y, ...) and then shifting each resulting letter 4 place(s) forward. What is the code for WAVE?
+
+Options:
+A. ZVAR
+B. DZEV
+C. AEZI
+D. HDIZ
+
+Correct Option  : D
+Correct Answer  : HDIZ
+
+Explanation:
+Step 1 – mirror letters: WAVE → DZEV. Step 2 – shift 4 forward: DZEV → HDIZ. Hence the code is HDIZ.
+
+====================================================================================================
+QUESTION 19
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 196
+Question ID     : LR-CD-0196
+
+Question:
+A coding rule states: if a word has an even number of letters, shift each letter 2 places forward; if it has an odd number of letters, shift each letter 3 places forward. What is the code for MANGO?
+
+Options:
+A. OCPIQ
+B. QERKS
+C. JXKDL
+D. PDQJR
+
+Correct Option  : D
+Correct Answer  : PDQJR
+
+Explanation:
+MANGO has 5 letters, which is odd, so each letter is shifted 3 places forward: M → P, A → D, N → Q, G → J, O → R. The code is PDQJR.
+
+====================================================================================================
+QUESTION 20
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 218
+Question ID     : LR-CD-0218
+
+Question:
+Each word is given a value equal to the sum of the alphabet positions of its letters (A = 1, ... , Z = 26). Which of SUN and RAT has the greater value, and by how much?
+
+Options:
+A. SUN, by 15
+B. RAT, by 15
+C. SUN, by 17
+D. Both have the same value
+
+Correct Option  : A
+Correct Answer  : SUN, by 15
+
+Explanation:
+SUN = 19 + 21 + 14 = 54 and RAT = 18 + 1 + 20 = 39. The difference is 15, so SUN is greater by 15.
+
+====================================================================================================
+QUESTION 21
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 223
+Question ID     : LR-CD-0223
+
+Question:
+Every letter of a word is shifted 3 place(s) forward to form its code. The word WATER is coded as ZD?HU, where one letter is missing. Which letter should replace the question mark?
+
+Options:
+A. T
+B. W
+C. Q
+D. X
+
+Correct Option  : B
+Correct Answer  : W
+
+Explanation:
+The third letter of WATER is T, and shifting it 3 place(s) forward gives W. So the missing letter is W.
+
+====================================================================================================
+QUESTION 22
+====================================================================================================
+
+Topic           : Coding and Decoding
+Question Number : 278
+Question ID     : LR-CD-0278
+
+Question:
+If CANDY is coded as IGTJE, by how many places has each letter been shifted forward?
+
+Options:
+A. 6
+B. 5
+C. 7
+D. 20
+
+Correct Option  : A
+Correct Answer  : 6
+
+Explanation:
+Compare the first letters: C (position 3) becomes I (position 9), a forward shift of 6. The same shift holds for every letter, so the answer is 6.
+
+====================================================================================================
+QUESTION 23
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 160
+Question ID     : LR-AC-0160
+
+Question:
+Three of the following four letters are alike in a certain way. Which one is the odd one out?
+
+Options:
+A. O
+B. A
+C. I
+D. D
+
+Correct Option  : A
+Correct Answer  : O
+Reference Given : A -> D
+
+Explanation:
+A, D and I occupy positions 1, 4 and 9, which are perfect squares. O occupies position 15, which is not a perfect square. Hence O is the odd one out.
+
+====================================================================================================
+QUESTION 24
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 172
+Question ID     : LR-AC-0172
+
+Question:
+Three of the following four letter groups are alike in a certain way. Which one is the odd one out?
+
+Options:
+A. ABC
+B. EFK
+C. HIQ
+D. BCD
+
+Correct Option  : D
+Correct Answer  : BCD
+Reference Given : D -> A
+
+Explanation:
+In ABC, 1 + 2 = 3; in EFK, 5 + 6 = 11; in HIQ, 8 + 9 = 17. In BCD the positions 2 and 3 add up to 5, but the third letter D occupies position 4. Hence BCD is the odd one out.
+
+====================================================================================================
+QUESTION 25
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 180
+Question ID     : LR-AC-0180
+
+Question:
+Three of the following four letter groups are alike in a certain way. Which one is the odd one out?
+
+Options:
+A. QRS
+B. HIK
+C. CDE
+D. FGH
+
+Correct Option  : A
+Correct Answer  : QRS
+Reference Given : A -> B
+
+Explanation:
+The letters of HIK, CDE and FGH occupy positions 8-11, 3-5 and 6-8, all lying in the first half of the alphabet (A to M). The letters of QRS occupy positions 17, 18 and 19, which lie in the second half. Hence QRS is the odd one out.
+
+====================================================================================================
+QUESTION 26
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 181
+Question ID     : LR-AC-0181
+
+Question:
+Which of the following letter groups does not follow the same rule as the other three?
+
+Options:
+A. JKL
+B. UVW
+C. PQR
+D. XYZ
+
+Correct Option  : A
+Correct Answer  : JKL
+Reference Given : A -> B
+
+Explanation:
+The letters of XYZ, UVW and PQR occupy positions 24-26, 21-23 and 16-18, all lying in the second half of the alphabet (N to Z). JKL contains J (10), K (11) and L (12), which lie in the first half. Hence JKL is the odd one out.
+
+====================================================================================================
+QUESTION 27
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 182
+Question ID     : LR-AC-0182
+
+Question:
+Three of the following four letter pairs are alike in a certain way. Which one is the odd one out?
+
+Options:
+A. BD
+B. DG
+C. CF
+D. AB
+
+Correct Option  : B
+Correct Answer  : DG
+Reference Given : B -> D
+
+Explanation:
+In AB the position of the second letter is twice that of the first (2 = 2 x 1); BD gives 4 = 2 x 2 and CF gives 6 = 2 x 3. In DG, D is 4 and G is 7, but 2 x 4 = 8 (which would be H). Hence DG is the odd one out.
+
+====================================================================================================
+QUESTION 28
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 189
+Question ID     : LR-AC-0189
+
+Question:
+132 : 11 :: 156 : ?
+
+Options:
+A. 16
+B. 13
+C. 26
+D. 12
+
+Correct Option  : B
+Correct Answer  : 13
+Reference Given : D -> D
+
+Explanation:
+The second number is one-twelfth of the first: 132 / 12 = 11. Applying the same rule, 156 / 12 = 13. Hence the correct answer is 13.
+
+====================================================================================================
+QUESTION 29
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 209
+Question ID     : LR-AC-0209
+
+Question:
+8 : 27 :: 4 : ?
+
+Options:
+A. 12
+B. 16
+C. 21
+D. 15
+
+Correct Option  : D
+Correct Answer  : 15
+Reference Given : D -> B
+
+Explanation:
+The second number is obtained by multiplying the first by 3 and adding 3: 8 x 3 + 3 = 27. Applying the same rule, 4 x 3 + 3 = 15. Hence the correct answer is 15.
+
+====================================================================================================
+QUESTION 30
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 211
+Question ID     : LR-AC-0211
+
+Question:
+12 : 30 :: 20 : ?
+
+Options:
+A. 40
+B. 45
+C. 50
+D. 42
+
+Correct Option  : C
+Correct Answer  : 50
+Reference Given : C -> D
+
+Explanation:
+The second number is the first multiplied by 5 and divided by 2: 12 x 5 / 2 = 30. Applying the same rule, 20 x 5 / 2 = 50. Hence the correct answer is 50.
+
+====================================================================================================
+QUESTION 31
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 224
+Question ID     : LR-AC-0224
+
+Question:
+Which of the following numbers is the odd one out?
+
+Options:
+A. 52
+B. 43
+C. 61
+D. 19
+
+Correct Option  : D
+Correct Answer  : 19
+Reference Given : D -> A
+
+Explanation:
+The digits of 43, 52 and 61 each add up to 7. The digits of 19 add up to 10. Hence 19 is the odd one out.
+
+====================================================================================================
+QUESTION 32
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 229
+Question ID     : LR-AC-0229
+
+Question:
+Which of the following numbers is the odd one out?
+
+Options:
+A. 122
+B. 313
+C. 121
+D. 171
+
+Correct Option  : A
+Correct Answer  : 122
+Reference Given : A -> B
+
+Explanation:
+121, 171 and 313 read the same forwards and backwards (palindromes). 122 reversed is 221, so it is not a palindrome. Hence 122 is the odd one out.
+
+====================================================================================================
+QUESTION 33
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 236
+Question ID     : LR-AC-0236
+
+Question:
+Which of the following numbers is the odd one out?
+
+Options:
+A. 25
+B. 14
+C. 36
+D. 49
+
+Correct Option  : D
+Correct Answer  : 49
+Reference Given : D -> B
+
+Explanation:
+The digits of 14, 25 and 36 differ by 3 in each case (4 - 1 = 3, 5 - 2 = 3, 6 - 3 = 3). The digits of 49 differ by 5. Hence 49 is the odd one out.
+
+====================================================================================================
+QUESTION 34
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 238
+Question ID     : LR-AC-0238
+
+Question:
+Which of the following numbers is the odd one out?
+
+Options:
+A. 19
+B. 37
+C. 53
+D. 28
+
+Correct Option  : C
+Correct Answer  : 53
+Reference Given : C -> D
+
+Explanation:
+The digits of 19, 28 and 37 each add up to 10. The digits of 53 add up to 8. Hence 53 is the odd one out.
+
+====================================================================================================
+QUESTION 35
+====================================================================================================
+
+Topic           : Analogy and Classification
+Question Number : 281
+Question ID     : LR-AC-0281
+
+Question:
+Which of the following letter-number terms does not follow the same rule as the other three?
+
+Options:
+A. 3F
+B. 6B
+C. 5C
+D. 4D
+
+Correct Option  : A
+Correct Answer  : 3F
+Reference Given : A -> D
+
+Explanation:
+In 6B, 5C and 4D the number equals 8 minus the alphabet position of the letter (8 - 2 = 6, 8 - 3 = 5, 8 - 4 = 4). F is the 6th letter, so 8 - 6 = 2, which means 3F breaks the rule. Hence 3F is the odd one out.
+

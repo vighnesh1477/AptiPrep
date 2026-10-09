@@ -1,0 +1,201 @@
+/* ============================================
+   Navbar Styles
+   ============================================ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-sticky);
+  height: var(--navbar-height);
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-normal),
+    border-color var(--transition-normal);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Brand */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.navbar-brand:hover .navbar-brand-text {
+  color: var(--accent);
+}
+
+.navbar-brand {
+  transition: color var(--transition-fast);
+}
+
+.navbar-brand-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+/* ⚠️ Uncomment the block below ONLY if your logo is
+   dark-colored and becomes invisible in dark mode.
+   It renders the logo as white in the dark theme. */
+
+/* [data-theme='dark'] .navbar-brand-icon {
+  filter: brightness(0) invert(1);
+} */
+
+.navbar-brand-text {
+  letter-spacing: -0.02em;
+}
+
+/* Links */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.navbar-link {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.navbar-link:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+}
+
+.navbar-link-active {
+  color: var(--accent);
+  background-color: var(--accent-light);
+}
+
+.navbar-link-active:hover {
+  color: var(--accent);
+  background-color: var(--accent-light);
+}
+
+/* Actions */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Hamburger */
+
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--text-secondary);
+  border-radius: 1px;
+  transition: transform var(--transition-fast),
+    opacity var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.navbar-hamburger-open .hamburger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-hamburger-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-hamburger-open .hamburger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Overlay */
+
+.navbar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  top: var(--navbar-height);
+  background-color: var(--bg-overlay);
+  z-index: calc(var(--z-sticky) - 1);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .navbar-links {
+    position: fixed;
+    top: var(--navbar-height);
+    right: 0;
+    bottom: 0;
+    width: 260px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--space-md);
+    background-color: var(--bg-primary);
+    border-left: 1px solid var(--border-color);
+    transform: translateX(100%);
+    transition: transform var(--transition-normal);
+    z-index: var(--z-sticky);
+    overflow-y: auto;
+  }
+
+  .navbar-links-open {
+    transform: translateX(0);
+  }
+
+  .navbar-link {
+    padding: var(--space-md);
+    font-size: var(--text-base);
+    border-radius: var(--radius-md);
+  }
+
+  .navbar-hamburger {
+    display: flex;
+  }
+
+  .navbar-overlay {
+    display: block;
+  }
+}

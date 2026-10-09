@@ -1,0 +1,19 @@
+{
+  "exams": [
+    {
+      "id": "infosys_trial",
+      "companyId": "infosys",
+      "name": "Infosys Trial Exam"
+    },
+    {
+      "id": "tcs_nqt",
+      "companyId": "tcs",
+      "name": "TCS NQT"
+    },
+    {
+      "id": "accenture_aptitude",
+      "companyId": "accenture",
+      "name": "Accenture Aptitude"
+    }
+  ]
+}

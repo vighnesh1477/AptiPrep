@@ -1,0 +1,468 @@
+{
+  "categories": [
+    {
+      "id": "quantitative_aptitude",
+      "name": "Quantitative Aptitude",
+      "topics": [
+        {
+          "id": "number_system",
+          "name": "Number System",
+          "subtopics": [
+            {
+              "id": "divisibility_rules",
+              "name": "Divisibility Rules"
+            },
+            {
+              "id": "remainder_theorems",
+              "name": "Remainder Theorems"
+            },
+            {
+              "id": "hcf_lcm",
+              "name": "HCF and LCM"
+            },
+            {
+              "id": "unit_digit",
+              "name": "Unit Digit"
+            },
+            {
+              "id": "factors_multiples",
+              "name": "Factors and Multiples"
+            },
+            {
+              "id": "fractions_decimals",
+              "name": "Fractions and Decimals"
+            }
+          ]
+        },
+        {
+          "id": "percentages",
+          "name": "Percentages",
+          "subtopics": [
+            {
+              "id": "percentages",
+              "name": "Percentages"
+            }
+          ]
+        },
+        {
+          "id": "profit_loss_discount",
+          "name": "Profit, Loss, and Discount",
+          "subtopics": [
+            {
+              "id": "profit_loss_discount",
+              "name": "Profit, Loss, and Discount"
+            }
+          ]
+        },
+        {
+          "id": "simple_compound_interest",
+          "name": "Simple Interest and Compound Interest",
+          "subtopics": [
+            {
+              "id": "simple_compound_interest",
+              "name": "Simple Interest and Compound Interest"
+            }
+          ]
+        },
+        {
+          "id": "averages",
+          "name": "Averages",
+          "subtopics": [
+            {
+              "id": "averages",
+              "name": "Averages"
+            }
+          ]
+        },
+        {
+          "id": "ratio_proportion_variation",
+          "name": "Ratio, Proportion, and Variation",
+          "subtopics": [
+            {
+              "id": "ratio_proportion_variation",
+              "name": "Ratio, Proportion, and Variation"
+            }
+          ]
+        },
+        {
+          "id": "partnerships",
+          "name": "Partnerships",
+          "subtopics": [
+            {
+              "id": "partnerships",
+              "name": "Partnerships"
+            }
+          ]
+        },
+        {
+          "id": "mixtures_alligations",
+          "name": "Mixtures and Alligations",
+          "subtopics": [
+            {
+              "id": "mixtures_alligations",
+              "name": "Mixtures and Alligations"
+            }
+          ]
+        },
+        {
+          "id": "time_work",
+          "name": "Time and Work",
+          "subtopics": [
+            {
+              "id": "time_work",
+              "name": "Time and Work"
+            }
+          ]
+        },
+        {
+          "id": "pipes_cisterns",
+          "name": "Pipes and Cisterns",
+          "subtopics": [
+            {
+              "id": "pipes_cisterns",
+              "name": "Pipes and Cisterns"
+            }
+          ]
+        },
+        {
+          "id": "time_speed_distance",
+          "name": "Time, Speed, and Distance",
+          "subtopics": [
+            {
+              "id": "time_speed_distance",
+              "name": "Time, Speed, and Distance"
+            }
+          ]
+        },
+        {
+          "id": "problems_on_trains",
+          "name": "Problems on Trains",
+          "subtopics": [
+            {
+              "id": "problems_on_trains",
+              "name": "Problems on Trains"
+            }
+          ]
+        },
+        {
+          "id": "boats_streams",
+          "name": "Boats and Streams",
+          "subtopics": [
+            {
+              "id": "boats_streams",
+              "name": "Boats and Streams"
+            }
+          ]
+        },
+        {
+          "id": "races_games_skills",
+          "name": "Races and Games of Skills",
+          "subtopics": [
+            {
+              "id": "races_games_skills",
+              "name": "Races and Games of Skills"
+            }
+          ]
+        },
+        {
+          "id": "permutations_combinations",
+          "name": "Permutations and Combinations",
+          "subtopics": [
+            {
+              "id": "permutations_combinations",
+              "name": "Permutations and Combinations"
+            }
+          ]
+        },
+        {
+          "id": "probability",
+          "name": "Probability",
+          "subtopics": [
+            {
+              "id": "probability",
+              "name": "Probability"
+            }
+          ]
+        },
+        {
+          "id": "simple_equations",
+          "name": "Simple Equations",
+          "subtopics": [
+            {
+              "id": "simple_equations",
+              "name": "Simple Equations"
+            }
+          ]
+        },
+        {
+          "id": "logarithms",
+          "name": "Logarithms",
+          "subtopics": [
+            {
+              "id": "logarithms",
+              "name": "Logarithms"
+            }
+          ]
+        },
+        {
+          "id": "progressions",
+          "name": "Progressions (AP, GP, HP)",
+          "subtopics": [
+            {
+              "id": "progressions",
+              "name": "Progressions (AP, GP, HP)"
+            }
+          ]
+        },
+        {
+          "id": "geometry_mensuration",
+          "name": "Geometry and Mensuration (2D & 3D Shapes)",
+          "subtopics": [
+            {
+              "id": "geometry_mensuration",
+              "name": "Geometry and Mensuration (2D & 3D Shapes)"
+            }
+          ]
+        },
+        {
+          "id": "heights_distances",
+          "name": "Heights and Distances",
+          "subtopics": [
+            {
+              "id": "heights_distances",
+              "name": "Heights and Distances"
+            }
+          ]
+        },
+        {
+          "id": "clocks_calendars",
+          "name": "Clocks and Calendars",
+          "subtopics": [
+            {
+              "id": "clocks_calendars",
+              "name": "Clocks and Calendars"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logical_reasoning",
+      "name": "Logical Reasoning",
+      "topics": [
+        {
+          "id": "alphanumeric_logic",
+          "name": "Alphanumeric Logic",
+          "subtopics": [
+            {
+              "id": "number_letter_series",
+              "name": "Number and Letter Series"
+            },
+            {
+              "id": "coding_decoding",
+              "name": "Coding and Decoding"
+            },
+            {
+              "id": "analogy_classification",
+              "name": "Analogy and Classification"
+            },
+            {
+              "id": "odd_one_out",
+              "name": "Odd One Out"
+            }
+          ]
+        },
+        {
+          "id": "spatial_relational_logic",
+          "name": "Spatial & Relational Logic",
+          "subtopics": [
+            {
+              "id": "blood_relations",
+              "name": "Blood Relations"
+            },
+            {
+              "id": "direction_sense",
+              "name": "Direction Sense Test"
+            },
+            {
+              "id": "linear_seating",
+              "name": "Linear Seating Arrangement"
+            },
+            {
+              "id": "circular_seating",
+              "name": "Circular Seating Arrangement"
+            },
+            {
+              "id": "matrix_complex_puzzles",
+              "name": "Matrix and Complex Puzzles"
+            }
+          ]
+        },
+        {
+          "id": "deductive_reasoning",
+          "name": "Deductive Reasoning",
+          "subtopics": [
+            {
+              "id": "syllogisms",
+              "name": "Syllogisms"
+            },
+            {
+              "id": "venn_diagrams",
+              "name": "Venn Diagrams"
+            },
+            {
+              "id": "cubes_dice",
+              "name": "Cubes and Dice"
+            },
+            {
+              "id": "mathematical_operations_inequalities",
+              "name": "Mathematical Operations and Inequalities"
+            }
+          ]
+        },
+        {
+          "id": "critical_reasoning",
+          "name": "Critical Reasoning",
+          "subtopics": [
+            {
+              "id": "statement_assumptions",
+              "name": "Statement and Assumptions"
+            },
+            {
+              "id": "statement_conclusions",
+              "name": "Statement and Conclusions"
+            },
+            {
+              "id": "course_of_action",
+              "name": "Course of Action"
+            },
+            {
+              "id": "cause_effect",
+              "name": "Cause and Effect"
+            },
+            {
+              "id": "data_sufficiency",
+              "name": "Data Sufficiency"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data_interpretation",
+      "name": "Data Interpretation",
+      "topics": [
+        {
+          "id": "visual_data_analysis",
+          "name": "Visual Data Analysis",
+          "subtopics": [
+            {
+              "id": "tables_matrices",
+              "name": "Tables and Matrices"
+            },
+            {
+              "id": "bar_charts_histograms",
+              "name": "Bar Charts and Histograms"
+            },
+            {
+              "id": "pie_charts",
+              "name": "Pie Charts"
+            },
+            {
+              "id": "line_graphs",
+              "name": "Line Graphs"
+            },
+            {
+              "id": "radar_web_charts",
+              "name": "Radar and Web Charts"
+            },
+            {
+              "id": "mixed_graphs",
+              "name": "Mixed Graphs (Combo Charts)"
+            },
+            {
+              "id": "caselets",
+              "name": "Caselets (Paragraph-based Data)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verbal_ability",
+      "name": "Verbal Ability",
+      "topics": [
+        {
+          "id": "grammar_mechanics",
+          "name": "Grammar & Mechanics",
+          "subtopics": [
+            {
+              "id": "spotting_errors",
+              "name": "Spotting Errors (Subject-Verb Agreement, Tenses)"
+            },
+            {
+              "id": "sentence_correction",
+              "name": "Sentence Correction and Improvement"
+            },
+            {
+              "id": "active_passive",
+              "name": "Active and Passive Voice"
+            },
+            {
+              "id": "direct_indirect",
+              "name": "Direct and Indirect Speech"
+            }
+          ]
+        },
+        {
+          "id": "vocabulary_context",
+          "name": "Vocabulary & Context",
+          "subtopics": [
+            {
+              "id": "synonyms_antonyms",
+              "name": "Synonyms and Antonyms"
+            },
+            {
+              "id": "contextual_fill_blanks",
+              "name": "Contextual Fill in the Blanks"
+            },
+            {
+              "id": "cloze_test",
+              "name": "Cloze Test (Paragraph Fillers)"
+            },
+            {
+              "id": "idioms_phrases",
+              "name": "Idioms and Phrases"
+            },
+            {
+              "id": "one_word_substitutions",
+              "name": "One-Word Substitutions"
+            }
+          ]
+        },
+        {
+          "id": "comprehension_arrangement",
+          "name": "Comprehension & Arrangement",
+          "subtopics": [
+            {
+              "id": "reading_comprehension",
+              "name": "Reading Comprehension (RC)"
+            },
+            {
+              "id": "para_jumbles",
+              "name": "Para Jumbles (Sentence Re-arrangement)"
+            },
+            {
+              "id": "paragraph_completion",
+              "name": "Paragraph Completion"
+            },
+            {
+              "id": "theme_detection",
+              "name": "Theme Detection"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

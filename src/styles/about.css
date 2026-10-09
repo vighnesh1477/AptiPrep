@@ -1,0 +1,336 @@
+/* ============================================
+   About Page — TechPrep-matching Design
+   ============================================ */
+
+.about-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 50px 24px 0;
+}
+
+.about-container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* ===== Hero: Side by Side ===== */
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 48px;
+}
+
+/* Left: Creator */
+
+.about-hero-left {
+  position: sticky;
+  top: 80px;
+  text-align: center;
+}
+
+/* ===== Avatars (single source of truth) ===== */
+
+.about-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  background: var(--accent);
+  letter-spacing: -0.02em;
+}
+
+.about-avatar--photo {
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+.about-avatar.about-avatar--small {
+  width: 130px;
+  height: 130px;
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+}
+
+.about-creator-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.about-creator-role {
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.about-creator-bio {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 220px;
+  margin: 0 auto 16px;
+}
+
+.about-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.about-social-link:hover {
+  text-decoration: underline;
+}
+
+/* Right: Philosophy */
+
+.about-hero-right {
+  padding-top: 8px;
+}
+
+.about-hero-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-tertiary);
+  margin-bottom: 16px;
+}
+
+.about-hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+
+.about-hero-statement {
+  border-left: 3px solid var(--accent);
+  padding-left: 20px;
+}
+
+.about-hero-statement p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-hero-statement p:last-child {
+  margin-top: 4px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+/* ===== Divider ===== */
+
+.about-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border-color);
+  margin-bottom: 48px;
+}
+
+/* ===== Sections ===== */
+
+.about-section {
+  margin-bottom: 48px;
+}
+
+.about-section-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.about-section-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* ===== Team Grid ===== */
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.about-team-card {
+  padding: 28px 20px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  text-align: center;
+  transition: border-color 0.15s ease;
+}
+
+.about-team-card:hover {
+  border-color: var(--accent);
+}
+
+.about-team-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.about-team-role {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-team-bio {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* ===== Contribute ===== */
+
+.about-steps {
+  margin: 0 0 28px;
+  padding-left: 22px;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 2;
+}
+
+.about-steps strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.about-contribute-cta {
+  text-align: center;
+}
+
+.about-github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 24px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.about-github-btn:hover {
+  background: var(--accent-hover);
+}
+
+.about-github-btn svg {
+  flex-shrink: 0;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-hero-left {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .about-hero-right {
+    padding-top: 0;
+  }
+
+  .about-hero-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .about-hero-label {
+    text-align: center;
+  }
+
+  .about-hero-statement {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .about-team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 40px 16px 0;
+  }
+
+  .about-hero-title {
+    font-size: 1.8rem;
+  }
+
+  .about-hero-statement p {
+    font-size: 0.95rem;
+  }
+
+  .about-hero-statement p:last-child {
+    font-size: 1rem;
+  }
+
+  .about-avatar {
+    width: 130px;
+    height: 130px;
+    font-size: 2.8rem;
+  }
+
+.about-avatar.about-avatar--small {
+  width: 110px;
+  height: 110px;
+  font-size: 2.2rem;
+}
+
+  .about-creator-bio {
+    max-width: 100%;
+  }
+}
+
+/* Hash scroll offset */
+#contribute {
+  scroll-margin-top: 100px;
+}

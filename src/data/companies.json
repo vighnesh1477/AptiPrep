@@ -1,0 +1,16 @@
+{
+  "companies": [
+    {
+      "id": "infosys",
+      "name": "Infosys"
+    },
+    {
+      "id": "tcs",
+      "name": "TCS"
+    },
+    {
+      "id": "accenture",
+      "name": "Accenture"
+    }
+  ]
+}

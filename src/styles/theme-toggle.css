@@ -1,0 +1,63 @@
+/* ============================================
+   Theme Switch — Light / Dark / System
+   ============================================ */
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.theme-switch-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: var(--text-tertiary);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color var(--transition-fast),
+    background-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+  white-space: nowrap;
+}
+
+.theme-switch-btn:hover {
+  color: var(--text-secondary);
+}
+
+.theme-switch-btn-active {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-switch-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .theme-switch-label {
+    display: none;
+  }
+
+  .theme-switch-btn {
+    padding: 6px 8px;
+  }
+
+  .theme-switch-icon {
+    width: 16px;
+    height: 16px;
+  }
+}

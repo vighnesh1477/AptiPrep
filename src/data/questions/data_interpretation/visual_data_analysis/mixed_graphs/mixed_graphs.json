@@ -1,0 +1,5207 @@
+{
+  "categoryId": "data_interpretation",
+  "topicId": "visual_data_analysis",
+  "subtopicId": "mixed_graphs",
+  "questions": [
+    {
+      "questionId": "DI-MG-0001",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the percentage decrease in production from 2019 to 2021?",
+      "questionImage": "question/DI-MG-0001.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "40.81"
+        },
+        {
+          "id": "B",
+          "text": "65.01"
+        },
+        {
+          "id": "C",
+          "text": "50"
+        },
+        {
+          "id": "D",
+          "text": "38.52"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Change = |40 - 80| / 80 x 100 = 50%.",
+      "explanationImage": "explanation/DI-MG-0001.png"
+    },
+    {
+      "questionId": "DI-MG-0002",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were sold in 2019 (in '000 units)?",
+      "questionImage": "question/DI-MG-0001.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "93.81"
+        },
+        {
+          "id": "B",
+          "text": "54.36"
+        },
+        {
+          "id": "C",
+          "text": "60.43"
+        },
+        {
+          "id": "D",
+          "text": "76"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Sold in 2019 = 80 x 95% = 76.",
+      "explanationImage": "explanation/DI-MG-0002.png"
+    },
+    {
+      "questionId": "DI-MG-0003",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the ratio of units sold in 2019 to those in 2021?",
+      "questionImage": "question/DI-MG-0001.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "19 : 13"
+        },
+        {
+          "id": "B",
+          "text": "13 : 38"
+        },
+        {
+          "id": "C",
+          "text": "2 : 1"
+        },
+        {
+          "id": "D",
+          "text": "38 : 13"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "76 : 26 = 38 : 13.",
+      "explanationImage": "explanation/DI-MG-0003.png"
+    },
+    {
+      "questionId": "DI-MG-0004",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the average production per year over the six years (in '000 units)?",
+      "questionImage": "question/DI-MG-0001.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "99.73"
+        },
+        {
+          "id": "B",
+          "text": "99.45"
+        },
+        {
+          "id": "C",
+          "text": "81.53"
+        },
+        {
+          "id": "D",
+          "text": "90"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 540 / 6 = 90.",
+      "explanationImage": "explanation/DI-MG-0004.png"
+    },
+    {
+      "questionId": "DI-MG-0005",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the total number of units sold in 2019 and 2021 together (in '000 units)?",
+      "questionImage": "question/DI-MG-0001.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "102"
+        },
+        {
+          "id": "B",
+          "text": "111.88"
+        },
+        {
+          "id": "C",
+          "text": "111.05"
+        },
+        {
+          "id": "D",
+          "text": "86.21"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "76 + 26 = 102.",
+      "explanationImage": "explanation/DI-MG-0005.png"
+    },
+    {
+      "questionId": "DI-MG-0006",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the ratio of applicants selected in 2021 to those in 2020?",
+      "questionImage": "question/DI-MG-0006.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "21 : 16"
+        },
+        {
+          "id": "B",
+          "text": "16 : 21"
+        },
+        {
+          "id": "C",
+          "text": "3 : 2"
+        },
+        {
+          "id": "D",
+          "text": "7 : 8"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "42 : 32 = 21 : 16.",
+      "explanationImage": "explanation/DI-MG-0006.png"
+    },
+    {
+      "questionId": "DI-MG-0007",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nIn which year was the number of applicants selected the highest?",
+      "questionImage": "question/DI-MG-0006.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2020"
+        },
+        {
+          "id": "B",
+          "text": "2021"
+        },
+        {
+          "id": "C",
+          "text": "2022"
+        },
+        {
+          "id": "D",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Values: 2019 64, 2020 32, 2021 42, 2022 117, 2023 50, 2024 52. Highest: 2022.",
+      "explanationImage": "explanation/DI-MG-0007.png"
+    },
+    {
+      "questionId": "DI-MG-0008",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the total number of applicants selected in 2021 and 2020 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0006.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "64.77"
+        },
+        {
+          "id": "B",
+          "text": "74"
+        },
+        {
+          "id": "C",
+          "text": "63.81"
+        },
+        {
+          "id": "D",
+          "text": "78.18"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "42 + 32 = 74.",
+      "explanationImage": "explanation/DI-MG-0008.png"
+    },
+    {
+      "questionId": "DI-MG-0009",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in applicants from 2020 to 2021?",
+      "questionImage": "question/DI-MG-0006.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "69.32"
+        },
+        {
+          "id": "B",
+          "text": "62.14"
+        },
+        {
+          "id": "C",
+          "text": "35.35"
+        },
+        {
+          "id": "D",
+          "text": "50"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Change = |60 - 40| / 40 x 100 = 50%.",
+      "explanationImage": "explanation/DI-MG-0009.png"
+    },
+    {
+      "questionId": "DI-MG-0010",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the average applicants per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0006.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "117.69"
+        },
+        {
+          "id": "B",
+          "text": "103.33"
+        },
+        {
+          "id": "C",
+          "text": "90.36"
+        },
+        {
+          "id": "D",
+          "text": "97.48"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 620 / 6 = 103.33.",
+      "explanationImage": "explanation/DI-MG-0010.png"
+    },
+    {
+      "questionId": "DI-MG-0011",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were not passed in 2024 (in hundreds)?",
+      "questionImage": "question/DI-MG-0011.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "85.87"
+        },
+        {
+          "id": "B",
+          "text": "120"
+        },
+        {
+          "id": "C",
+          "text": "103.81"
+        },
+        {
+          "id": "D",
+          "text": "86.99"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not passed = 200 - 80 = 120.",
+      "explanationImage": "explanation/DI-MG-0011.png"
+    },
+    {
+      "questionId": "DI-MG-0012",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the average appeared per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0011.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "153.27"
+        },
+        {
+          "id": "B",
+          "text": "131.27"
+        },
+        {
+          "id": "C",
+          "text": "140"
+        },
+        {
+          "id": "D",
+          "text": "133.83"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Average = 840 / 6 = 140.",
+      "explanationImage": "explanation/DI-MG-0012.png"
+    },
+    {
+      "questionId": "DI-MG-0013",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the ratio of students passed in 2020 to those in 2024?",
+      "questionImage": "question/DI-MG-0011.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 : 1"
+        },
+        {
+          "id": "B",
+          "text": "5 : 8"
+        },
+        {
+          "id": "C",
+          "text": "1 : 2"
+        },
+        {
+          "id": "D",
+          "text": "1 : 1"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "40 : 80 = 1 : 2.",
+      "explanationImage": "explanation/DI-MG-0013.png"
+    },
+    {
+      "questionId": "DI-MG-0014",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in appeared from 2020 to 2024?",
+      "questionImage": "question/DI-MG-0011.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "131.01"
+        },
+        {
+          "id": "B",
+          "text": "111.27"
+        },
+        {
+          "id": "C",
+          "text": "100"
+        },
+        {
+          "id": "D",
+          "text": "132.99"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Change = |200 - 100| / 100 x 100 = 100%.",
+      "explanationImage": "explanation/DI-MG-0014.png"
+    },
+    {
+      "questionId": "DI-MG-0015",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were passed in 2020 (in hundreds)?",
+      "questionImage": "question/DI-MG-0011.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "30.25"
+        },
+        {
+          "id": "B",
+          "text": "47.18"
+        },
+        {
+          "id": "C",
+          "text": "48.72"
+        },
+        {
+          "id": "D",
+          "text": "40"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Passed in 2020 = 100 x 40% = 40.",
+      "explanationImage": "explanation/DI-MG-0015.png"
+    },
+    {
+      "questionId": "DI-MG-0016",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the average seats per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0016.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "161.39"
+        },
+        {
+          "id": "B",
+          "text": "150"
+        },
+        {
+          "id": "C",
+          "text": "136.11"
+        },
+        {
+          "id": "D",
+          "text": "143.57"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 900 / 6 = 150.",
+      "explanationImage": "explanation/DI-MG-0016.png"
+    },
+    {
+      "questionId": "DI-MG-0017",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were not filled in 2020 (in hundreds)?",
+      "questionImage": "question/DI-MG-0016.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.16"
+        },
+        {
+          "id": "B",
+          "text": "5.32"
+        },
+        {
+          "id": "C",
+          "text": "2.84"
+        },
+        {
+          "id": "D",
+          "text": "8"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Not filled = 160 - 152 = 8.",
+      "explanationImage": "explanation/DI-MG-0017.png"
+    },
+    {
+      "questionId": "DI-MG-0018",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the percentage decrease in seats from 2020 to 2021?",
+      "questionImage": "question/DI-MG-0016.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "19.96"
+        },
+        {
+          "id": "B",
+          "text": "16.43"
+        },
+        {
+          "id": "C",
+          "text": "17.95"
+        },
+        {
+          "id": "D",
+          "text": "12.50"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Change = |140 - 160| / 160 x 100 = 12.50%.",
+      "explanationImage": "explanation/DI-MG-0018.png"
+    },
+    {
+      "questionId": "DI-MG-0019",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nIn which year was the number of seats filled the highest?",
+      "questionImage": "question/DI-MG-0016.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2021"
+        },
+        {
+          "id": "B",
+          "text": "2019"
+        },
+        {
+          "id": "C",
+          "text": "2024"
+        },
+        {
+          "id": "D",
+          "text": "2020"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Values: 2019 99, 2020 152, 2021 70, 2022 27, 2023 64, 2024 140. Highest: 2020.",
+      "explanationImage": "explanation/DI-MG-0019.png"
+    },
+    {
+      "questionId": "DI-MG-0020",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the ratio of seats filled in 2021 to those in 2020?",
+      "questionImage": "question/DI-MG-0016.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "7 : 8"
+        },
+        {
+          "id": "B",
+          "text": "35 : 76"
+        },
+        {
+          "id": "C",
+          "text": "10 : 19"
+        },
+        {
+          "id": "D",
+          "text": "76 : 35"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "70 : 152 = 35 : 76.",
+      "explanationImage": "explanation/DI-MG-0020.png"
+    },
+    {
+      "questionId": "DI-MG-0021",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nIn which year was the number of orders delivered on time the highest?",
+      "questionImage": "question/DI-MG-0021.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2021"
+        },
+        {
+          "id": "B",
+          "text": "2019"
+        },
+        {
+          "id": "C",
+          "text": "2023"
+        },
+        {
+          "id": "D",
+          "text": "2020"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Values: 2019 18, 2020 90, 2021 66, 2022 120, 2023 160, 2024 50. Highest: 2023.",
+      "explanationImage": "explanation/DI-MG-0021.png"
+    },
+    {
+      "questionId": "DI-MG-0022",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were delivered on time in 2022 (in '000)?",
+      "questionImage": "question/DI-MG-0021.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "137.81"
+        },
+        {
+          "id": "B",
+          "text": "107.94"
+        },
+        {
+          "id": "C",
+          "text": "155.85"
+        },
+        {
+          "id": "D",
+          "text": "120"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Delivered on time in 2022 = 200 x 60% = 120.",
+      "explanationImage": "explanation/DI-MG-0022.png"
+    },
+    {
+      "questionId": "DI-MG-0023",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in orders from 2019 to 2022?",
+      "questionImage": "question/DI-MG-0021.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "522.53"
+        },
+        {
+          "id": "B",
+          "text": "483.31"
+        },
+        {
+          "id": "C",
+          "text": "346.16"
+        },
+        {
+          "id": "D",
+          "text": "400"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Change = |200 - 40| / 40 x 100 = 400%.",
+      "explanationImage": "explanation/DI-MG-0023.png"
+    },
+    {
+      "questionId": "DI-MG-0024",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the total number of orders delivered on time in 2022 and 2019 together (in '000)?",
+      "questionImage": "question/DI-MG-0021.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "161.63"
+        },
+        {
+          "id": "B",
+          "text": "153.88"
+        },
+        {
+          "id": "C",
+          "text": "122.93"
+        },
+        {
+          "id": "D",
+          "text": "138"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "120 + 18 = 138.",
+      "explanationImage": "explanation/DI-MG-0024.png"
+    },
+    {
+      "questionId": "DI-MG-0025",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the average orders per year over the six years (in '000)?",
+      "questionImage": "question/DI-MG-0021.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "133.81"
+        },
+        {
+          "id": "B",
+          "text": "140"
+        },
+        {
+          "id": "C",
+          "text": "152.23"
+        },
+        {
+          "id": "D",
+          "text": "152.65"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 840 / 6 = 140.",
+      "explanationImage": "explanation/DI-MG-0025.png"
+    },
+    {
+      "questionId": "DI-MG-0026",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in production from 2021 to 2022?",
+      "questionImage": "question/DI-MG-0026.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "68.82"
+        },
+        {
+          "id": "B",
+          "text": "100"
+        },
+        {
+          "id": "C",
+          "text": "74.75"
+        },
+        {
+          "id": "D",
+          "text": "121.12"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Change = |200 - 100| / 100 x 100 = 100%.",
+      "explanationImage": "explanation/DI-MG-0026.png"
+    },
+    {
+      "questionId": "DI-MG-0027",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the ratio of units sold in 2021 to those in 2022?",
+      "questionImage": "question/DI-MG-0026.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "9 : 34"
+        },
+        {
+          "id": "B",
+          "text": "1 : 2"
+        },
+        {
+          "id": "C",
+          "text": "9 : 17"
+        },
+        {
+          "id": "D",
+          "text": "34 : 9"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "45 : 170 = 9 : 34.",
+      "explanationImage": "explanation/DI-MG-0027.png"
+    },
+    {
+      "questionId": "DI-MG-0028",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were sold in 2021 (in '000 units)?",
+      "questionImage": "question/DI-MG-0026.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "45"
+        },
+        {
+          "id": "B",
+          "text": "49.67"
+        },
+        {
+          "id": "C",
+          "text": "54.97"
+        },
+        {
+          "id": "D",
+          "text": "41.16"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Sold in 2021 = 100 x 45% = 45.",
+      "explanationImage": "explanation/DI-MG-0028.png"
+    },
+    {
+      "questionId": "DI-MG-0029",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were not sold in 2022 (in '000 units)?",
+      "questionImage": "question/DI-MG-0026.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "25.08"
+        },
+        {
+          "id": "B",
+          "text": "25.24"
+        },
+        {
+          "id": "C",
+          "text": "30"
+        },
+        {
+          "id": "D",
+          "text": "26.89"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Not sold = 200 - 170 = 30.",
+      "explanationImage": "explanation/DI-MG-0029.png"
+    },
+    {
+      "questionId": "DI-MG-0030",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the total number of units sold in 2021 and 2022 together (in '000 units)?",
+      "questionImage": "question/DI-MG-0026.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "215"
+        },
+        {
+          "id": "B",
+          "text": "190.01"
+        },
+        {
+          "id": "C",
+          "text": "230.84"
+        },
+        {
+          "id": "D",
+          "text": "226.16"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "45 + 170 = 215.",
+      "explanationImage": "explanation/DI-MG-0030.png"
+    },
+    {
+      "questionId": "DI-MG-0031",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the total number of applicants selected in 2020 and 2022 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0031.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "131.19"
+        },
+        {
+          "id": "B",
+          "text": "125.47"
+        },
+        {
+          "id": "C",
+          "text": "122.57"
+        },
+        {
+          "id": "D",
+          "text": "139"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "48 + 91 = 139.",
+      "explanationImage": "explanation/DI-MG-0031.png"
+    },
+    {
+      "questionId": "DI-MG-0032",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nIn which year was the number of applicants selected the highest?",
+      "questionImage": "question/DI-MG-0031.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2023"
+        },
+        {
+          "id": "B",
+          "text": "2021"
+        },
+        {
+          "id": "C",
+          "text": "2024"
+        },
+        {
+          "id": "D",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Values: 2019 90, 2020 48, 2021 76, 2022 91, 2023 128, 2024 90. Highest: 2023.",
+      "explanationImage": "explanation/DI-MG-0032.png"
+    },
+    {
+      "questionId": "DI-MG-0033",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nHow many applicants were selected in 2020 (in hundreds)?",
+      "questionImage": "question/DI-MG-0031.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "56.18"
+        },
+        {
+          "id": "B",
+          "text": "58.29"
+        },
+        {
+          "id": "C",
+          "text": "39.52"
+        },
+        {
+          "id": "D",
+          "text": "48"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Selected in 2020 = 120 x 40% = 48.",
+      "explanationImage": "explanation/DI-MG-0033.png"
+    },
+    {
+      "questionId": "DI-MG-0034",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the ratio of applicants selected in 2020 to those in 2022?",
+      "questionImage": "question/DI-MG-0031.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "48 : 91"
+        },
+        {
+          "id": "B",
+          "text": "91 : 48"
+        },
+        {
+          "id": "C",
+          "text": "6 : 7"
+        },
+        {
+          "id": "D",
+          "text": "8 : 13"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "48 : 91 = 48 : 91.",
+      "explanationImage": "explanation/DI-MG-0034.png"
+    },
+    {
+      "questionId": "DI-MG-0035",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nHow many applicants were not selected in 2022 (in hundreds)?",
+      "questionImage": "question/DI-MG-0031.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "56.96"
+        },
+        {
+          "id": "B",
+          "text": "49"
+        },
+        {
+          "id": "C",
+          "text": "53.89"
+        },
+        {
+          "id": "D",
+          "text": "35.03"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not selected = 140 - 91 = 49.",
+      "explanationImage": "explanation/DI-MG-0035.png"
+    },
+    {
+      "questionId": "DI-MG-0036",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were not passed in 2024 (in hundreds)?",
+      "questionImage": "question/DI-MG-0036.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "42"
+        },
+        {
+          "id": "B",
+          "text": "46.44"
+        },
+        {
+          "id": "C",
+          "text": "31.61"
+        },
+        {
+          "id": "D",
+          "text": "37.69"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Not passed = 140 - 98 = 42.",
+      "explanationImage": "explanation/DI-MG-0036.png"
+    },
+    {
+      "questionId": "DI-MG-0037",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the ratio of students passed in 2020 to those in 2024?",
+      "questionImage": "question/DI-MG-0036.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "9 : 14"
+        },
+        {
+          "id": "B",
+          "text": "2 : 7"
+        },
+        {
+          "id": "C",
+          "text": "49 : 9"
+        },
+        {
+          "id": "D",
+          "text": "9 : 49"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "18 : 98 = 9 : 49.",
+      "explanationImage": "explanation/DI-MG-0037.png"
+    },
+    {
+      "questionId": "DI-MG-0038",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the average appeared per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0036.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "95.77"
+        },
+        {
+          "id": "B",
+          "text": "110"
+        },
+        {
+          "id": "C",
+          "text": "116.60"
+        },
+        {
+          "id": "D",
+          "text": "95.92"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 660 / 6 = 110.",
+      "explanationImage": "explanation/DI-MG-0038.png"
+    },
+    {
+      "questionId": "DI-MG-0039",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in appeared from 2020 to 2024?",
+      "questionImage": "question/DI-MG-0036.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "250"
+        },
+        {
+          "id": "B",
+          "text": "325.70"
+        },
+        {
+          "id": "C",
+          "text": "210.05"
+        },
+        {
+          "id": "D",
+          "text": "215.02"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Change = |140 - 40| / 40 x 100 = 250%.",
+      "explanationImage": "explanation/DI-MG-0039.png"
+    },
+    {
+      "questionId": "DI-MG-0040",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nIn which year was the number of students passed the highest?",
+      "questionImage": "question/DI-MG-0036.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2021"
+        },
+        {
+          "id": "B",
+          "text": "2022"
+        },
+        {
+          "id": "C",
+          "text": "2024"
+        },
+        {
+          "id": "D",
+          "text": "2023"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Values: 2019 22, 2020 18, 2021 162, 2022 33, 2023 130, 2024 98. Highest: 2021.",
+      "explanationImage": "explanation/DI-MG-0040.png"
+    },
+    {
+      "questionId": "DI-MG-0041",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the average seats per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0041.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "187.41"
+        },
+        {
+          "id": "B",
+          "text": "180"
+        },
+        {
+          "id": "C",
+          "text": "193.14"
+        },
+        {
+          "id": "D",
+          "text": "184.38"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 1080 / 6 = 180.",
+      "explanationImage": "explanation/DI-MG-0041.png"
+    },
+    {
+      "questionId": "DI-MG-0042",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were filled in 2024 (in hundreds)?",
+      "questionImage": "question/DI-MG-0041.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "130"
+        },
+        {
+          "id": "B",
+          "text": "103.28"
+        },
+        {
+          "id": "C",
+          "text": "151.05"
+        },
+        {
+          "id": "D",
+          "text": "119.37"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Filled in 2024 = 200 x 65% = 130.",
+      "explanationImage": "explanation/DI-MG-0042.png"
+    },
+    {
+      "questionId": "DI-MG-0043",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were not filled in 2019 (in hundreds)?",
+      "questionImage": "question/DI-MG-0041.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "58.97"
+        },
+        {
+          "id": "B",
+          "text": "81.88"
+        },
+        {
+          "id": "C",
+          "text": "84.83"
+        },
+        {
+          "id": "D",
+          "text": "70"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Not filled = 200 - 130 = 70.",
+      "explanationImage": "explanation/DI-MG-0043.png"
+    },
+    {
+      "questionId": "DI-MG-0044",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nIn which year was the number of seats filled the highest?",
+      "questionImage": "question/DI-MG-0041.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2019"
+        },
+        {
+          "id": "B",
+          "text": "2023"
+        },
+        {
+          "id": "C",
+          "text": "2021"
+        },
+        {
+          "id": "D",
+          "text": "2020"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Values: 2019 130, 2020 99, 2021 50, 2022 120, 2023 170, 2024 130. Highest: 2023.",
+      "explanationImage": "explanation/DI-MG-0044.png"
+    },
+    {
+      "questionId": "DI-MG-0045",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the ratio of seats filled in 2024 to those in 2019?",
+      "questionImage": "question/DI-MG-0041.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "27 : 26"
+        },
+        {
+          "id": "B",
+          "text": "29 : 26"
+        },
+        {
+          "id": "C",
+          "text": "14 : 13"
+        },
+        {
+          "id": "D",
+          "text": "1 : 1"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "130 : 130 = 1 : 1.",
+      "explanationImage": "explanation/DI-MG-0045.png"
+    },
+    {
+      "questionId": "DI-MG-0046",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were not delivered on time in 2023 (in '000)?",
+      "questionImage": "question/DI-MG-0046.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "27"
+        },
+        {
+          "id": "B",
+          "text": "33.32"
+        },
+        {
+          "id": "C",
+          "text": "20.55"
+        },
+        {
+          "id": "D",
+          "text": "32.05"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Not delivered on time = 180 - 153 = 27.",
+      "explanationImage": "explanation/DI-MG-0046.png"
+    },
+    {
+      "questionId": "DI-MG-0047",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in orders from 2022 to 2023?",
+      "questionImage": "question/DI-MG-0046.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "200"
+        },
+        {
+          "id": "B",
+          "text": "266.99"
+        },
+        {
+          "id": "C",
+          "text": "127.89"
+        },
+        {
+          "id": "D",
+          "text": "150.97"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Change = |180 - 60| / 60 x 100 = 200%.",
+      "explanationImage": "explanation/DI-MG-0047.png"
+    },
+    {
+      "questionId": "DI-MG-0048",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the ratio of orders delivered on time in 2022 to those in 2023?",
+      "questionImage": "question/DI-MG-0046.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 3"
+        },
+        {
+          "id": "B",
+          "text": "16 : 51"
+        },
+        {
+          "id": "C",
+          "text": "51 : 16"
+        },
+        {
+          "id": "D",
+          "text": "16 : 17"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "48 : 153 = 16 : 51.",
+      "explanationImage": "explanation/DI-MG-0048.png"
+    },
+    {
+      "questionId": "DI-MG-0049",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nIn which year was the number of orders delivered on time the highest?",
+      "questionImage": "question/DI-MG-0046.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2023"
+        },
+        {
+          "id": "B",
+          "text": "2020"
+        },
+        {
+          "id": "C",
+          "text": "2021"
+        },
+        {
+          "id": "D",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Values: 2019 54, 2020 84, 2021 90, 2022 48, 2023 153, 2024 108. Highest: 2023.",
+      "explanationImage": "explanation/DI-MG-0049.png"
+    },
+    {
+      "questionId": "DI-MG-0050",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were delivered on time in 2022 (in '000)?",
+      "questionImage": "question/DI-MG-0046.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "62.25"
+        },
+        {
+          "id": "B",
+          "text": "48"
+        },
+        {
+          "id": "C",
+          "text": "36.15"
+        },
+        {
+          "id": "D",
+          "text": "55.99"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Delivered on time in 2022 = 60 x 80% = 48.",
+      "explanationImage": "explanation/DI-MG-0050.png"
+    },
+    {
+      "questionId": "DI-MG-0051",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the average production per year over the six years (in '000 units)?",
+      "questionImage": "question/DI-MG-0051.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "123.05"
+        },
+        {
+          "id": "B",
+          "text": "113.33"
+        },
+        {
+          "id": "C",
+          "text": "102.21"
+        },
+        {
+          "id": "D",
+          "text": "102.85"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 680 / 6 = 113.33.",
+      "explanationImage": "explanation/DI-MG-0051.png"
+    },
+    {
+      "questionId": "DI-MG-0052",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the ratio of units sold in 2023 to those in 2020?",
+      "questionImage": "question/DI-MG-0051.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "24 : 55"
+        },
+        {
+          "id": "B",
+          "text": "11 : 16"
+        },
+        {
+          "id": "C",
+          "text": "10 : 3"
+        },
+        {
+          "id": "D",
+          "text": "55 : 24"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "110 : 48 = 55 : 24.",
+      "explanationImage": "explanation/DI-MG-0052.png"
+    },
+    {
+      "questionId": "DI-MG-0053",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in production from 2020 to 2023?",
+      "questionImage": "question/DI-MG-0051.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "293.36"
+        },
+        {
+          "id": "B",
+          "text": "166.14"
+        },
+        {
+          "id": "C",
+          "text": "140.03"
+        },
+        {
+          "id": "D",
+          "text": "233.33"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Change = |200 - 60| / 60 x 100 = 233.33%.",
+      "explanationImage": "explanation/DI-MG-0053.png"
+    },
+    {
+      "questionId": "DI-MG-0054",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nIn which year was the number of units sold the highest?",
+      "questionImage": "question/DI-MG-0051.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2024"
+        },
+        {
+          "id": "B",
+          "text": "2022"
+        },
+        {
+          "id": "C",
+          "text": "2023"
+        },
+        {
+          "id": "D",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Values: 2019 32, 2020 48, 2021 95, 2022 190, 2023 110, 2024 36. Highest: 2022.",
+      "explanationImage": "explanation/DI-MG-0054.png"
+    },
+    {
+      "questionId": "DI-MG-0055",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were not sold in 2020 (in '000 units)?",
+      "questionImage": "question/DI-MG-0051.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "18.04"
+        },
+        {
+          "id": "B",
+          "text": "12"
+        },
+        {
+          "id": "C",
+          "text": "16.15"
+        },
+        {
+          "id": "D",
+          "text": "16.29"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not sold = 60 - 48 = 12.",
+      "explanationImage": "explanation/DI-MG-0055.png"
+    },
+    {
+      "questionId": "DI-MG-0056",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the average applicants per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0056.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "94.81"
+        },
+        {
+          "id": "B",
+          "text": "116.40"
+        },
+        {
+          "id": "C",
+          "text": "92.04"
+        },
+        {
+          "id": "D",
+          "text": "106.67"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 640 / 6 = 106.67.",
+      "explanationImage": "explanation/DI-MG-0056.png"
+    },
+    {
+      "questionId": "DI-MG-0057",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the ratio of applicants selected in 2019 to those in 2021?",
+      "questionImage": "question/DI-MG-0056.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "27 : 64"
+        },
+        {
+          "id": "B",
+          "text": "3 : 4"
+        },
+        {
+          "id": "C",
+          "text": "9 : 16"
+        },
+        {
+          "id": "D",
+          "text": "64 : 27"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "54 : 128 = 27 : 64.",
+      "explanationImage": "explanation/DI-MG-0057.png"
+    },
+    {
+      "questionId": "DI-MG-0058",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the total number of applicants selected in 2019 and 2021 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0056.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "204.82"
+        },
+        {
+          "id": "B",
+          "text": "214.41"
+        },
+        {
+          "id": "C",
+          "text": "182"
+        },
+        {
+          "id": "D",
+          "text": "215.54"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "54 + 128 = 182.",
+      "explanationImage": "explanation/DI-MG-0058.png"
+    },
+    {
+      "questionId": "DI-MG-0059",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nHow many applicants were selected in 2019 (in hundreds)?",
+      "questionImage": "question/DI-MG-0056.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "42.12"
+        },
+        {
+          "id": "B",
+          "text": "42.28"
+        },
+        {
+          "id": "C",
+          "text": "66.74"
+        },
+        {
+          "id": "D",
+          "text": "54"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Selected in 2019 = 120 x 45% = 54.",
+      "explanationImage": "explanation/DI-MG-0059.png"
+    },
+    {
+      "questionId": "DI-MG-0060",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nIn which year was the number of applicants selected the highest?",
+      "questionImage": "question/DI-MG-0056.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2019"
+        },
+        {
+          "id": "B",
+          "text": "2020"
+        },
+        {
+          "id": "C",
+          "text": "2023"
+        },
+        {
+          "id": "D",
+          "text": "2022"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Values: 2019 54, 2020 34, 2021 128, 2022 90, 2023 152, 2024 38. Highest: 2023.",
+      "explanationImage": "explanation/DI-MG-0060.png"
+    },
+    {
+      "questionId": "DI-MG-0061",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nIn which year was the number of students passed the highest?",
+      "questionImage": "question/DI-MG-0061.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2023"
+        },
+        {
+          "id": "B",
+          "text": "2022"
+        },
+        {
+          "id": "C",
+          "text": "2024"
+        },
+        {
+          "id": "D",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Values: 2019 26, 2020 48, 2021 100, 2022 90, 2023 171, 2024 50. Highest: 2023.",
+      "explanationImage": "explanation/DI-MG-0061.png"
+    },
+    {
+      "questionId": "DI-MG-0062",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the total number of students passed in 2019 and 2020 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0061.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "74"
+        },
+        {
+          "id": "B",
+          "text": "78.18"
+        },
+        {
+          "id": "C",
+          "text": "60.95"
+        },
+        {
+          "id": "D",
+          "text": "59.73"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "26 + 48 = 74.",
+      "explanationImage": "explanation/DI-MG-0062.png"
+    },
+    {
+      "questionId": "DI-MG-0063",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were passed in 2019 (in hundreds)?",
+      "questionImage": "question/DI-MG-0061.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "31.02"
+        },
+        {
+          "id": "B",
+          "text": "26"
+        },
+        {
+          "id": "C",
+          "text": "21.71"
+        },
+        {
+          "id": "D",
+          "text": "20.82"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Passed in 2019 = 40 x 65% = 26.",
+      "explanationImage": "explanation/DI-MG-0063.png"
+    },
+    {
+      "questionId": "DI-MG-0064",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were not passed in 2020 (in hundreds)?",
+      "questionImage": "question/DI-MG-0061.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "52.53"
+        },
+        {
+          "id": "B",
+          "text": "89.52"
+        },
+        {
+          "id": "C",
+          "text": "72"
+        },
+        {
+          "id": "D",
+          "text": "86.96"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Not passed = 120 - 48 = 72.",
+      "explanationImage": "explanation/DI-MG-0064.png"
+    },
+    {
+      "questionId": "DI-MG-0065",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in appeared from 2019 to 2020?",
+      "questionImage": "question/DI-MG-0061.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "257.89"
+        },
+        {
+          "id": "B",
+          "text": "139.95"
+        },
+        {
+          "id": "C",
+          "text": "200"
+        },
+        {
+          "id": "D",
+          "text": "265.12"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Change = |120 - 40| / 40 x 100 = 200%.",
+      "explanationImage": "explanation/DI-MG-0065.png"
+    },
+    {
+      "questionId": "DI-MG-0066",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the average seats per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0066.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "111.55"
+        },
+        {
+          "id": "B",
+          "text": "81.73"
+        },
+        {
+          "id": "C",
+          "text": "103.70"
+        },
+        {
+          "id": "D",
+          "text": "96.67"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 580 / 6 = 96.67.",
+      "explanationImage": "explanation/DI-MG-0066.png"
+    },
+    {
+      "questionId": "DI-MG-0067",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were filled in 2019 (in hundreds)?",
+      "questionImage": "question/DI-MG-0066.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "47.19"
+        },
+        {
+          "id": "B",
+          "text": "60"
+        },
+        {
+          "id": "C",
+          "text": "43.06"
+        },
+        {
+          "id": "D",
+          "text": "46.54"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Filled in 2019 = 100 x 60% = 60.",
+      "explanationImage": "explanation/DI-MG-0067.png"
+    },
+    {
+      "questionId": "DI-MG-0068",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were not filled in 2020 (in hundreds)?",
+      "questionImage": "question/DI-MG-0066.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "24.19"
+        },
+        {
+          "id": "B",
+          "text": "32"
+        },
+        {
+          "id": "C",
+          "text": "41.10"
+        },
+        {
+          "id": "D",
+          "text": "24.23"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not filled = 160 - 128 = 32.",
+      "explanationImage": "explanation/DI-MG-0068.png"
+    },
+    {
+      "questionId": "DI-MG-0069",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the total number of seats filled in 2019 and 2020 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0066.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "178.05"
+        },
+        {
+          "id": "B",
+          "text": "164.51"
+        },
+        {
+          "id": "C",
+          "text": "163.53"
+        },
+        {
+          "id": "D",
+          "text": "188"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "60 + 128 = 188.",
+      "explanationImage": "explanation/DI-MG-0069.png"
+    },
+    {
+      "questionId": "DI-MG-0070",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the ratio of seats filled in 2019 to those in 2020?",
+      "questionImage": "question/DI-MG-0066.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "15 : 32"
+        },
+        {
+          "id": "B",
+          "text": "3 : 4"
+        },
+        {
+          "id": "C",
+          "text": "5 : 8"
+        },
+        {
+          "id": "D",
+          "text": "32 : 15"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "60 : 128 = 15 : 32.",
+      "explanationImage": "explanation/DI-MG-0070.png"
+    },
+    {
+      "questionId": "DI-MG-0071",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were delivered on time in 2022 (in '000)?",
+      "questionImage": "question/DI-MG-0071.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "16"
+        },
+        {
+          "id": "B",
+          "text": "11.09"
+        },
+        {
+          "id": "C",
+          "text": "22.76"
+        },
+        {
+          "id": "D",
+          "text": "21.65"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Delivered on time in 2022 = 40 x 40% = 16.",
+      "explanationImage": "explanation/DI-MG-0071.png"
+    },
+    {
+      "questionId": "DI-MG-0072",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were not delivered on time in 2023 (in '000)?",
+      "questionImage": "question/DI-MG-0071.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "20.06"
+        },
+        {
+          "id": "B",
+          "text": "18"
+        },
+        {
+          "id": "C",
+          "text": "22.70"
+        },
+        {
+          "id": "D",
+          "text": "11.16"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not delivered on time = 40 - 22 = 18.",
+      "explanationImage": "explanation/DI-MG-0072.png"
+    },
+    {
+      "questionId": "DI-MG-0073",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the average orders per year over the six years (in '000)?",
+      "questionImage": "question/DI-MG-0071.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "107.65"
+        },
+        {
+          "id": "B",
+          "text": "88.03"
+        },
+        {
+          "id": "C",
+          "text": "93.33"
+        },
+        {
+          "id": "D",
+          "text": "81.47"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Average = 560 / 6 = 93.33.",
+      "explanationImage": "explanation/DI-MG-0073.png"
+    },
+    {
+      "questionId": "DI-MG-0074",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the ratio of orders delivered on time in 2022 to those in 2023?",
+      "questionImage": "question/DI-MG-0071.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "13 : 11"
+        },
+        {
+          "id": "B",
+          "text": "11 : 8"
+        },
+        {
+          "id": "C",
+          "text": "8 : 11"
+        },
+        {
+          "id": "D",
+          "text": "1 : 1"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "16 : 22 = 8 : 11.",
+      "explanationImage": "explanation/DI-MG-0074.png"
+    },
+    {
+      "questionId": "DI-MG-0075",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the total number of orders delivered on time in 2022 and 2023 together (in '000)?",
+      "questionImage": "question/DI-MG-0071.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "29.68"
+        },
+        {
+          "id": "B",
+          "text": "38"
+        },
+        {
+          "id": "C",
+          "text": "33.04"
+        },
+        {
+          "id": "D",
+          "text": "42.11"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "16 + 22 = 38.",
+      "explanationImage": "explanation/DI-MG-0075.png"
+    },
+    {
+      "questionId": "DI-MG-0076",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were not sold in 2021 (in '000 units)?",
+      "questionImage": "question/DI-MG-0076.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "63.49"
+        },
+        {
+          "id": "B",
+          "text": "100.10"
+        },
+        {
+          "id": "C",
+          "text": "90"
+        },
+        {
+          "id": "D",
+          "text": "97.07"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Not sold = 200 - 110 = 90.",
+      "explanationImage": "explanation/DI-MG-0076.png"
+    },
+    {
+      "questionId": "DI-MG-0077",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the average production per year over the six years (in '000 units)?",
+      "questionImage": "question/DI-MG-0076.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "136.46"
+        },
+        {
+          "id": "B",
+          "text": "154.89"
+        },
+        {
+          "id": "C",
+          "text": "140.47"
+        },
+        {
+          "id": "D",
+          "text": "146.67"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 880 / 6 = 146.67.",
+      "explanationImage": "explanation/DI-MG-0077.png"
+    },
+    {
+      "questionId": "DI-MG-0078",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nIn which year was the number of units sold the highest?",
+      "questionImage": "question/DI-MG-0076.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2019"
+        },
+        {
+          "id": "B",
+          "text": "2023"
+        },
+        {
+          "id": "C",
+          "text": "2021"
+        },
+        {
+          "id": "D",
+          "text": "2024"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Values: 2019 99, 2020 68, 2021 110, 2022 108, 2023 90, 2024 90. Highest: 2021.",
+      "explanationImage": "explanation/DI-MG-0078.png"
+    },
+    {
+      "questionId": "DI-MG-0079",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the percentage decrease in production from 2021 to 2022?",
+      "questionImage": "question/DI-MG-0076.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "40"
+        },
+        {
+          "id": "B",
+          "text": "29.75"
+        },
+        {
+          "id": "C",
+          "text": "44"
+        },
+        {
+          "id": "D",
+          "text": "48.44"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Change = |120 - 200| / 200 x 100 = 40%.",
+      "explanationImage": "explanation/DI-MG-0079.png"
+    },
+    {
+      "questionId": "DI-MG-0080",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the total number of units sold in 2022 and 2021 together (in '000 units)?",
+      "questionImage": "question/DI-MG-0076.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "260.96"
+        },
+        {
+          "id": "B",
+          "text": "240.06"
+        },
+        {
+          "id": "C",
+          "text": "254.21"
+        },
+        {
+          "id": "D",
+          "text": "218"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "108 + 110 = 218.",
+      "explanationImage": "explanation/DI-MG-0080.png"
+    },
+    {
+      "questionId": "DI-MG-0081",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nHow many applicants were not selected in 2023 (in hundreds)?",
+      "questionImage": "question/DI-MG-0081.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "25.66"
+        },
+        {
+          "id": "B",
+          "text": "18"
+        },
+        {
+          "id": "C",
+          "text": "23.98"
+        },
+        {
+          "id": "D",
+          "text": "11.17"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not selected = 180 - 162 = 18.",
+      "explanationImage": "explanation/DI-MG-0081.png"
+    },
+    {
+      "questionId": "DI-MG-0082",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the ratio of applicants selected in 2020 to those in 2023?",
+      "questionImage": "question/DI-MG-0081.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "27 : 7"
+        },
+        {
+          "id": "B",
+          "text": "1 : 3"
+        },
+        {
+          "id": "C",
+          "text": "7 : 9"
+        },
+        {
+          "id": "D",
+          "text": "7 : 27"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "42 : 162 = 7 : 27.",
+      "explanationImage": "explanation/DI-MG-0082.png"
+    },
+    {
+      "questionId": "DI-MG-0083",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the average applicants per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0081.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "126.67"
+        },
+        {
+          "id": "B",
+          "text": "140.30"
+        },
+        {
+          "id": "C",
+          "text": "112.21"
+        },
+        {
+          "id": "D",
+          "text": "132.05"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 760 / 6 = 126.67.",
+      "explanationImage": "explanation/DI-MG-0083.png"
+    },
+    {
+      "questionId": "DI-MG-0084",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in applicants from 2020 to 2023?",
+      "questionImage": "question/DI-MG-0081.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "200"
+        },
+        {
+          "id": "B",
+          "text": "155.33"
+        },
+        {
+          "id": "C",
+          "text": "154.10"
+        },
+        {
+          "id": "D",
+          "text": "153.47"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Change = |180 - 60| / 60 x 100 = 200%.",
+      "explanationImage": "explanation/DI-MG-0084.png"
+    },
+    {
+      "questionId": "DI-MG-0085",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nIn which year was the number of applicants selected the highest?",
+      "questionImage": "question/DI-MG-0081.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2024"
+        },
+        {
+          "id": "B",
+          "text": "2023"
+        },
+        {
+          "id": "C",
+          "text": "2021"
+        },
+        {
+          "id": "D",
+          "text": "2020"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Values: 2019 160, 2020 42, 2021 81, 2022 45, 2023 162, 2024 16. Highest: 2023.",
+      "explanationImage": "explanation/DI-MG-0085.png"
+    },
+    {
+      "questionId": "DI-MG-0086",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were passed in 2021 (in hundreds)?",
+      "questionImage": "question/DI-MG-0086.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "97.35"
+        },
+        {
+          "id": "B",
+          "text": "61.98"
+        },
+        {
+          "id": "C",
+          "text": "99.30"
+        },
+        {
+          "id": "D",
+          "text": "78"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Passed in 2021 = 120 x 65% = 78.",
+      "explanationImage": "explanation/DI-MG-0086.png"
+    },
+    {
+      "questionId": "DI-MG-0087",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the average appeared per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0086.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "89"
+        },
+        {
+          "id": "B",
+          "text": "91.31"
+        },
+        {
+          "id": "C",
+          "text": "100"
+        },
+        {
+          "id": "D",
+          "text": "94.75"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Average = 600 / 6 = 100.",
+      "explanationImage": "explanation/DI-MG-0087.png"
+    },
+    {
+      "questionId": "DI-MG-0088",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the total number of students passed in 2021 and 2019 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0086.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "119.64"
+        },
+        {
+          "id": "B",
+          "text": "146"
+        },
+        {
+          "id": "C",
+          "text": "168.85"
+        },
+        {
+          "id": "D",
+          "text": "171.26"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "78 + 68 = 146.",
+      "explanationImage": "explanation/DI-MG-0088.png"
+    },
+    {
+      "questionId": "DI-MG-0089",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nIn which year was the number of students passed the highest?",
+      "questionImage": "question/DI-MG-0086.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2021"
+        },
+        {
+          "id": "B",
+          "text": "2023"
+        },
+        {
+          "id": "C",
+          "text": "2022"
+        },
+        {
+          "id": "D",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Values: 2019 68, 2020 63, 2021 78, 2022 36, 2023 108, 2024 24. Highest: 2023.",
+      "explanationImage": "explanation/DI-MG-0089.png"
+    },
+    {
+      "questionId": "DI-MG-0090",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were not passed in 2019 (in hundreds)?",
+      "questionImage": "question/DI-MG-0086.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "14.02"
+        },
+        {
+          "id": "B",
+          "text": "9.88"
+        },
+        {
+          "id": "C",
+          "text": "9.05"
+        },
+        {
+          "id": "D",
+          "text": "12"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Not passed = 80 - 68 = 12.",
+      "explanationImage": "explanation/DI-MG-0090.png"
+    },
+    {
+      "questionId": "DI-MG-0091",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the average seats per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0091.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "143.30"
+        },
+        {
+          "id": "B",
+          "text": "136.67"
+        },
+        {
+          "id": "C",
+          "text": "128.14"
+        },
+        {
+          "id": "D",
+          "text": "128.10"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 820 / 6 = 136.67.",
+      "explanationImage": "explanation/DI-MG-0091.png"
+    },
+    {
+      "questionId": "DI-MG-0092",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were not filled in 2022 (in hundreds)?",
+      "questionImage": "question/DI-MG-0091.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "49.75"
+        },
+        {
+          "id": "B",
+          "text": "51.13"
+        },
+        {
+          "id": "C",
+          "text": "31.78"
+        },
+        {
+          "id": "D",
+          "text": "42"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Not filled = 140 - 98 = 42.",
+      "explanationImage": "explanation/DI-MG-0092.png"
+    },
+    {
+      "questionId": "DI-MG-0093",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the ratio of seats filled in 2023 to those in 2022?",
+      "questionImage": "question/DI-MG-0091.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "19 : 14"
+        },
+        {
+          "id": "B",
+          "text": "19 : 49"
+        },
+        {
+          "id": "C",
+          "text": "2 : 7"
+        },
+        {
+          "id": "D",
+          "text": "49 : 19"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "38 : 98 = 19 : 49.",
+      "explanationImage": "explanation/DI-MG-0093.png"
+    },
+    {
+      "questionId": "DI-MG-0094",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nIn which year was the number of seats filled the highest?",
+      "questionImage": "question/DI-MG-0091.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2020"
+        },
+        {
+          "id": "B",
+          "text": "2019"
+        },
+        {
+          "id": "C",
+          "text": "2022"
+        },
+        {
+          "id": "D",
+          "text": "2023"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Values: 2019 140, 2020 108, 2021 72, 2022 98, 2023 38, 2024 85. Highest: 2019.",
+      "explanationImage": "explanation/DI-MG-0094.png"
+    },
+    {
+      "questionId": "DI-MG-0095",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the percentage decrease in seats from 2022 to 2023?",
+      "questionImage": "question/DI-MG-0091.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "52.33"
+        },
+        {
+          "id": "B",
+          "text": "94.09"
+        },
+        {
+          "id": "C",
+          "text": "53.76"
+        },
+        {
+          "id": "D",
+          "text": "71.43"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Change = |40 - 140| / 140 x 100 = 71.43%.",
+      "explanationImage": "explanation/DI-MG-0095.png"
+    },
+    {
+      "questionId": "DI-MG-0096",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the ratio of orders delivered on time in 2019 to those in 2020?",
+      "questionImage": "question/DI-MG-0096.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 2"
+        },
+        {
+          "id": "B",
+          "text": "2 : 9"
+        },
+        {
+          "id": "C",
+          "text": "1 : 9"
+        },
+        {
+          "id": "D",
+          "text": "9 : 1"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "16 : 144 = 1 : 9.",
+      "explanationImage": "explanation/DI-MG-0096.png"
+    },
+    {
+      "questionId": "DI-MG-0097",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the average orders per year over the six years (in '000)?",
+      "questionImage": "question/DI-MG-0096.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "120.94"
+        },
+        {
+          "id": "B",
+          "text": "130"
+        },
+        {
+          "id": "C",
+          "text": "135.08"
+        },
+        {
+          "id": "D",
+          "text": "142.25"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 780 / 6 = 130.",
+      "explanationImage": "explanation/DI-MG-0097.png"
+    },
+    {
+      "questionId": "DI-MG-0098",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were delivered on time in 2019 (in '000)?",
+      "questionImage": "question/DI-MG-0096.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "18.60"
+        },
+        {
+          "id": "B",
+          "text": "16"
+        },
+        {
+          "id": "C",
+          "text": "10.06"
+        },
+        {
+          "id": "D",
+          "text": "8.69"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Delivered on time in 2019 = 40 x 40% = 16.",
+      "explanationImage": "explanation/DI-MG-0098.png"
+    },
+    {
+      "questionId": "DI-MG-0099",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were not delivered on time in 2020 (in '000)?",
+      "questionImage": "question/DI-MG-0096.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "38.89"
+        },
+        {
+          "id": "B",
+          "text": "39.02"
+        },
+        {
+          "id": "C",
+          "text": "27.66"
+        },
+        {
+          "id": "D",
+          "text": "36"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Not delivered on time = 180 - 144 = 36.",
+      "explanationImage": "explanation/DI-MG-0099.png"
+    },
+    {
+      "questionId": "DI-MG-0100",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the total number of orders delivered on time in 2019 and 2020 together (in '000)?",
+      "questionImage": "question/DI-MG-0096.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "146.72"
+        },
+        {
+          "id": "B",
+          "text": "135.86"
+        },
+        {
+          "id": "C",
+          "text": "160"
+        },
+        {
+          "id": "D",
+          "text": "176.94"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "16 + 144 = 160.",
+      "explanationImage": "explanation/DI-MG-0100.png"
+    },
+    {
+      "questionId": "DI-MG-0101",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were not sold in 2023 (in '000 units)?",
+      "questionImage": "question/DI-MG-0101.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "77"
+        },
+        {
+          "id": "B",
+          "text": "94.91"
+        },
+        {
+          "id": "C",
+          "text": "84.28"
+        },
+        {
+          "id": "D",
+          "text": "56.65"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Not sold = 140 - 63 = 77.",
+      "explanationImage": "explanation/DI-MG-0101.png"
+    },
+    {
+      "questionId": "DI-MG-0102",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were sold in 2019 (in '000 units)?",
+      "questionImage": "question/DI-MG-0101.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "98"
+        },
+        {
+          "id": "B",
+          "text": "72.17"
+        },
+        {
+          "id": "C",
+          "text": "121.47"
+        },
+        {
+          "id": "D",
+          "text": "119.15"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Sold in 2019 = 140 x 70% = 98.",
+      "explanationImage": "explanation/DI-MG-0102.png"
+    },
+    {
+      "questionId": "DI-MG-0103",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the average production per year over the six years (in '000 units)?",
+      "questionImage": "question/DI-MG-0101.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "122.47"
+        },
+        {
+          "id": "B",
+          "text": "120.10"
+        },
+        {
+          "id": "C",
+          "text": "118.07"
+        },
+        {
+          "id": "D",
+          "text": "113.33"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 680 / 6 = 113.33.",
+      "explanationImage": "explanation/DI-MG-0103.png"
+    },
+    {
+      "questionId": "DI-MG-0104",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the ratio of units sold in 2019 to those in 2023?",
+      "questionImage": "question/DI-MG-0101.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "14 : 9"
+        },
+        {
+          "id": "B",
+          "text": "9 : 14"
+        },
+        {
+          "id": "C",
+          "text": "1 : 1"
+        },
+        {
+          "id": "D",
+          "text": "113 : 63"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "98 : 63 = 14 : 9.",
+      "explanationImage": "explanation/DI-MG-0104.png"
+    },
+    {
+      "questionId": "DI-MG-0105",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the total number of units sold in 2019 and 2023 together (in '000 units)?",
+      "questionImage": "question/DI-MG-0101.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "134.91"
+        },
+        {
+          "id": "B",
+          "text": "176.96"
+        },
+        {
+          "id": "C",
+          "text": "161"
+        },
+        {
+          "id": "D",
+          "text": "182.80"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "98 + 63 = 161.",
+      "explanationImage": "explanation/DI-MG-0105.png"
+    },
+    {
+      "questionId": "DI-MG-0106",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the average applicants per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0106.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "90"
+        },
+        {
+          "id": "B",
+          "text": "96.76"
+        },
+        {
+          "id": "C",
+          "text": "98.73"
+        },
+        {
+          "id": "D",
+          "text": "103.69"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 540 / 6 = 90.",
+      "explanationImage": "explanation/DI-MG-0106.png"
+    },
+    {
+      "questionId": "DI-MG-0107",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nHow many applicants were selected in 2019 (in hundreds)?",
+      "questionImage": "question/DI-MG-0106.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "69.28"
+        },
+        {
+          "id": "B",
+          "text": "67.18"
+        },
+        {
+          "id": "C",
+          "text": "68.84"
+        },
+        {
+          "id": "D",
+          "text": "57"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Selected in 2019 = 60 x 95% = 57.",
+      "explanationImage": "explanation/DI-MG-0107.png"
+    },
+    {
+      "questionId": "DI-MG-0108",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in applicants from 2019 to 2022?",
+      "questionImage": "question/DI-MG-0106.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "40.96"
+        },
+        {
+          "id": "B",
+          "text": "47.39"
+        },
+        {
+          "id": "C",
+          "text": "48.90"
+        },
+        {
+          "id": "D",
+          "text": "66.67"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Change = |100 - 60| / 60 x 100 = 66.67%.",
+      "explanationImage": "explanation/DI-MG-0108.png"
+    },
+    {
+      "questionId": "DI-MG-0109",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nHow many applicants were not selected in 2022 (in hundreds)?",
+      "questionImage": "question/DI-MG-0106.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "63.41"
+        },
+        {
+          "id": "B",
+          "text": "69.51"
+        },
+        {
+          "id": "C",
+          "text": "55"
+        },
+        {
+          "id": "D",
+          "text": "69.70"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Not selected = 100 - 45 = 55.",
+      "explanationImage": "explanation/DI-MG-0109.png"
+    },
+    {
+      "questionId": "DI-MG-0110",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the ratio of applicants selected in 2019 to those in 2022?",
+      "questionImage": "question/DI-MG-0106.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "19 : 9"
+        },
+        {
+          "id": "B",
+          "text": "15 : 19"
+        },
+        {
+          "id": "C",
+          "text": "19 : 15"
+        },
+        {
+          "id": "D",
+          "text": "3 : 5"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "57 : 45 = 19 : 15.",
+      "explanationImage": "explanation/DI-MG-0110.png"
+    },
+    {
+      "questionId": "DI-MG-0111",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the total number of students passed in 2021 and 2023 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0111.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "136"
+        },
+        {
+          "id": "B",
+          "text": "115.91"
+        },
+        {
+          "id": "C",
+          "text": "115.31"
+        },
+        {
+          "id": "D",
+          "text": "156.54"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "24 + 112 = 136.",
+      "explanationImage": "explanation/DI-MG-0111.png"
+    },
+    {
+      "questionId": "DI-MG-0112",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the ratio of students passed in 2021 to those in 2023?",
+      "questionImage": "question/DI-MG-0111.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 : 4"
+        },
+        {
+          "id": "B",
+          "text": "3 : 14"
+        },
+        {
+          "id": "C",
+          "text": "2 : 7"
+        },
+        {
+          "id": "D",
+          "text": "14 : 3"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "24 : 112 = 3 : 14.",
+      "explanationImage": "explanation/DI-MG-0112.png"
+    },
+    {
+      "questionId": "DI-MG-0113",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nIn which year was the number of students passed the highest?",
+      "questionImage": "question/DI-MG-0111.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2021"
+        },
+        {
+          "id": "B",
+          "text": "2023"
+        },
+        {
+          "id": "C",
+          "text": "2020"
+        },
+        {
+          "id": "D",
+          "text": "2024"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Values: 2019 114, 2020 40, 2021 24, 2022 120, 2023 112, 2024 171. Highest: 2024.",
+      "explanationImage": "explanation/DI-MG-0113.png"
+    },
+    {
+      "questionId": "DI-MG-0114",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the average appeared per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0111.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "125"
+        },
+        {
+          "id": "B",
+          "text": "139.37"
+        },
+        {
+          "id": "C",
+          "text": "116.61"
+        },
+        {
+          "id": "D",
+          "text": "130"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 780 / 6 = 130.",
+      "explanationImage": "explanation/DI-MG-0114.png"
+    },
+    {
+      "questionId": "DI-MG-0115",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were not passed in 2023 (in hundreds)?",
+      "questionImage": "question/DI-MG-0111.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "20.12"
+        },
+        {
+          "id": "B",
+          "text": "25.69"
+        },
+        {
+          "id": "C",
+          "text": "28"
+        },
+        {
+          "id": "D",
+          "text": "21.25"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Not passed = 140 - 112 = 28.",
+      "explanationImage": "explanation/DI-MG-0115.png"
+    },
+    {
+      "questionId": "DI-MG-0116",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the percentage decrease in seats from 2021 to 2024?",
+      "questionImage": "question/DI-MG-0116.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "11.11"
+        },
+        {
+          "id": "B",
+          "text": "3.73"
+        },
+        {
+          "id": "C",
+          "text": "16.21"
+        },
+        {
+          "id": "D",
+          "text": "18.18"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Change = |160 - 180| / 180 x 100 = 11.11%.",
+      "explanationImage": "explanation/DI-MG-0116.png"
+    },
+    {
+      "questionId": "DI-MG-0117",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were not filled in 2021 (in hundreds)?",
+      "questionImage": "question/DI-MG-0116.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "66.32"
+        },
+        {
+          "id": "B",
+          "text": "90"
+        },
+        {
+          "id": "C",
+          "text": "111.81"
+        },
+        {
+          "id": "D",
+          "text": "70.34"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not filled = 180 - 90 = 90.",
+      "explanationImage": "explanation/DI-MG-0117.png"
+    },
+    {
+      "questionId": "DI-MG-0118",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the ratio of seats filled in 2024 to those in 2021?",
+      "questionImage": "question/DI-MG-0116.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 : 4"
+        },
+        {
+          "id": "B",
+          "text": "3 : 2"
+        },
+        {
+          "id": "C",
+          "text": "8 : 9"
+        },
+        {
+          "id": "D",
+          "text": "4 : 3"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "120 : 90 = 4 : 3.",
+      "explanationImage": "explanation/DI-MG-0118.png"
+    },
+    {
+      "questionId": "DI-MG-0119",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nIn which year was the number of seats filled the highest?",
+      "questionImage": "question/DI-MG-0116.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2024"
+        },
+        {
+          "id": "B",
+          "text": "2021"
+        },
+        {
+          "id": "C",
+          "text": "2019"
+        },
+        {
+          "id": "D",
+          "text": "2022"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Values: 2019 170, 2020 70, 2021 90, 2022 33, 2023 54, 2024 120. Highest: 2019.",
+      "explanationImage": "explanation/DI-MG-0119.png"
+    },
+    {
+      "questionId": "DI-MG-0120",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the total number of seats filled in 2024 and 2021 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0116.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "210"
+        },
+        {
+          "id": "B",
+          "text": "172.07"
+        },
+        {
+          "id": "C",
+          "text": "183.53"
+        },
+        {
+          "id": "D",
+          "text": "236.62"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "120 + 90 = 210.",
+      "explanationImage": "explanation/DI-MG-0120.png"
+    },
+    {
+      "questionId": "DI-MG-0121",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the average orders per year over the six years (in '000)?",
+      "questionImage": "question/DI-MG-0121.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "122.89"
+        },
+        {
+          "id": "B",
+          "text": "129.55"
+        },
+        {
+          "id": "C",
+          "text": "133.33"
+        },
+        {
+          "id": "D",
+          "text": "144.95"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Average = 800 / 6 = 133.33.",
+      "explanationImage": "explanation/DI-MG-0121.png"
+    },
+    {
+      "questionId": "DI-MG-0122",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nIn which year was the number of orders delivered on time the highest?",
+      "questionImage": "question/DI-MG-0121.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2022"
+        },
+        {
+          "id": "B",
+          "text": "2021"
+        },
+        {
+          "id": "C",
+          "text": "2019"
+        },
+        {
+          "id": "D",
+          "text": "2020"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Values: 2019 136, 2020 65, 2021 126, 2022 66, 2023 90, 2024 114. Highest: 2019.",
+      "explanationImage": "explanation/DI-MG-0122.png"
+    },
+    {
+      "questionId": "DI-MG-0123",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the ratio of orders delivered on time in 2019 to those in 2023?",
+      "questionImage": "question/DI-MG-0121.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "17 : 15"
+        },
+        {
+          "id": "B",
+          "text": "45 : 68"
+        },
+        {
+          "id": "C",
+          "text": "68 : 45"
+        },
+        {
+          "id": "D",
+          "text": "4 : 3"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "136 : 90 = 68 : 45.",
+      "explanationImage": "explanation/DI-MG-0123.png"
+    },
+    {
+      "questionId": "DI-MG-0124",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were delivered on time in 2019 (in '000)?",
+      "questionImage": "question/DI-MG-0121.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "149.10"
+        },
+        {
+          "id": "B",
+          "text": "108.71"
+        },
+        {
+          "id": "C",
+          "text": "136"
+        },
+        {
+          "id": "D",
+          "text": "96.62"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Delivered on time in 2019 = 160 x 85% = 136.",
+      "explanationImage": "explanation/DI-MG-0124.png"
+    },
+    {
+      "questionId": "DI-MG-0125",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the total number of orders delivered on time in 2019 and 2023 together (in '000)?",
+      "questionImage": "question/DI-MG-0121.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "190.71"
+        },
+        {
+          "id": "B",
+          "text": "226"
+        },
+        {
+          "id": "C",
+          "text": "199.22"
+        },
+        {
+          "id": "D",
+          "text": "248.25"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "136 + 90 = 226.",
+      "explanationImage": "explanation/DI-MG-0125.png"
+    },
+    {
+      "questionId": "DI-MG-0126",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were not sold in 2022 (in '000 units)?",
+      "questionImage": "question/DI-MG-0126.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "60"
+        },
+        {
+          "id": "B",
+          "text": "68.83"
+        },
+        {
+          "id": "C",
+          "text": "49.38"
+        },
+        {
+          "id": "D",
+          "text": "52.97"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Not sold = 100 - 40 = 60.",
+      "explanationImage": "explanation/DI-MG-0126.png"
+    },
+    {
+      "questionId": "DI-MG-0127",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nIn which year was the number of units sold the highest?",
+      "questionImage": "question/DI-MG-0126.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2024"
+        },
+        {
+          "id": "B",
+          "text": "2022"
+        },
+        {
+          "id": "C",
+          "text": "2020"
+        },
+        {
+          "id": "D",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Values: 2019 144, 2020 153, 2021 135, 2022 40, 2023 96, 2024 30. Highest: 2020.",
+      "explanationImage": "explanation/DI-MG-0127.png"
+    },
+    {
+      "questionId": "DI-MG-0128",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were sold in 2023 (in '000 units)?",
+      "questionImage": "question/DI-MG-0126.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "96"
+        },
+        {
+          "id": "B",
+          "text": "85.35"
+        },
+        {
+          "id": "C",
+          "text": "70.82"
+        },
+        {
+          "id": "D",
+          "text": "103.71"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Sold in 2023 = 120 x 80% = 96.",
+      "explanationImage": "explanation/DI-MG-0128.png"
+    },
+    {
+      "questionId": "DI-MG-0129",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the total number of units sold in 2023 and 2022 together (in '000 units)?",
+      "questionImage": "question/DI-MG-0126.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "136"
+        },
+        {
+          "id": "B",
+          "text": "110.94"
+        },
+        {
+          "id": "C",
+          "text": "114.17"
+        },
+        {
+          "id": "D",
+          "text": "159.96"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "96 + 40 = 136.",
+      "explanationImage": "explanation/DI-MG-0129.png"
+    },
+    {
+      "questionId": "DI-MG-0130",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the ratio of units sold in 2023 to those in 2022?",
+      "questionImage": "question/DI-MG-0126.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "5 : 12"
+        },
+        {
+          "id": "B",
+          "text": "6 : 5"
+        },
+        {
+          "id": "C",
+          "text": "2 : 1"
+        },
+        {
+          "id": "D",
+          "text": "12 : 5"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "96 : 40 = 12 : 5.",
+      "explanationImage": "explanation/DI-MG-0130.png"
+    },
+    {
+      "questionId": "DI-MG-0131",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the percentage decrease in applicants from 2019 to 2020?",
+      "questionImage": "question/DI-MG-0131.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "30.82"
+        },
+        {
+          "id": "B",
+          "text": "50"
+        },
+        {
+          "id": "C",
+          "text": "58.58"
+        },
+        {
+          "id": "D",
+          "text": "31.85"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Change = |40 - 80| / 80 x 100 = 50%.",
+      "explanationImage": "explanation/DI-MG-0131.png"
+    },
+    {
+      "questionId": "DI-MG-0132",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the ratio of applicants selected in 2019 to those in 2020?",
+      "questionImage": "question/DI-MG-0131.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "26 : 11"
+        },
+        {
+          "id": "B",
+          "text": "13 : 11"
+        },
+        {
+          "id": "C",
+          "text": "11 : 26"
+        },
+        {
+          "id": "D",
+          "text": "2 : 1"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "52 : 22 = 26 : 11.",
+      "explanationImage": "explanation/DI-MG-0132.png"
+    },
+    {
+      "questionId": "DI-MG-0133",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the total number of applicants selected in 2019 and 2020 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0131.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "78.53"
+        },
+        {
+          "id": "B",
+          "text": "67.49"
+        },
+        {
+          "id": "C",
+          "text": "69.70"
+        },
+        {
+          "id": "D",
+          "text": "74"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "52 + 22 = 74.",
+      "explanationImage": "explanation/DI-MG-0133.png"
+    },
+    {
+      "questionId": "DI-MG-0134",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nHow many applicants were not selected in 2020 (in hundreds)?",
+      "questionImage": "question/DI-MG-0131.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "10.14"
+        },
+        {
+          "id": "B",
+          "text": "13.47"
+        },
+        {
+          "id": "C",
+          "text": "18"
+        },
+        {
+          "id": "D",
+          "text": "12.46"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Not selected = 40 - 22 = 18.",
+      "explanationImage": "explanation/DI-MG-0134.png"
+    },
+    {
+      "questionId": "DI-MG-0135",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the average applicants per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0131.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "90"
+        },
+        {
+          "id": "B",
+          "text": "94.44"
+        },
+        {
+          "id": "C",
+          "text": "95.36"
+        },
+        {
+          "id": "D",
+          "text": "100.29"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 540 / 6 = 90.",
+      "explanationImage": "explanation/DI-MG-0135.png"
+    },
+    {
+      "questionId": "DI-MG-0136",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the total number of students passed in 2024 and 2021 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0136.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "80.19"
+        },
+        {
+          "id": "B",
+          "text": "105.76"
+        },
+        {
+          "id": "C",
+          "text": "92"
+        },
+        {
+          "id": "D",
+          "text": "96.66"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "20 + 72 = 92.",
+      "explanationImage": "explanation/DI-MG-0136.png"
+    },
+    {
+      "questionId": "DI-MG-0137",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were not passed in 2021 (in hundreds)?",
+      "questionImage": "question/DI-MG-0136.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "112.18"
+        },
+        {
+          "id": "B",
+          "text": "88"
+        },
+        {
+          "id": "C",
+          "text": "99.60"
+        },
+        {
+          "id": "D",
+          "text": "67.36"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not passed = 160 - 72 = 88.",
+      "explanationImage": "explanation/DI-MG-0137.png"
+    },
+    {
+      "questionId": "DI-MG-0138",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nIn which year was the number of students passed the highest?",
+      "questionImage": "question/DI-MG-0136.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2022"
+        },
+        {
+          "id": "B",
+          "text": "2020"
+        },
+        {
+          "id": "C",
+          "text": "2024"
+        },
+        {
+          "id": "D",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Values: 2019 102, 2020 120, 2021 72, 2022 54, 2023 16, 2024 20. Highest: 2020.",
+      "explanationImage": "explanation/DI-MG-0138.png"
+    },
+    {
+      "questionId": "DI-MG-0139",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the percentage decrease in appeared from 2021 to 2024?",
+      "questionImage": "question/DI-MG-0136.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "89.48"
+        },
+        {
+          "id": "B",
+          "text": "86.72"
+        },
+        {
+          "id": "C",
+          "text": "88.29"
+        },
+        {
+          "id": "D",
+          "text": "75"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Change = |40 - 160| / 160 x 100 = 75%.",
+      "explanationImage": "explanation/DI-MG-0139.png"
+    },
+    {
+      "questionId": "DI-MG-0140",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were passed in 2024 (in hundreds)?",
+      "questionImage": "question/DI-MG-0136.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "12.31"
+        },
+        {
+          "id": "B",
+          "text": "13.43"
+        },
+        {
+          "id": "C",
+          "text": "20"
+        },
+        {
+          "id": "D",
+          "text": "22.69"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Passed in 2024 = 40 x 50% = 20.",
+      "explanationImage": "explanation/DI-MG-0140.png"
+    },
+    {
+      "questionId": "DI-MG-0141",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the total number of seats filled in 2021 and 2023 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0141.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "103"
+        },
+        {
+          "id": "B",
+          "text": "93.77"
+        },
+        {
+          "id": "C",
+          "text": "97.82"
+        },
+        {
+          "id": "D",
+          "text": "82.81"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "70 + 33 = 103.",
+      "explanationImage": "explanation/DI-MG-0141.png"
+    },
+    {
+      "questionId": "DI-MG-0142",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were not filled in 2023 (in hundreds)?",
+      "questionImage": "question/DI-MG-0141.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "34.39"
+        },
+        {
+          "id": "B",
+          "text": "27"
+        },
+        {
+          "id": "C",
+          "text": "34.03"
+        },
+        {
+          "id": "D",
+          "text": "20.04"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not filled = 60 - 33 = 27.",
+      "explanationImage": "explanation/DI-MG-0142.png"
+    },
+    {
+      "questionId": "DI-MG-0143",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nIn which year was the number of seats filled the highest?",
+      "questionImage": "question/DI-MG-0141.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2022"
+        },
+        {
+          "id": "B",
+          "text": "2021"
+        },
+        {
+          "id": "C",
+          "text": "2024"
+        },
+        {
+          "id": "D",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Values: 2019 80, 2020 66, 2021 70, 2022 119, 2023 33, 2024 152. Highest: 2024.",
+      "explanationImage": "explanation/DI-MG-0143.png"
+    },
+    {
+      "questionId": "DI-MG-0144",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the ratio of seats filled in 2021 to those in 2023?",
+      "questionImage": "question/DI-MG-0141.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "7 : 3"
+        },
+        {
+          "id": "B",
+          "text": "70 : 33"
+        },
+        {
+          "id": "C",
+          "text": "10 : 11"
+        },
+        {
+          "id": "D",
+          "text": "33 : 70"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "70 : 33 = 70 : 33.",
+      "explanationImage": "explanation/DI-MG-0144.png"
+    },
+    {
+      "questionId": "DI-MG-0145",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the percentage decrease in seats from 2021 to 2023?",
+      "questionImage": "question/DI-MG-0141.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "64.69"
+        },
+        {
+          "id": "B",
+          "text": "42.36"
+        },
+        {
+          "id": "C",
+          "text": "57.14"
+        },
+        {
+          "id": "D",
+          "text": "50.87"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Change = |60 - 140| / 140 x 100 = 57.14%.",
+      "explanationImage": "explanation/DI-MG-0145.png"
+    },
+    {
+      "questionId": "DI-MG-0146",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the percentage decrease in orders from 2020 to 2023?",
+      "questionImage": "question/DI-MG-0146.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "75.89"
+        },
+        {
+          "id": "B",
+          "text": "55.56"
+        },
+        {
+          "id": "C",
+          "text": "73.61"
+        },
+        {
+          "id": "D",
+          "text": "42.52"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Change = |80 - 180| / 180 x 100 = 55.56%.",
+      "explanationImage": "explanation/DI-MG-0146.png"
+    },
+    {
+      "questionId": "DI-MG-0147",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the average orders per year over the six years (in '000)?",
+      "questionImage": "question/DI-MG-0146.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "91.94"
+        },
+        {
+          "id": "B",
+          "text": "106.67"
+        },
+        {
+          "id": "C",
+          "text": "97.57"
+        },
+        {
+          "id": "D",
+          "text": "113.84"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 640 / 6 = 106.67.",
+      "explanationImage": "explanation/DI-MG-0147.png"
+    },
+    {
+      "questionId": "DI-MG-0148",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were delivered on time in 2020 (in '000)?",
+      "questionImage": "question/DI-MG-0146.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "99"
+        },
+        {
+          "id": "B",
+          "text": "108.63"
+        },
+        {
+          "id": "C",
+          "text": "128.12"
+        },
+        {
+          "id": "D",
+          "text": "70.82"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Delivered on time in 2020 = 180 x 55% = 99.",
+      "explanationImage": "explanation/DI-MG-0148.png"
+    },
+    {
+      "questionId": "DI-MG-0149",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the total number of orders delivered on time in 2020 and 2023 together (in '000)?",
+      "questionImage": "question/DI-MG-0146.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "120.14"
+        },
+        {
+          "id": "B",
+          "text": "161.82"
+        },
+        {
+          "id": "C",
+          "text": "147"
+        },
+        {
+          "id": "D",
+          "text": "119.99"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "99 + 48 = 147.",
+      "explanationImage": "explanation/DI-MG-0149.png"
+    },
+    {
+      "questionId": "DI-MG-0150",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nIn which year was the number of orders delivered on time the highest?",
+      "questionImage": "question/DI-MG-0146.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2023"
+        },
+        {
+          "id": "B",
+          "text": "2022"
+        },
+        {
+          "id": "C",
+          "text": "2021"
+        },
+        {
+          "id": "D",
+          "text": "2020"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Values: 2019 96, 2020 99, 2021 30, 2022 28, 2023 48, 2024 56. Highest: 2020.",
+      "explanationImage": "explanation/DI-MG-0150.png"
+    },
+    {
+      "questionId": "DI-MG-0151",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were not sold in 2019 (in '000 units)?",
+      "questionImage": "question/DI-MG-0151.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "25.17"
+        },
+        {
+          "id": "B",
+          "text": "20.80"
+        },
+        {
+          "id": "C",
+          "text": "25.34"
+        },
+        {
+          "id": "D",
+          "text": "18"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Not sold = 120 - 102 = 18.",
+      "explanationImage": "explanation/DI-MG-0151.png"
+    },
+    {
+      "questionId": "DI-MG-0152",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the average production per year over the six years (in '000 units)?",
+      "questionImage": "question/DI-MG-0151.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "129.14"
+        },
+        {
+          "id": "B",
+          "text": "143.26"
+        },
+        {
+          "id": "C",
+          "text": "144.77"
+        },
+        {
+          "id": "D",
+          "text": "133.33"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 800 / 6 = 133.33.",
+      "explanationImage": "explanation/DI-MG-0152.png"
+    },
+    {
+      "questionId": "DI-MG-0153",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the ratio of units sold in 2024 to those in 2019?",
+      "questionImage": "question/DI-MG-0151.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "7 : 6"
+        },
+        {
+          "id": "B",
+          "text": "49 : 51"
+        },
+        {
+          "id": "C",
+          "text": "51 : 49"
+        },
+        {
+          "id": "D",
+          "text": "14 : 17"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "98 : 102 = 49 : 51.",
+      "explanationImage": "explanation/DI-MG-0153.png"
+    },
+    {
+      "questionId": "DI-MG-0154",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the total number of units sold in 2024 and 2019 together (in '000 units)?",
+      "questionImage": "question/DI-MG-0151.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "200"
+        },
+        {
+          "id": "B",
+          "text": "168.60"
+        },
+        {
+          "id": "C",
+          "text": "184.56"
+        },
+        {
+          "id": "D",
+          "text": "224.92"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "98 + 102 = 200.",
+      "explanationImage": "explanation/DI-MG-0154.png"
+    },
+    {
+      "questionId": "DI-MG-0155",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were sold in 2024 (in '000 units)?",
+      "questionImage": "question/DI-MG-0151.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "98"
+        },
+        {
+          "id": "B",
+          "text": "108.84"
+        },
+        {
+          "id": "C",
+          "text": "82.33"
+        },
+        {
+          "id": "D",
+          "text": "73.48"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Sold in 2024 = 140 x 70% = 98.",
+      "explanationImage": "explanation/DI-MG-0155.png"
+    },
+    {
+      "questionId": "DI-MG-0156",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the percentage decrease in applicants from 2021 to 2022?",
+      "questionImage": "question/DI-MG-0156.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "60"
+        },
+        {
+          "id": "B",
+          "text": "76.17"
+        },
+        {
+          "id": "C",
+          "text": "49.23"
+        },
+        {
+          "id": "D",
+          "text": "48.65"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Change = |40 - 100| / 100 x 100 = 60%.",
+      "explanationImage": "explanation/DI-MG-0156.png"
+    },
+    {
+      "questionId": "DI-MG-0157",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nHow many applicants were selected in 2022 (in hundreds)?",
+      "questionImage": "question/DI-MG-0156.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "33.96"
+        },
+        {
+          "id": "B",
+          "text": "19.67"
+        },
+        {
+          "id": "C",
+          "text": "21.13"
+        },
+        {
+          "id": "D",
+          "text": "28"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Selected in 2022 = 40 x 70% = 28.",
+      "explanationImage": "explanation/DI-MG-0157.png"
+    },
+    {
+      "questionId": "DI-MG-0158",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nHow many applicants were not selected in 2021 (in hundreds)?",
+      "questionImage": "question/DI-MG-0156.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "17.75"
+        },
+        {
+          "id": "B",
+          "text": "19.97"
+        },
+        {
+          "id": "C",
+          "text": "15"
+        },
+        {
+          "id": "D",
+          "text": "20.44"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Not selected = 100 - 85 = 15.",
+      "explanationImage": "explanation/DI-MG-0158.png"
+    },
+    {
+      "questionId": "DI-MG-0159",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the average applicants per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0156.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "123.83"
+        },
+        {
+          "id": "B",
+          "text": "113.33"
+        },
+        {
+          "id": "C",
+          "text": "108.25"
+        },
+        {
+          "id": "D",
+          "text": "125.89"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 680 / 6 = 113.33.",
+      "explanationImage": "explanation/DI-MG-0159.png"
+    },
+    {
+      "questionId": "DI-MG-0160",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the ratio of applicants selected in 2022 to those in 2021?",
+      "questionImage": "question/DI-MG-0156.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 : 5"
+        },
+        {
+          "id": "B",
+          "text": "14 : 17"
+        },
+        {
+          "id": "C",
+          "text": "28 : 85"
+        },
+        {
+          "id": "D",
+          "text": "85 : 28"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "28 : 85 = 28 : 85.",
+      "explanationImage": "explanation/DI-MG-0160.png"
+    },
+    {
+      "questionId": "DI-MG-0161",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were not passed in 2024 (in hundreds)?",
+      "questionImage": "question/DI-MG-0161.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "129.26"
+        },
+        {
+          "id": "B",
+          "text": "120"
+        },
+        {
+          "id": "C",
+          "text": "99.89"
+        },
+        {
+          "id": "D",
+          "text": "142.46"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not passed = 200 - 80 = 120.",
+      "explanationImage": "explanation/DI-MG-0161.png"
+    },
+    {
+      "questionId": "DI-MG-0162",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nIn which year was the number of students passed the highest?",
+      "questionImage": "question/DI-MG-0161.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2021"
+        },
+        {
+          "id": "B",
+          "text": "2019"
+        },
+        {
+          "id": "C",
+          "text": "2024"
+        },
+        {
+          "id": "D",
+          "text": "2022"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Values: 2019 80, 2020 66, 2021 85, 2022 135, 2023 32, 2024 80. Highest: 2022.",
+      "explanationImage": "explanation/DI-MG-0162.png"
+    },
+    {
+      "questionId": "DI-MG-0163",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the ratio of students passed in 2021 to those in 2024?",
+      "questionImage": "question/DI-MG-0161.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 2"
+        },
+        {
+          "id": "B",
+          "text": "16 : 17"
+        },
+        {
+          "id": "C",
+          "text": "17 : 16"
+        },
+        {
+          "id": "D",
+          "text": "17 : 8"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "85 : 80 = 17 : 16.",
+      "explanationImage": "explanation/DI-MG-0163.png"
+    },
+    {
+      "questionId": "DI-MG-0164",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the average appeared per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0161.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "146.67"
+        },
+        {
+          "id": "B",
+          "text": "161.65"
+        },
+        {
+          "id": "C",
+          "text": "160.61"
+        },
+        {
+          "id": "D",
+          "text": "138.84"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 880 / 6 = 146.67.",
+      "explanationImage": "explanation/DI-MG-0164.png"
+    },
+    {
+      "questionId": "DI-MG-0165",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were passed in 2021 (in hundreds)?",
+      "questionImage": "question/DI-MG-0161.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "60.41"
+        },
+        {
+          "id": "B",
+          "text": "75.37"
+        },
+        {
+          "id": "C",
+          "text": "85"
+        },
+        {
+          "id": "D",
+          "text": "72.52"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Passed in 2021 = 100 x 85% = 85.",
+      "explanationImage": "explanation/DI-MG-0165.png"
+    },
+    {
+      "questionId": "DI-MG-0166",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nIn which year was the number of seats filled the highest?",
+      "questionImage": "question/DI-MG-0166.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2022"
+        },
+        {
+          "id": "B",
+          "text": "2023"
+        },
+        {
+          "id": "C",
+          "text": "2019"
+        },
+        {
+          "id": "D",
+          "text": "2021"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Values: 2019 136, 2020 75, 2021 80, 2022 28, 2023 75, 2024 98. Highest: 2019.",
+      "explanationImage": "explanation/DI-MG-0166.png"
+    },
+    {
+      "questionId": "DI-MG-0167",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were not filled in 2024 (in hundreds)?",
+      "questionImage": "question/DI-MG-0166.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "48.01"
+        },
+        {
+          "id": "B",
+          "text": "36.06"
+        },
+        {
+          "id": "C",
+          "text": "42"
+        },
+        {
+          "id": "D",
+          "text": "34.12"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Not filled = 140 - 98 = 42.",
+      "explanationImage": "explanation/DI-MG-0167.png"
+    },
+    {
+      "questionId": "DI-MG-0168",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the ratio of seats filled in 2020 to those in 2024?",
+      "questionImage": "question/DI-MG-0166.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "5 : 7"
+        },
+        {
+          "id": "B",
+          "text": "15 : 14"
+        },
+        {
+          "id": "C",
+          "text": "98 : 75"
+        },
+        {
+          "id": "D",
+          "text": "75 : 98"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "75 : 98 = 75 : 98.",
+      "explanationImage": "explanation/DI-MG-0168.png"
+    },
+    {
+      "questionId": "DI-MG-0169",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were filled in 2020 (in hundreds)?",
+      "questionImage": "question/DI-MG-0166.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "68"
+        },
+        {
+          "id": "B",
+          "text": "75"
+        },
+        {
+          "id": "C",
+          "text": "55.97"
+        },
+        {
+          "id": "D",
+          "text": "93.58"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Filled in 2020 = 100 x 75% = 75.",
+      "explanationImage": "explanation/DI-MG-0169.png"
+    },
+    {
+      "questionId": "DI-MG-0170",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the average seats per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0166.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "116.67"
+        },
+        {
+          "id": "B",
+          "text": "125.03"
+        },
+        {
+          "id": "C",
+          "text": "121.37"
+        },
+        {
+          "id": "D",
+          "text": "130.10"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 700 / 6 = 116.67.",
+      "explanationImage": "explanation/DI-MG-0170.png"
+    },
+    {
+      "questionId": "DI-MG-0171",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the average orders per year over the six years (in '000)?",
+      "questionImage": "question/DI-MG-0171.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "153.58"
+        },
+        {
+          "id": "B",
+          "text": "140.89"
+        },
+        {
+          "id": "C",
+          "text": "146.67"
+        },
+        {
+          "id": "D",
+          "text": "157.76"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Average = 880 / 6 = 146.67.",
+      "explanationImage": "explanation/DI-MG-0171.png"
+    },
+    {
+      "questionId": "DI-MG-0172",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were not delivered on time in 2022 (in '000)?",
+      "questionImage": "question/DI-MG-0171.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "36"
+        },
+        {
+          "id": "B",
+          "text": "32.77"
+        },
+        {
+          "id": "C",
+          "text": "44.96"
+        },
+        {
+          "id": "D",
+          "text": "41.34"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Not delivered on time = 80 - 44 = 36.",
+      "explanationImage": "explanation/DI-MG-0172.png"
+    },
+    {
+      "questionId": "DI-MG-0173",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the total number of orders delivered on time in 2024 and 2022 together (in '000)?",
+      "questionImage": "question/DI-MG-0171.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "196.48"
+        },
+        {
+          "id": "B",
+          "text": "209.33"
+        },
+        {
+          "id": "C",
+          "text": "179"
+        },
+        {
+          "id": "D",
+          "text": "192.74"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "135 + 44 = 179.",
+      "explanationImage": "explanation/DI-MG-0173.png"
+    },
+    {
+      "questionId": "DI-MG-0174",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nIn which year was the number of orders delivered on time the highest?",
+      "questionImage": "question/DI-MG-0171.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2024"
+        },
+        {
+          "id": "B",
+          "text": "2023"
+        },
+        {
+          "id": "C",
+          "text": "2021"
+        },
+        {
+          "id": "D",
+          "text": "2019"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Values: 2019 100, 2020 48, 2021 60, 2022 44, 2023 90, 2024 135. Highest: 2024.",
+      "explanationImage": "explanation/DI-MG-0174.png"
+    },
+    {
+      "questionId": "DI-MG-0175",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in orders from 2022 to 2024?",
+      "questionImage": "question/DI-MG-0171.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "96.93"
+        },
+        {
+          "id": "B",
+          "text": "88.71"
+        },
+        {
+          "id": "C",
+          "text": "125"
+        },
+        {
+          "id": "D",
+          "text": "89.23"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Change = |180 - 80| / 80 x 100 = 125%.",
+      "explanationImage": "explanation/DI-MG-0175.png"
+    },
+    {
+      "questionId": "DI-MG-0176",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nIn which year was the number of units sold the highest?",
+      "questionImage": "question/DI-MG-0176.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2019"
+        },
+        {
+          "id": "B",
+          "text": "2020"
+        },
+        {
+          "id": "C",
+          "text": "2024"
+        },
+        {
+          "id": "D",
+          "text": "2022"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Values: 2019 170, 2020 40, 2021 27, 2022 80, 2023 150, 2024 45. Highest: 2019.",
+      "explanationImage": "explanation/DI-MG-0176.png"
+    },
+    {
+      "questionId": "DI-MG-0177",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nHow many units were sold in 2019 (in '000 units)?",
+      "questionImage": "question/DI-MG-0176.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "170"
+        },
+        {
+          "id": "B",
+          "text": "210.03"
+        },
+        {
+          "id": "C",
+          "text": "204.55"
+        },
+        {
+          "id": "D",
+          "text": "142.53"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Sold in 2019 = 200 x 85% = 170.",
+      "explanationImage": "explanation/DI-MG-0177.png"
+    },
+    {
+      "questionId": "DI-MG-0178",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the ratio of units sold in 2019 to those in 2023?",
+      "questionImage": "question/DI-MG-0176.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "15 : 17"
+        },
+        {
+          "id": "B",
+          "text": "17 : 15"
+        },
+        {
+          "id": "C",
+          "text": "6 : 5"
+        },
+        {
+          "id": "D",
+          "text": "1 : 1"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "170 : 150 = 17 : 15.",
+      "explanationImage": "explanation/DI-MG-0178.png"
+    },
+    {
+      "questionId": "DI-MG-0179",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the average production per year over the six years (in '000 units)?",
+      "questionImage": "question/DI-MG-0176.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "114.85"
+        },
+        {
+          "id": "B",
+          "text": "120"
+        },
+        {
+          "id": "C",
+          "text": "107.75"
+        },
+        {
+          "id": "D",
+          "text": "129.47"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 720 / 6 = 120.",
+      "explanationImage": "explanation/DI-MG-0179.png"
+    },
+    {
+      "questionId": "DI-MG-0180",
+      "questionText": "Directions: The bar graph shows production and the line graph shows the percentage sold over six years. Study the chart and answer the question.\n\nWhat is the total number of units sold in 2019 and 2023 together (in '000 units)?",
+      "questionImage": "question/DI-MG-0176.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "320"
+        },
+        {
+          "id": "B",
+          "text": "341.56"
+        },
+        {
+          "id": "C",
+          "text": "298.64"
+        },
+        {
+          "id": "D",
+          "text": "338.01"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "170 + 150 = 320.",
+      "explanationImage": "explanation/DI-MG-0180.png"
+    },
+    {
+      "questionId": "DI-MG-0181",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in applicants from 2021 to 2023?",
+      "questionImage": "question/DI-MG-0181.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "56.94"
+        },
+        {
+          "id": "B",
+          "text": "50"
+        },
+        {
+          "id": "C",
+          "text": "69.45"
+        },
+        {
+          "id": "D",
+          "text": "30.90"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Change = |60 - 40| / 40 x 100 = 50%.",
+      "explanationImage": "explanation/DI-MG-0181.png"
+    },
+    {
+      "questionId": "DI-MG-0182",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the average applicants per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0181.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "96.97"
+        },
+        {
+          "id": "B",
+          "text": "90"
+        },
+        {
+          "id": "C",
+          "text": "103.69"
+        },
+        {
+          "id": "D",
+          "text": "97.88"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 540 / 6 = 90.",
+      "explanationImage": "explanation/DI-MG-0182.png"
+    },
+    {
+      "questionId": "DI-MG-0183",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nHow many applicants were not selected in 2021 (in hundreds)?",
+      "questionImage": "question/DI-MG-0181.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "9.81"
+        },
+        {
+          "id": "B",
+          "text": "15.53"
+        },
+        {
+          "id": "C",
+          "text": "9.29"
+        },
+        {
+          "id": "D",
+          "text": "12"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Not selected = 40 - 28 = 12.",
+      "explanationImage": "explanation/DI-MG-0183.png"
+    },
+    {
+      "questionId": "DI-MG-0184",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the ratio of applicants selected in 2023 to those in 2021?",
+      "questionImage": "question/DI-MG-0181.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "7 : 9"
+        },
+        {
+          "id": "B",
+          "text": "9 : 7"
+        },
+        {
+          "id": "C",
+          "text": "3 : 2"
+        },
+        {
+          "id": "D",
+          "text": "6 : 7"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "36 : 28 = 9 : 7.",
+      "explanationImage": "explanation/DI-MG-0184.png"
+    },
+    {
+      "questionId": "DI-MG-0185",
+      "questionText": "Directions: The bar graph shows applicants and the line graph shows the percentage selected over six years. Study the chart and answer the question.\n\nWhat is the total number of applicants selected in 2023 and 2021 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0181.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "72.60"
+        },
+        {
+          "id": "B",
+          "text": "59.44"
+        },
+        {
+          "id": "C",
+          "text": "64"
+        },
+        {
+          "id": "D",
+          "text": "59.61"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "36 + 28 = 64.",
+      "explanationImage": "explanation/DI-MG-0185.png"
+    },
+    {
+      "questionId": "DI-MG-0186",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the ratio of students passed in 2022 to those in 2019?",
+      "questionImage": "question/DI-MG-0186.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "17 : 15"
+        },
+        {
+          "id": "B",
+          "text": "5 : 2"
+        },
+        {
+          "id": "C",
+          "text": "17 : 6"
+        },
+        {
+          "id": "D",
+          "text": "6 : 17"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "85 : 30 = 17 : 6.",
+      "explanationImage": "explanation/DI-MG-0186.png"
+    },
+    {
+      "questionId": "DI-MG-0187",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nIn which year was the number of students passed the highest?",
+      "questionImage": "question/DI-MG-0186.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2022"
+        },
+        {
+          "id": "B",
+          "text": "2020"
+        },
+        {
+          "id": "C",
+          "text": "2019"
+        },
+        {
+          "id": "D",
+          "text": "2023"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Values: 2019 30, 2020 117, 2021 36, 2022 85, 2023 65, 2024 64. Highest: 2020.",
+      "explanationImage": "explanation/DI-MG-0187.png"
+    },
+    {
+      "questionId": "DI-MG-0188",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nHow many students were not passed in 2019 (in hundreds)?",
+      "questionImage": "question/DI-MG-0186.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "13.77"
+        },
+        {
+          "id": "B",
+          "text": "10"
+        },
+        {
+          "id": "C",
+          "text": "16.28"
+        },
+        {
+          "id": "D",
+          "text": "16.78"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not passed = 40 - 30 = 10.",
+      "explanationImage": "explanation/DI-MG-0188.png"
+    },
+    {
+      "questionId": "DI-MG-0189",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the total number of students passed in 2022 and 2019 together (in hundreds)?",
+      "questionImage": "question/DI-MG-0186.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "124.59"
+        },
+        {
+          "id": "B",
+          "text": "133.56"
+        },
+        {
+          "id": "C",
+          "text": "102.03"
+        },
+        {
+          "id": "D",
+          "text": "115"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "85 + 30 = 115.",
+      "explanationImage": "explanation/DI-MG-0189.png"
+    },
+    {
+      "questionId": "DI-MG-0190",
+      "questionText": "Directions: The bar graph shows appeared and the line graph shows the percentage passed over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in appeared from 2019 to 2022?",
+      "questionImage": "question/DI-MG-0186.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "126.84"
+        },
+        {
+          "id": "B",
+          "text": "150"
+        },
+        {
+          "id": "C",
+          "text": "125.07"
+        },
+        {
+          "id": "D",
+          "text": "170"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Change = |100 - 40| / 40 x 100 = 150%.",
+      "explanationImage": "explanation/DI-MG-0190.png"
+    },
+    {
+      "questionId": "DI-MG-0191",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the average seats per year over the six years (in hundreds)?",
+      "questionImage": "question/DI-MG-0191.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "147.83"
+        },
+        {
+          "id": "B",
+          "text": "144.43"
+        },
+        {
+          "id": "C",
+          "text": "142.50"
+        },
+        {
+          "id": "D",
+          "text": "133.33"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 800 / 6 = 133.33.",
+      "explanationImage": "explanation/DI-MG-0191.png"
+    },
+    {
+      "questionId": "DI-MG-0192",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nIn which year was the number of seats filled the highest?",
+      "questionImage": "question/DI-MG-0191.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2019"
+        },
+        {
+          "id": "B",
+          "text": "2023"
+        },
+        {
+          "id": "C",
+          "text": "2021"
+        },
+        {
+          "id": "D",
+          "text": "2024"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Values: 2019 133, 2020 84, 2021 57, 2022 104, 2023 95, 2024 180. Highest: 2024.",
+      "explanationImage": "explanation/DI-MG-0192.png"
+    },
+    {
+      "questionId": "DI-MG-0193",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the ratio of seats filled in 2019 to those in 2022?",
+      "questionImage": "question/DI-MG-0191.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "104 : 133"
+        },
+        {
+          "id": "B",
+          "text": "7 : 8"
+        },
+        {
+          "id": "C",
+          "text": "133 : 104"
+        },
+        {
+          "id": "D",
+          "text": "19 : 13"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "133 : 104 = 133 : 104.",
+      "explanationImage": "explanation/DI-MG-0193.png"
+    },
+    {
+      "questionId": "DI-MG-0194",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nHow many seats were filled in 2019 (in hundreds)?",
+      "questionImage": "question/DI-MG-0191.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "133"
+        },
+        {
+          "id": "B",
+          "text": "107.09"
+        },
+        {
+          "id": "C",
+          "text": "116.72"
+        },
+        {
+          "id": "D",
+          "text": "160.40"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Filled in 2019 = 140 x 95% = 133.",
+      "explanationImage": "explanation/DI-MG-0194.png"
+    },
+    {
+      "questionId": "DI-MG-0195",
+      "questionText": "Directions: The bar graph shows seats and the line graph shows the percentage filled over six years. Study the chart and answer the question.\n\nWhat is the percentage increase in seats from 2019 to 2022?",
+      "questionImage": "question/DI-MG-0191.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "8.45"
+        },
+        {
+          "id": "B",
+          "text": "9.75"
+        },
+        {
+          "id": "C",
+          "text": "9.45"
+        },
+        {
+          "id": "D",
+          "text": "14.29"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Change = |160 - 140| / 140 x 100 = 14.29%.",
+      "explanationImage": "explanation/DI-MG-0195.png"
+    },
+    {
+      "questionId": "DI-MG-0196",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nIn which year was the number of orders delivered on time the highest?",
+      "questionImage": "question/DI-MG-0196.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2021"
+        },
+        {
+          "id": "B",
+          "text": "2020"
+        },
+        {
+          "id": "C",
+          "text": "2023"
+        },
+        {
+          "id": "D",
+          "text": "2024"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Values: 2019 64, 2020 36, 2021 91, 2022 24, 2023 52, 2024 76. Highest: 2021.",
+      "explanationImage": "explanation/DI-MG-0196.png"
+    },
+    {
+      "questionId": "DI-MG-0197",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were not delivered on time in 2023 (in '000)?",
+      "questionImage": "question/DI-MG-0196.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "20.70"
+        },
+        {
+          "id": "B",
+          "text": "28"
+        },
+        {
+          "id": "C",
+          "text": "32.55"
+        },
+        {
+          "id": "D",
+          "text": "34.49"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Not delivered on time = 80 - 52 = 28.",
+      "explanationImage": "explanation/DI-MG-0197.png"
+    },
+    {
+      "questionId": "DI-MG-0198",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the average orders per year over the six years (in '000)?",
+      "questionImage": "question/DI-MG-0196.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "86.67"
+        },
+        {
+          "id": "B",
+          "text": "99.54"
+        },
+        {
+          "id": "C",
+          "text": "81.08"
+        },
+        {
+          "id": "D",
+          "text": "79.03"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 520 / 6 = 86.67.",
+      "explanationImage": "explanation/DI-MG-0198.png"
+    },
+    {
+      "questionId": "DI-MG-0199",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nWhat is the ratio of orders delivered on time in 2020 to those in 2023?",
+      "questionImage": "question/DI-MG-0196.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "9 : 13"
+        },
+        {
+          "id": "B",
+          "text": "41 : 52"
+        },
+        {
+          "id": "C",
+          "text": "1 : 1"
+        },
+        {
+          "id": "D",
+          "text": "13 : 9"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "36 : 52 = 9 : 13.",
+      "explanationImage": "explanation/DI-MG-0199.png"
+    },
+    {
+      "questionId": "DI-MG-0200",
+      "questionText": "Directions: The bar graph shows orders and the line graph shows the percentage delivered on time over six years. Study the chart and answer the question.\n\nHow many orders were delivered on time in 2020 (in '000)?",
+      "questionImage": "question/DI-MG-0196.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "44.25"
+        },
+        {
+          "id": "B",
+          "text": "28.90"
+        },
+        {
+          "id": "C",
+          "text": "26.33"
+        },
+        {
+          "id": "D",
+          "text": "36"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Delivered on time in 2020 = 80 x 45% = 36.",
+      "explanationImage": "explanation/DI-MG-0200.png"
+    }
+  ]
+}

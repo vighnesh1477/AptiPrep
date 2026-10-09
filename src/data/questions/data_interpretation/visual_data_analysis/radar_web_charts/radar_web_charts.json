@@ -1,0 +1,5207 @@
+{
+  "categoryId": "data_interpretation",
+  "topicId": "visual_data_analysis",
+  "subtopicId": "radar_web_charts",
+  "questions": [
+    {
+      "questionId": "DI-RWC-0001",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the difference between Company P and Company Q in May?",
+      "questionImage": "question/DI-RWC-0001.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "27"
+        },
+        {
+          "id": "B",
+          "text": "30"
+        },
+        {
+          "id": "C",
+          "text": "60"
+        },
+        {
+          "id": "D",
+          "text": "81"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "In May: Company P = 100, Company Q = 40. Difference = 60.",
+      "explanationImage": "explanation/DI-RWC-0001.png"
+    },
+    {
+      "questionId": "DI-RWC-0002",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nBy what percent is Company P in Jan less than Company P in May?",
+      "questionImage": "question/DI-RWC-0001.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "10"
+        },
+        {
+          "id": "B",
+          "text": "14.91"
+        },
+        {
+          "id": "C",
+          "text": "13.33"
+        },
+        {
+          "id": "D",
+          "text": "5.31"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Percent less = |90 - 100| / 100 x 100 = 10%.",
+      "explanationImage": "explanation/DI-RWC-0002.png"
+    },
+    {
+      "questionId": "DI-RWC-0003",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nIn which less is the combined value of Company P and Company Q the highest?",
+      "questionImage": "question/DI-RWC-0001.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jan"
+        },
+        {
+          "id": "B",
+          "text": "Jun"
+        },
+        {
+          "id": "C",
+          "text": "Apr"
+        },
+        {
+          "id": "D",
+          "text": "Mar"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Combined values: Jan 130, Feb 130, Mar 180, Apr 150, May 140, Jun 140. Highest: Mar.",
+      "explanationImage": "explanation/DI-RWC-0003.png"
+    },
+    {
+      "questionId": "DI-RWC-0004",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nIn how many lesss is Company P greater than Company Q?",
+      "questionImage": "question/DI-RWC-0001.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Company P > Company Q in: Jan, Feb, Apr, May, Jun -> 5.",
+      "explanationImage": "explanation/DI-RWC-0004.png"
+    },
+    {
+      "questionId": "DI-RWC-0005",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the ratio of Company P in May to Company Q in Jan?",
+      "questionImage": "question/DI-RWC-0001.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "5 : 2"
+        },
+        {
+          "id": "B",
+          "text": "2 : 1"
+        },
+        {
+          "id": "C",
+          "text": "2 : 5"
+        },
+        {
+          "id": "D",
+          "text": "11 : 4"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Ratio = 100 : 40 = 5 : 2.",
+      "explanationImage": "explanation/DI-RWC-0005.png"
+    },
+    {
+      "questionId": "DI-RWC-0006",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nIn how many lesss is Ravi greater than Sneha?",
+      "questionImage": "question/DI-RWC-0006.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "6"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "1"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Ravi > Sneha in: Maths, Chemistry, English, Hindi -> 4.",
+      "explanationImage": "explanation/DI-RWC-0006.png"
+    },
+    {
+      "questionId": "DI-RWC-0007",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the difference between Ravi and Sneha in English?",
+      "questionImage": "question/DI-RWC-0006.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "45"
+        },
+        {
+          "id": "B",
+          "text": "96"
+        },
+        {
+          "id": "C",
+          "text": "60"
+        },
+        {
+          "id": "D",
+          "text": "44"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "In English: Ravi = 100, Sneha = 40. Difference = 60.",
+      "explanationImage": "explanation/DI-RWC-0007.png"
+    },
+    {
+      "questionId": "DI-RWC-0008",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the total of Ravi over all six subjects?",
+      "questionImage": "question/DI-RWC-0006.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "370"
+        },
+        {
+          "id": "B",
+          "text": "330"
+        },
+        {
+          "id": "C",
+          "text": "383"
+        },
+        {
+          "id": "D",
+          "text": "347"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Total for Ravi = 65 + 40 + 70 + 100 + 45 + 50 = 370.",
+      "explanationImage": "explanation/DI-RWC-0008.png"
+    },
+    {
+      "questionId": "DI-RWC-0009",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the average of Sneha over the six subjects?",
+      "questionImage": "question/DI-RWC-0006.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "58.33"
+        },
+        {
+          "id": "B",
+          "text": "56.08"
+        },
+        {
+          "id": "C",
+          "text": "55.05"
+        },
+        {
+          "id": "D",
+          "text": "66.31"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 350 / 6 = 58.33.",
+      "explanationImage": "explanation/DI-RWC-0009.png"
+    },
+    {
+      "questionId": "DI-RWC-0010",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nIn which less is the combined value of Ravi and Sneha the highest?",
+      "questionImage": "question/DI-RWC-0006.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chemistry"
+        },
+        {
+          "id": "B",
+          "text": "Maths"
+        },
+        {
+          "id": "C",
+          "text": "Physics"
+        },
+        {
+          "id": "D",
+          "text": "English"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Combined values: Maths 120, Physics 135, Chemistry 115, English 140, Hindi 85, Biology 125. Highest: English.",
+      "explanationImage": "explanation/DI-RWC-0010.png"
+    },
+    {
+      "questionId": "DI-RWC-0011",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the ratio of Store A in Jaipur to Store B in Pune?",
+      "questionImage": "question/DI-RWC-0011.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 3"
+        },
+        {
+          "id": "B",
+          "text": "3 : 8"
+        },
+        {
+          "id": "C",
+          "text": "8 : 3"
+        },
+        {
+          "id": "D",
+          "text": "1 : 2"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 30 : 80 = 3 : 8.",
+      "explanationImage": "explanation/DI-RWC-0011.png"
+    },
+    {
+      "questionId": "DI-RWC-0012",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the difference between Store A and Store B in Jaipur?",
+      "questionImage": "question/DI-RWC-0011.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "30"
+        },
+        {
+          "id": "B",
+          "text": "15"
+        },
+        {
+          "id": "C",
+          "text": "22"
+        },
+        {
+          "id": "D",
+          "text": "38"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "In Jaipur: Store A = 30, Store B = 60. Difference = 30.",
+      "explanationImage": "explanation/DI-RWC-0012.png"
+    },
+    {
+      "questionId": "DI-RWC-0013",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nIn which more is the combined value of Store A and Store B the highest?",
+      "questionImage": "question/DI-RWC-0011.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jaipur"
+        },
+        {
+          "id": "B",
+          "text": "Kochi"
+        },
+        {
+          "id": "C",
+          "text": "Mumbai"
+        },
+        {
+          "id": "D",
+          "text": "Delhi"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Combined values: Delhi 140, Mumbai 70, Pune 110, Jaipur 90, Patna 100, Kochi 210. Highest: Kochi.",
+      "explanationImage": "explanation/DI-RWC-0013.png"
+    },
+    {
+      "questionId": "DI-RWC-0014",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the average of Store B over the six citys?",
+      "questionImage": "question/DI-RWC-0011.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "73.33"
+        },
+        {
+          "id": "B",
+          "text": "70.78"
+        },
+        {
+          "id": "C",
+          "text": "78.52"
+        },
+        {
+          "id": "D",
+          "text": "70.28"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 440 / 6 = 73.33.",
+      "explanationImage": "explanation/DI-RWC-0014.png"
+    },
+    {
+      "questionId": "DI-RWC-0015",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nIn how many mores is Store A greater than Store B?",
+      "questionImage": "question/DI-RWC-0011.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "1"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Store A > Store B in: Delhi -> 1.",
+      "explanationImage": "explanation/DI-RWC-0015.png"
+    },
+    {
+      "questionId": "DI-RWC-0016",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the ratio of Branch X in Admin to Branch Y in Sales?",
+      "questionImage": "question/DI-RWC-0016.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "11 : 8"
+        },
+        {
+          "id": "B",
+          "text": "1 : 1"
+        },
+        {
+          "id": "C",
+          "text": "12 : 13"
+        },
+        {
+          "id": "D",
+          "text": "13 : 12"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 120 : 120 = 1 : 1.",
+      "explanationImage": "explanation/DI-RWC-0016.png"
+    },
+    {
+      "questionId": "DI-RWC-0017",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nBy what percent is Branch X in Sales less than Branch X in Admin?",
+      "questionImage": "question/DI-RWC-0016.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "8.33"
+        },
+        {
+          "id": "B",
+          "text": "12.80"
+        },
+        {
+          "id": "C",
+          "text": "3.78"
+        },
+        {
+          "id": "D",
+          "text": "4.50"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Percent less = |110 - 120| / 120 x 100 = 8.33%.",
+      "explanationImage": "explanation/DI-RWC-0017.png"
+    },
+    {
+      "questionId": "DI-RWC-0018",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the total of Branch X over all six departments?",
+      "questionImage": "question/DI-RWC-0016.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "493"
+        },
+        {
+          "id": "B",
+          "text": "444"
+        },
+        {
+          "id": "C",
+          "text": "508"
+        },
+        {
+          "id": "D",
+          "text": "470"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Total for Branch X = 20 + 90 + 110 + 20 + 110 + 120 = 470.",
+      "explanationImage": "explanation/DI-RWC-0018.png"
+    },
+    {
+      "questionId": "DI-RWC-0019",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nIn how many lesss is Branch X greater than Branch Y?",
+      "questionImage": "question/DI-RWC-0016.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "2"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Branch X > Branch Y in: IT, Legal, Admin -> 3.",
+      "explanationImage": "explanation/DI-RWC-0019.png"
+    },
+    {
+      "questionId": "DI-RWC-0020",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the average of Branch Y over the six departments?",
+      "questionImage": "question/DI-RWC-0016.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "58.33"
+        },
+        {
+          "id": "B",
+          "text": "54.13"
+        },
+        {
+          "id": "C",
+          "text": "53.35"
+        },
+        {
+          "id": "D",
+          "text": "61.87"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 350 / 6 = 58.33.",
+      "explanationImage": "explanation/DI-RWC-0020.png"
+    },
+    {
+      "questionId": "DI-RWC-0021",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the ratio of Firm M in 2019 to Firm N in 2024?",
+      "questionImage": "question/DI-RWC-0021.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "7 : 6"
+        },
+        {
+          "id": "B",
+          "text": "3 : 4"
+        },
+        {
+          "id": "C",
+          "text": "6 : 7"
+        },
+        {
+          "id": "D",
+          "text": "1 : 1"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Ratio = 60 : 70 = 6 : 7.",
+      "explanationImage": "explanation/DI-RWC-0021.png"
+    },
+    {
+      "questionId": "DI-RWC-0022",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the average of Firm N over the six years?",
+      "questionImage": "question/DI-RWC-0021.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "85.05"
+        },
+        {
+          "id": "B",
+          "text": "84.89"
+        },
+        {
+          "id": "C",
+          "text": "95.09"
+        },
+        {
+          "id": "D",
+          "text": "91.67"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 550 / 6 = 91.67.",
+      "explanationImage": "explanation/DI-RWC-0022.png"
+    },
+    {
+      "questionId": "DI-RWC-0023",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nIn how many mores is Firm M greater than Firm N?",
+      "questionImage": "question/DI-RWC-0021.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "0"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Firm M > Firm N in: 2021, 2023, 2024 -> 3.",
+      "explanationImage": "explanation/DI-RWC-0023.png"
+    },
+    {
+      "questionId": "DI-RWC-0024",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the difference between Firm M and Firm N in 2019?",
+      "questionImage": "question/DI-RWC-0021.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "17"
+        },
+        {
+          "id": "B",
+          "text": "41"
+        },
+        {
+          "id": "C",
+          "text": "30"
+        },
+        {
+          "id": "D",
+          "text": "43"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "In 2019: Firm M = 60, Firm N = 90. Difference = 30.",
+      "explanationImage": "explanation/DI-RWC-0024.png"
+    },
+    {
+      "questionId": "DI-RWC-0025",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the total of Firm M over all six years?",
+      "questionImage": "question/DI-RWC-0021.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "490"
+        },
+        {
+          "id": "B",
+          "text": "460"
+        },
+        {
+          "id": "C",
+          "text": "526"
+        },
+        {
+          "id": "D",
+          "text": "517"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Total for Firm M = 60 + 50 + 80 + 80 + 120 + 100 = 490.",
+      "explanationImage": "explanation/DI-RWC-0025.png"
+    },
+    {
+      "questionId": "DI-RWC-0026",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nIn which more is the combined value of Institute I and Institute J the highest?",
+      "questionImage": "question/DI-RWC-0026.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "BBA"
+        },
+        {
+          "id": "B",
+          "text": "B.Com"
+        },
+        {
+          "id": "C",
+          "text": "BCA"
+        },
+        {
+          "id": "D",
+          "text": "BA"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Combined values: BCA 170, BBA 170, B.Com 230, B.Sc 170, BA 130, B.Tech 190. Highest: B.Com.",
+      "explanationImage": "explanation/DI-RWC-0026.png"
+    },
+    {
+      "questionId": "DI-RWC-0027",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the ratio of Institute I in B.Tech to Institute J in BCA?",
+      "questionImage": "question/DI-RWC-0026.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "9 : 7"
+        },
+        {
+          "id": "B",
+          "text": "2 : 3"
+        },
+        {
+          "id": "C",
+          "text": "7 : 9"
+        },
+        {
+          "id": "D",
+          "text": "8 : 9"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Ratio = 70 : 90 = 7 : 9.",
+      "explanationImage": "explanation/DI-RWC-0027.png"
+    },
+    {
+      "questionId": "DI-RWC-0028",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nIn how many mores is Institute I greater than Institute J?",
+      "questionImage": "question/DI-RWC-0026.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Institute I > Institute J in: BBA, B.Sc, BA -> 3.",
+      "explanationImage": "explanation/DI-RWC-0028.png"
+    },
+    {
+      "questionId": "DI-RWC-0029",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the difference between Institute I and Institute J in B.Tech?",
+      "questionImage": "question/DI-RWC-0026.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "42"
+        },
+        {
+          "id": "B",
+          "text": "35"
+        },
+        {
+          "id": "C",
+          "text": "50"
+        },
+        {
+          "id": "D",
+          "text": "63"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "In B.Tech: Institute I = 70, Institute J = 120. Difference = 50.",
+      "explanationImage": "explanation/DI-RWC-0029.png"
+    },
+    {
+      "questionId": "DI-RWC-0030",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the total of Institute I over all six courses?",
+      "questionImage": "question/DI-RWC-0026.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "606"
+        },
+        {
+          "id": "B",
+          "text": "619"
+        },
+        {
+          "id": "C",
+          "text": "580"
+        },
+        {
+          "id": "D",
+          "text": "563"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Total for Institute I = 80 + 100 + 110 + 120 + 100 + 70 = 580.",
+      "explanationImage": "explanation/DI-RWC-0030.png"
+    },
+    {
+      "questionId": "DI-RWC-0031",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the difference between Plant R and Plant S in Oct?",
+      "questionImage": "question/DI-RWC-0031.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "15"
+        },
+        {
+          "id": "B",
+          "text": "28"
+        },
+        {
+          "id": "C",
+          "text": "27"
+        },
+        {
+          "id": "D",
+          "text": "20"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "In Oct: Plant R = 80, Plant S = 100. Difference = 20.",
+      "explanationImage": "explanation/DI-RWC-0031.png"
+    },
+    {
+      "questionId": "DI-RWC-0032",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the total of Plant R over all six months?",
+      "questionImage": "question/DI-RWC-0031.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "418"
+        },
+        {
+          "id": "B",
+          "text": "448"
+        },
+        {
+          "id": "C",
+          "text": "452"
+        },
+        {
+          "id": "D",
+          "text": "430"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Total for Plant R = 100 + 20 + 110 + 80 + 20 + 100 = 430.",
+      "explanationImage": "explanation/DI-RWC-0032.png"
+    },
+    {
+      "questionId": "DI-RWC-0033",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the average of Plant S over the six months?",
+      "questionImage": "question/DI-RWC-0031.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "73.33"
+        },
+        {
+          "id": "B",
+          "text": "65.78"
+        },
+        {
+          "id": "C",
+          "text": "71.12"
+        },
+        {
+          "id": "D",
+          "text": "67.12"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 440 / 6 = 73.33.",
+      "explanationImage": "explanation/DI-RWC-0033.png"
+    },
+    {
+      "questionId": "DI-RWC-0034",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the ratio of Plant R in Oct to Plant S in Jul?",
+      "questionImage": "question/DI-RWC-0031.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "4 : 1"
+        },
+        {
+          "id": "B",
+          "text": "9 : 2"
+        },
+        {
+          "id": "C",
+          "text": "8 : 3"
+        },
+        {
+          "id": "D",
+          "text": "1 : 1"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Ratio = 80 : 20 = 4 : 1.",
+      "explanationImage": "explanation/DI-RWC-0034.png"
+    },
+    {
+      "questionId": "DI-RWC-0035",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nIn which more is the combined value of Plant R and Plant S the highest?",
+      "questionImage": "question/DI-RWC-0031.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nov"
+        },
+        {
+          "id": "B",
+          "text": "Sep"
+        },
+        {
+          "id": "C",
+          "text": "Aug"
+        },
+        {
+          "id": "D",
+          "text": "Jul"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Combined values: Jul 120, Aug 120, Sep 190, Oct 180, Nov 130, Dec 130. Highest: Sep.",
+      "explanationImage": "explanation/DI-RWC-0035.png"
+    },
+    {
+      "questionId": "DI-RWC-0036",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the ratio of Park U in Wed to Park V in Thu?",
+      "questionImage": "question/DI-RWC-0036.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "11 : 6"
+        },
+        {
+          "id": "B",
+          "text": "5 : 11"
+        },
+        {
+          "id": "C",
+          "text": "12 : 5"
+        },
+        {
+          "id": "D",
+          "text": "11 : 5"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Ratio = 110 : 50 = 11 : 5.",
+      "explanationImage": "explanation/DI-RWC-0036.png"
+    },
+    {
+      "questionId": "DI-RWC-0037",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nIn how many lesss is Park U greater than Park V?",
+      "questionImage": "question/DI-RWC-0036.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "5"
+        },
+        {
+          "id": "B",
+          "text": "6"
+        },
+        {
+          "id": "C",
+          "text": "0"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Park U > Park V in: Tue, Wed, Thu, Fri, Sat -> 5.",
+      "explanationImage": "explanation/DI-RWC-0037.png"
+    },
+    {
+      "questionId": "DI-RWC-0038",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nBy what percent is Park U in Thu less than Park U in Wed?",
+      "questionImage": "question/DI-RWC-0036.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "41.60"
+        },
+        {
+          "id": "B",
+          "text": "36.36"
+        },
+        {
+          "id": "C",
+          "text": "24.41"
+        },
+        {
+          "id": "D",
+          "text": "31.47"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Percent less = |70 - 110| / 110 x 100 = 36.36%.",
+      "explanationImage": "explanation/DI-RWC-0038.png"
+    },
+    {
+      "questionId": "DI-RWC-0039",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the total of Park U over all six days?",
+      "questionImage": "question/DI-RWC-0036.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "367"
+        },
+        {
+          "id": "B",
+          "text": "390"
+        },
+        {
+          "id": "C",
+          "text": "416"
+        },
+        {
+          "id": "D",
+          "text": "374"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Total for Park U = 40 + 70 + 110 + 70 + 50 + 50 = 390.",
+      "explanationImage": "explanation/DI-RWC-0039.png"
+    },
+    {
+      "questionId": "DI-RWC-0040",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the average of Park V over the six days?",
+      "questionImage": "question/DI-RWC-0036.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "33.18"
+        },
+        {
+          "id": "B",
+          "text": "45.02"
+        },
+        {
+          "id": "C",
+          "text": "42.64"
+        },
+        {
+          "id": "D",
+          "text": "40"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 240 / 6 = 40.",
+      "explanationImage": "explanation/DI-RWC-0040.png"
+    },
+    {
+      "questionId": "DI-RWC-0041",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nBy what percent is Company P in Feb more than Company P in May?",
+      "questionImage": "question/DI-RWC-0041.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "59.79"
+        },
+        {
+          "id": "B",
+          "text": "93.14"
+        },
+        {
+          "id": "C",
+          "text": "79.37"
+        },
+        {
+          "id": "D",
+          "text": "66.67"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Percent more = |50 - 30| / 30 x 100 = 66.67%.",
+      "explanationImage": "explanation/DI-RWC-0041.png"
+    },
+    {
+      "questionId": "DI-RWC-0042",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the total of Company P over all six months?",
+      "questionImage": "question/DI-RWC-0041.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "410"
+        },
+        {
+          "id": "B",
+          "text": "428"
+        },
+        {
+          "id": "C",
+          "text": "378"
+        },
+        {
+          "id": "D",
+          "text": "444"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Total for Company P = 80 + 50 + 110 + 40 + 30 + 100 = 410.",
+      "explanationImage": "explanation/DI-RWC-0042.png"
+    },
+    {
+      "questionId": "DI-RWC-0043",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the ratio of Company P in May to Company Q in Feb?",
+      "questionImage": "question/DI-RWC-0041.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "7 : 3"
+        },
+        {
+          "id": "B",
+          "text": "3 : 8"
+        },
+        {
+          "id": "C",
+          "text": "4 : 7"
+        },
+        {
+          "id": "D",
+          "text": "3 : 7"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Ratio = 30 : 70 = 3 : 7.",
+      "explanationImage": "explanation/DI-RWC-0043.png"
+    },
+    {
+      "questionId": "DI-RWC-0044",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nIn how many mores is Company P greater than Company Q?",
+      "questionImage": "question/DI-RWC-0041.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Company P > Company Q in: Jan, Mar -> 2.",
+      "explanationImage": "explanation/DI-RWC-0044.png"
+    },
+    {
+      "questionId": "DI-RWC-0045",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the average of Company Q over the six months?",
+      "questionImage": "question/DI-RWC-0041.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "67.23"
+        },
+        {
+          "id": "B",
+          "text": "78.27"
+        },
+        {
+          "id": "C",
+          "text": "71.67"
+        },
+        {
+          "id": "D",
+          "text": "69.24"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Average = 430 / 6 = 71.67.",
+      "explanationImage": "explanation/DI-RWC-0045.png"
+    },
+    {
+      "questionId": "DI-RWC-0046",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the difference between Ravi and Sneha in Chemistry?",
+      "questionImage": "question/DI-RWC-0046.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "12"
+        },
+        {
+          "id": "B",
+          "text": "11"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "8"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "In Chemistry: Ravi = 40, Sneha = 45. Difference = 5.",
+      "explanationImage": "explanation/DI-RWC-0046.png"
+    },
+    {
+      "questionId": "DI-RWC-0047",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the ratio of Ravi in Chemistry to Sneha in Hindi?",
+      "questionImage": "question/DI-RWC-0046.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "4 : 7"
+        },
+        {
+          "id": "B",
+          "text": "5 : 6"
+        },
+        {
+          "id": "C",
+          "text": "3 : 2"
+        },
+        {
+          "id": "D",
+          "text": "2 : 3"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Ratio = 40 : 60 = 2 : 3.",
+      "explanationImage": "explanation/DI-RWC-0047.png"
+    },
+    {
+      "questionId": "DI-RWC-0048",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nIn which more is the combined value of Ravi and Sneha the highest?",
+      "questionImage": "question/DI-RWC-0046.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chemistry"
+        },
+        {
+          "id": "B",
+          "text": "English"
+        },
+        {
+          "id": "C",
+          "text": "Hindi"
+        },
+        {
+          "id": "D",
+          "text": "Physics"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Combined values: Maths 140, Physics 120, Chemistry 85, English 160, Hindi 115, Biology 150. Highest: English.",
+      "explanationImage": "explanation/DI-RWC-0048.png"
+    },
+    {
+      "questionId": "DI-RWC-0049",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the average of Sneha over the six subjects?",
+      "questionImage": "question/DI-RWC-0046.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "55.83"
+        },
+        {
+          "id": "B",
+          "text": "58.15"
+        },
+        {
+          "id": "C",
+          "text": "51.38"
+        },
+        {
+          "id": "D",
+          "text": "50.32"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 335 / 6 = 55.83.",
+      "explanationImage": "explanation/DI-RWC-0049.png"
+    },
+    {
+      "questionId": "DI-RWC-0050",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nIn how many mores is Ravi greater than Sneha?",
+      "questionImage": "question/DI-RWC-0046.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "1"
+        },
+        {
+          "id": "D",
+          "text": "2"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ravi > Sneha in: Physics, English, Biology -> 3.",
+      "explanationImage": "explanation/DI-RWC-0050.png"
+    },
+    {
+      "questionId": "DI-RWC-0051",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the total of Store A over all six citys?",
+      "questionImage": "question/DI-RWC-0051.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "610"
+        },
+        {
+          "id": "B",
+          "text": "644"
+        },
+        {
+          "id": "C",
+          "text": "628"
+        },
+        {
+          "id": "D",
+          "text": "585"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Total for Store A = 90 + 110 + 60 + 120 + 110 + 120 = 610.",
+      "explanationImage": "explanation/DI-RWC-0051.png"
+    },
+    {
+      "questionId": "DI-RWC-0052",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nIn how many mores is Store A greater than Store B?",
+      "questionImage": "question/DI-RWC-0051.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Store A > Store B in: Delhi, Mumbai, Jaipur, Patna, Kochi -> 5.",
+      "explanationImage": "explanation/DI-RWC-0052.png"
+    },
+    {
+      "questionId": "DI-RWC-0053",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nBy what percent is Store A in Jaipur more than Store A in Mumbai?",
+      "questionImage": "question/DI-RWC-0051.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "10.71"
+        },
+        {
+          "id": "B",
+          "text": "7.13"
+        },
+        {
+          "id": "C",
+          "text": "10.92"
+        },
+        {
+          "id": "D",
+          "text": "9.09"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Percent more = |120 - 110| / 110 x 100 = 9.09%.",
+      "explanationImage": "explanation/DI-RWC-0053.png"
+    },
+    {
+      "questionId": "DI-RWC-0054",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nIn which more is the combined value of Store A and Store B the highest?",
+      "questionImage": "question/DI-RWC-0051.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jaipur"
+        },
+        {
+          "id": "B",
+          "text": "Pune"
+        },
+        {
+          "id": "C",
+          "text": "Delhi"
+        },
+        {
+          "id": "D",
+          "text": "Mumbai"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Combined values: Delhi 170, Mumbai 180, Pune 160, Jaipur 160, Patna 170, Kochi 160. Highest: Mumbai.",
+      "explanationImage": "explanation/DI-RWC-0054.png"
+    },
+    {
+      "questionId": "DI-RWC-0055",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the difference between Store A and Store B in Mumbai?",
+      "questionImage": "question/DI-RWC-0051.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "25"
+        },
+        {
+          "id": "B",
+          "text": "40"
+        },
+        {
+          "id": "C",
+          "text": "23"
+        },
+        {
+          "id": "D",
+          "text": "31"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "In Mumbai: Store A = 110, Store B = 70. Difference = 40.",
+      "explanationImage": "explanation/DI-RWC-0055.png"
+    },
+    {
+      "questionId": "DI-RWC-0056",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the ratio of Branch X in HR to Branch Y in Finance?",
+      "questionImage": "question/DI-RWC-0056.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "6 : 7"
+        },
+        {
+          "id": "B",
+          "text": "7 : 6"
+        },
+        {
+          "id": "C",
+          "text": "3 : 4"
+        },
+        {
+          "id": "D",
+          "text": "1 : 1"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Ratio = 60 : 70 = 6 : 7.",
+      "explanationImage": "explanation/DI-RWC-0056.png"
+    },
+    {
+      "questionId": "DI-RWC-0057",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nBy what percent is Branch X in Finance more than Branch X in HR?",
+      "questionImage": "question/DI-RWC-0056.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "41.05"
+        },
+        {
+          "id": "B",
+          "text": "26.78"
+        },
+        {
+          "id": "C",
+          "text": "42.36"
+        },
+        {
+          "id": "D",
+          "text": "33.33"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Percent more = |80 - 60| / 60 x 100 = 33.33%.",
+      "explanationImage": "explanation/DI-RWC-0057.png"
+    },
+    {
+      "questionId": "DI-RWC-0058",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the total of Branch X over all six departments?",
+      "questionImage": "question/DI-RWC-0056.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "504"
+        },
+        {
+          "id": "B",
+          "text": "470"
+        },
+        {
+          "id": "C",
+          "text": "458"
+        },
+        {
+          "id": "D",
+          "text": "489"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Total for Branch X = 60 + 100 + 40 + 80 + 120 + 70 = 470.",
+      "explanationImage": "explanation/DI-RWC-0058.png"
+    },
+    {
+      "questionId": "DI-RWC-0059",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nIn how many mores is Branch X greater than Branch Y?",
+      "questionImage": "question/DI-RWC-0056.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Branch X > Branch Y in: IT, Finance, Legal -> 3.",
+      "explanationImage": "explanation/DI-RWC-0059.png"
+    },
+    {
+      "questionId": "DI-RWC-0060",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the average of Branch Y over the six departments?",
+      "questionImage": "question/DI-RWC-0056.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "71.67"
+        },
+        {
+          "id": "B",
+          "text": "68.35"
+        },
+        {
+          "id": "C",
+          "text": "75.87"
+        },
+        {
+          "id": "D",
+          "text": "75.36"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 430 / 6 = 71.67.",
+      "explanationImage": "explanation/DI-RWC-0060.png"
+    },
+    {
+      "questionId": "DI-RWC-0061",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nBy what percent is Firm M in 2019 more than Firm M in 2022?",
+      "questionImage": "question/DI-RWC-0061.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "55"
+        },
+        {
+          "id": "B",
+          "text": "99.71"
+        },
+        {
+          "id": "C",
+          "text": "80"
+        },
+        {
+          "id": "D",
+          "text": "104.14"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Percent more = |90 - 50| / 50 x 100 = 80%.",
+      "explanationImage": "explanation/DI-RWC-0061.png"
+    },
+    {
+      "questionId": "DI-RWC-0062",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the difference between Firm M and Firm N in 2022?",
+      "questionImage": "question/DI-RWC-0061.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "14"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "13"
+        },
+        {
+          "id": "D",
+          "text": "10"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "In 2022: Firm M = 50, Firm N = 60. Difference = 10.",
+      "explanationImage": "explanation/DI-RWC-0062.png"
+    },
+    {
+      "questionId": "DI-RWC-0063",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the ratio of Firm M in 2022 to Firm N in 2019?",
+      "questionImage": "question/DI-RWC-0061.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 : 2"
+        },
+        {
+          "id": "B",
+          "text": "1 : 2"
+        },
+        {
+          "id": "C",
+          "text": "2 : 1"
+        },
+        {
+          "id": "D",
+          "text": "5 : 11"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 50 : 100 = 1 : 2.",
+      "explanationImage": "explanation/DI-RWC-0063.png"
+    },
+    {
+      "questionId": "DI-RWC-0064",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nIn which more is the combined value of Firm M and Firm N the highest?",
+      "questionImage": "question/DI-RWC-0061.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2022"
+        },
+        {
+          "id": "B",
+          "text": "2020"
+        },
+        {
+          "id": "C",
+          "text": "2019"
+        },
+        {
+          "id": "D",
+          "text": "2023"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Combined values: 2019 190, 2020 100, 2021 130, 2022 110, 2023 120, 2024 140. Highest: 2019.",
+      "explanationImage": "explanation/DI-RWC-0064.png"
+    },
+    {
+      "questionId": "DI-RWC-0065",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the average of Firm N over the six years?",
+      "questionImage": "question/DI-RWC-0061.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "81.59"
+        },
+        {
+          "id": "B",
+          "text": "79.10"
+        },
+        {
+          "id": "C",
+          "text": "70.07"
+        },
+        {
+          "id": "D",
+          "text": "75"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 450 / 6 = 75.",
+      "explanationImage": "explanation/DI-RWC-0065.png"
+    },
+    {
+      "questionId": "DI-RWC-0066",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the average of Institute J over the six courses?",
+      "questionImage": "question/DI-RWC-0066.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "62.12"
+        },
+        {
+          "id": "B",
+          "text": "60.76"
+        },
+        {
+          "id": "C",
+          "text": "62.32"
+        },
+        {
+          "id": "D",
+          "text": "55"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 330 / 6 = 55.",
+      "explanationImage": "explanation/DI-RWC-0066.png"
+    },
+    {
+      "questionId": "DI-RWC-0067",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the ratio of Institute I in BA to Institute J in B.Sc?",
+      "questionImage": "question/DI-RWC-0066.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 : 3"
+        },
+        {
+          "id": "B",
+          "text": "2 : 1"
+        },
+        {
+          "id": "C",
+          "text": "3 : 2"
+        },
+        {
+          "id": "D",
+          "text": "1 : 1"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Ratio = 30 : 20 = 3 : 2.",
+      "explanationImage": "explanation/DI-RWC-0067.png"
+    },
+    {
+      "questionId": "DI-RWC-0068",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nBy what percent is Institute I in B.Sc more than Institute I in BA?",
+      "questionImage": "question/DI-RWC-0066.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "100"
+        },
+        {
+          "id": "B",
+          "text": "75.52"
+        },
+        {
+          "id": "C",
+          "text": "129.81"
+        },
+        {
+          "id": "D",
+          "text": "78.02"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Percent more = |60 - 30| / 30 x 100 = 100%.",
+      "explanationImage": "explanation/DI-RWC-0068.png"
+    },
+    {
+      "questionId": "DI-RWC-0069",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nIn which more is the combined value of Institute I and Institute J the highest?",
+      "questionImage": "question/DI-RWC-0066.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "B.Com"
+        },
+        {
+          "id": "B",
+          "text": "BCA"
+        },
+        {
+          "id": "C",
+          "text": "BA"
+        },
+        {
+          "id": "D",
+          "text": "B.Tech"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Combined values: BCA 180, BBA 60, B.Com 130, B.Sc 80, BA 120, B.Tech 80. Highest: BCA.",
+      "explanationImage": "explanation/DI-RWC-0069.png"
+    },
+    {
+      "questionId": "DI-RWC-0070",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the difference between Institute I and Institute J in BA?",
+      "questionImage": "question/DI-RWC-0066.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "85"
+        },
+        {
+          "id": "B",
+          "text": "39"
+        },
+        {
+          "id": "C",
+          "text": "60"
+        },
+        {
+          "id": "D",
+          "text": "80"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "In BA: Institute I = 30, Institute J = 90. Difference = 60.",
+      "explanationImage": "explanation/DI-RWC-0070.png"
+    },
+    {
+      "questionId": "DI-RWC-0071",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the ratio of Plant R in Jul to Plant S in Nov?",
+      "questionImage": "question/DI-RWC-0071.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 2"
+        },
+        {
+          "id": "B",
+          "text": "2 : 9"
+        },
+        {
+          "id": "C",
+          "text": "1 : 3"
+        },
+        {
+          "id": "D",
+          "text": "9 : 2"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 20 : 90 = 2 : 9.",
+      "explanationImage": "explanation/DI-RWC-0071.png"
+    },
+    {
+      "questionId": "DI-RWC-0072",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the difference between Plant R and Plant S in Jul?",
+      "questionImage": "question/DI-RWC-0071.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "40"
+        },
+        {
+          "id": "B",
+          "text": "17"
+        },
+        {
+          "id": "C",
+          "text": "55"
+        },
+        {
+          "id": "D",
+          "text": "50"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "In Jul: Plant R = 20, Plant S = 60. Difference = 40.",
+      "explanationImage": "explanation/DI-RWC-0072.png"
+    },
+    {
+      "questionId": "DI-RWC-0073",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nIn how many mores is Plant R greater than Plant S?",
+      "questionImage": "question/DI-RWC-0071.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "1"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Plant R > Plant S in: Oct -> 1.",
+      "explanationImage": "explanation/DI-RWC-0073.png"
+    },
+    {
+      "questionId": "DI-RWC-0074",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nBy what percent is Plant R in Nov more than Plant R in Jul?",
+      "questionImage": "question/DI-RWC-0071.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "65.14"
+        },
+        {
+          "id": "B",
+          "text": "50"
+        },
+        {
+          "id": "C",
+          "text": "43.41"
+        },
+        {
+          "id": "D",
+          "text": "39.60"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Percent more = |30 - 20| / 20 x 100 = 50%.",
+      "explanationImage": "explanation/DI-RWC-0074.png"
+    },
+    {
+      "questionId": "DI-RWC-0075",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the average of Plant S over the six months?",
+      "questionImage": "question/DI-RWC-0071.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "87.98"
+        },
+        {
+          "id": "B",
+          "text": "80"
+        },
+        {
+          "id": "C",
+          "text": "83.90"
+        },
+        {
+          "id": "D",
+          "text": "82.46"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 480 / 6 = 80.",
+      "explanationImage": "explanation/DI-RWC-0075.png"
+    },
+    {
+      "questionId": "DI-RWC-0076",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the difference between Park U and Park V in Mon?",
+      "questionImage": "question/DI-RWC-0076.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "60"
+        },
+        {
+          "id": "B",
+          "text": "48"
+        },
+        {
+          "id": "C",
+          "text": "85"
+        },
+        {
+          "id": "D",
+          "text": "70"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "In Mon: Park U = 50, Park V = 110. Difference = 60.",
+      "explanationImage": "explanation/DI-RWC-0076.png"
+    },
+    {
+      "questionId": "DI-RWC-0077",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nIn how many mores is Park U greater than Park V?",
+      "questionImage": "question/DI-RWC-0076.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "1"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Park U > Park V in: none -> 0.",
+      "explanationImage": "explanation/DI-RWC-0077.png"
+    },
+    {
+      "questionId": "DI-RWC-0078",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the total of Park U over all six days?",
+      "questionImage": "question/DI-RWC-0076.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "350"
+        },
+        {
+          "id": "B",
+          "text": "321"
+        },
+        {
+          "id": "C",
+          "text": "335"
+        },
+        {
+          "id": "D",
+          "text": "320"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Total for Park U = 50 + 80 + 30 + 70 + 60 + 60 = 350.",
+      "explanationImage": "explanation/DI-RWC-0078.png"
+    },
+    {
+      "questionId": "DI-RWC-0079",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the ratio of Park U in Mon to Park V in Sat?",
+      "questionImage": "question/DI-RWC-0076.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "6 : 11"
+        },
+        {
+          "id": "B",
+          "text": "5 : 8"
+        },
+        {
+          "id": "C",
+          "text": "8 : 5"
+        },
+        {
+          "id": "D",
+          "text": "3 : 4"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 50 : 80 = 5 : 8.",
+      "explanationImage": "explanation/DI-RWC-0079.png"
+    },
+    {
+      "questionId": "DI-RWC-0080",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nBy what percent is Park U in Sat more than Park U in Mon?",
+      "questionImage": "question/DI-RWC-0076.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "13.07"
+        },
+        {
+          "id": "B",
+          "text": "20"
+        },
+        {
+          "id": "C",
+          "text": "27.56"
+        },
+        {
+          "id": "D",
+          "text": "14.12"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Percent more = |60 - 50| / 50 x 100 = 20%.",
+      "explanationImage": "explanation/DI-RWC-0080.png"
+    },
+    {
+      "questionId": "DI-RWC-0081",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the ratio of Company P in May to Company Q in Feb?",
+      "questionImage": "question/DI-RWC-0081.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "5 : 11"
+        },
+        {
+          "id": "B",
+          "text": "2 : 1"
+        },
+        {
+          "id": "C",
+          "text": "10 : 11"
+        },
+        {
+          "id": "D",
+          "text": "1 : 2"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Ratio = 50 : 100 = 1 : 2.",
+      "explanationImage": "explanation/DI-RWC-0081.png"
+    },
+    {
+      "questionId": "DI-RWC-0082",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the average of Company Q over the six months?",
+      "questionImage": "question/DI-RWC-0081.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "80.29"
+        },
+        {
+          "id": "B",
+          "text": "81.57"
+        },
+        {
+          "id": "C",
+          "text": "85"
+        },
+        {
+          "id": "D",
+          "text": "79.64"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Average = 510 / 6 = 85.",
+      "explanationImage": "explanation/DI-RWC-0082.png"
+    },
+    {
+      "questionId": "DI-RWC-0083",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nBy what percent is Company P in Feb more than Company P in May?",
+      "questionImage": "question/DI-RWC-0081.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "115.06"
+        },
+        {
+          "id": "B",
+          "text": "61.98"
+        },
+        {
+          "id": "C",
+          "text": "100"
+        },
+        {
+          "id": "D",
+          "text": "128.05"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Percent more = |100 - 50| / 50 x 100 = 100%.",
+      "explanationImage": "explanation/DI-RWC-0083.png"
+    },
+    {
+      "questionId": "DI-RWC-0084",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the total of Company P over all six months?",
+      "questionImage": "question/DI-RWC-0081.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "407"
+        },
+        {
+          "id": "B",
+          "text": "423"
+        },
+        {
+          "id": "C",
+          "text": "411"
+        },
+        {
+          "id": "D",
+          "text": "440"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Total for Company P = 60 + 100 + 60 + 100 + 50 + 70 = 440.",
+      "explanationImage": "explanation/DI-RWC-0084.png"
+    },
+    {
+      "questionId": "DI-RWC-0085",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nIn which more is the combined value of Company P and Company Q the highest?",
+      "questionImage": "question/DI-RWC-0081.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jan"
+        },
+        {
+          "id": "B",
+          "text": "Feb"
+        },
+        {
+          "id": "C",
+          "text": "May"
+        },
+        {
+          "id": "D",
+          "text": "Apr"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Combined values: Jan 170, Feb 200, Mar 160, Apr 140, May 160, Jun 120. Highest: Feb.",
+      "explanationImage": "explanation/DI-RWC-0085.png"
+    },
+    {
+      "questionId": "DI-RWC-0086",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the difference between Ravi and Sneha in Biology?",
+      "questionImage": "question/DI-RWC-0086.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "62"
+        },
+        {
+          "id": "B",
+          "text": "61"
+        },
+        {
+          "id": "C",
+          "text": "60"
+        },
+        {
+          "id": "D",
+          "text": "40"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "In Biology: Ravi = 80, Sneha = 40. Difference = 40.",
+      "explanationImage": "explanation/DI-RWC-0086.png"
+    },
+    {
+      "questionId": "DI-RWC-0087",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nIn which less is the combined value of Ravi and Sneha the highest?",
+      "questionImage": "question/DI-RWC-0086.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "English"
+        },
+        {
+          "id": "B",
+          "text": "Physics"
+        },
+        {
+          "id": "C",
+          "text": "Hindi"
+        },
+        {
+          "id": "D",
+          "text": "Biology"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Combined values: Maths 95, Physics 145, Chemistry 125, English 135, Hindi 130, Biology 120. Highest: Physics.",
+      "explanationImage": "explanation/DI-RWC-0087.png"
+    },
+    {
+      "questionId": "DI-RWC-0088",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the average of Sneha over the six subjects?",
+      "questionImage": "question/DI-RWC-0086.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "64.32"
+        },
+        {
+          "id": "B",
+          "text": "59.17"
+        },
+        {
+          "id": "C",
+          "text": "53.77"
+        },
+        {
+          "id": "D",
+          "text": "66.12"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 355 / 6 = 59.17.",
+      "explanationImage": "explanation/DI-RWC-0088.png"
+    },
+    {
+      "questionId": "DI-RWC-0089",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the total of Ravi over all six subjects?",
+      "questionImage": "question/DI-RWC-0086.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "373"
+        },
+        {
+          "id": "B",
+          "text": "423"
+        },
+        {
+          "id": "C",
+          "text": "415"
+        },
+        {
+          "id": "D",
+          "text": "395"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Total for Ravi = 45 + 85 + 70 + 50 + 65 + 80 = 395.",
+      "explanationImage": "explanation/DI-RWC-0089.png"
+    },
+    {
+      "questionId": "DI-RWC-0090",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nBy what percent is Ravi in Maths less than Ravi in Biology?",
+      "questionImage": "question/DI-RWC-0086.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "35.49"
+        },
+        {
+          "id": "B",
+          "text": "35.17"
+        },
+        {
+          "id": "C",
+          "text": "43.75"
+        },
+        {
+          "id": "D",
+          "text": "53.64"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Percent less = |45 - 80| / 80 x 100 = 43.75%.",
+      "explanationImage": "explanation/DI-RWC-0090.png"
+    },
+    {
+      "questionId": "DI-RWC-0091",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the average of Store B over the six citys?",
+      "questionImage": "question/DI-RWC-0091.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "43.33"
+        },
+        {
+          "id": "B",
+          "text": "47.18"
+        },
+        {
+          "id": "C",
+          "text": "41.06"
+        },
+        {
+          "id": "D",
+          "text": "38.60"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 260 / 6 = 43.33.",
+      "explanationImage": "explanation/DI-RWC-0091.png"
+    },
+    {
+      "questionId": "DI-RWC-0092",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the total of Store A over all six citys?",
+      "questionImage": "question/DI-RWC-0091.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "520"
+        },
+        {
+          "id": "B",
+          "text": "490"
+        },
+        {
+          "id": "C",
+          "text": "510"
+        },
+        {
+          "id": "D",
+          "text": "478"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Total for Store A = 110 + 40 + 50 + 120 + 80 + 110 = 510.",
+      "explanationImage": "explanation/DI-RWC-0092.png"
+    },
+    {
+      "questionId": "DI-RWC-0093",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the ratio of Store A in Patna to Store B in Kochi?",
+      "questionImage": "question/DI-RWC-0091.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "8 : 3"
+        },
+        {
+          "id": "B",
+          "text": "3 : 8"
+        },
+        {
+          "id": "C",
+          "text": "2 : 1"
+        },
+        {
+          "id": "D",
+          "text": "3 : 1"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Ratio = 80 : 30 = 8 : 3.",
+      "explanationImage": "explanation/DI-RWC-0093.png"
+    },
+    {
+      "questionId": "DI-RWC-0094",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nIn how many mores is Store A greater than Store B?",
+      "questionImage": "question/DI-RWC-0091.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Store A > Store B in: Delhi, Mumbai, Pune, Jaipur, Patna, Kochi -> 6.",
+      "explanationImage": "explanation/DI-RWC-0094.png"
+    },
+    {
+      "questionId": "DI-RWC-0095",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nBy what percent is Store A in Kochi more than Store A in Patna?",
+      "questionImage": "question/DI-RWC-0091.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "51.14"
+        },
+        {
+          "id": "B",
+          "text": "30.43"
+        },
+        {
+          "id": "C",
+          "text": "42.86"
+        },
+        {
+          "id": "D",
+          "text": "37.50"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Percent more = |110 - 80| / 80 x 100 = 37.50%.",
+      "explanationImage": "explanation/DI-RWC-0095.png"
+    },
+    {
+      "questionId": "DI-RWC-0096",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nBy what percent is Branch X in IT more than Branch X in HR?",
+      "questionImage": "question/DI-RWC-0096.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "20"
+        },
+        {
+          "id": "B",
+          "text": "26.41"
+        },
+        {
+          "id": "C",
+          "text": "12.07"
+        },
+        {
+          "id": "D",
+          "text": "16.88"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Percent more = |60 - 50| / 50 x 100 = 20%.",
+      "explanationImage": "explanation/DI-RWC-0096.png"
+    },
+    {
+      "questionId": "DI-RWC-0097",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the average of Branch Y over the six departments?",
+      "questionImage": "question/DI-RWC-0096.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "85"
+        },
+        {
+          "id": "B",
+          "text": "81.52"
+        },
+        {
+          "id": "C",
+          "text": "91.82"
+        },
+        {
+          "id": "D",
+          "text": "82.01"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 510 / 6 = 85.",
+      "explanationImage": "explanation/DI-RWC-0097.png"
+    },
+    {
+      "questionId": "DI-RWC-0098",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nIn which more is the combined value of Branch X and Branch Y the highest?",
+      "questionImage": "question/DI-RWC-0096.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "HR"
+        },
+        {
+          "id": "B",
+          "text": "Legal"
+        },
+        {
+          "id": "C",
+          "text": "Finance"
+        },
+        {
+          "id": "D",
+          "text": "IT"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Combined values: HR 170, IT 160, Sales 60, Finance 160, Legal 160, Admin 90. Highest: HR.",
+      "explanationImage": "explanation/DI-RWC-0098.png"
+    },
+    {
+      "questionId": "DI-RWC-0099",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the ratio of Branch X in HR to Branch Y in IT?",
+      "questionImage": "question/DI-RWC-0096.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "5 : 11"
+        },
+        {
+          "id": "B",
+          "text": "1 : 2"
+        },
+        {
+          "id": "C",
+          "text": "3 : 5"
+        },
+        {
+          "id": "D",
+          "text": "2 : 1"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 50 : 100 = 1 : 2.",
+      "explanationImage": "explanation/DI-RWC-0099.png"
+    },
+    {
+      "questionId": "DI-RWC-0100",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nIn how many mores is Branch X greater than Branch Y?",
+      "questionImage": "question/DI-RWC-0096.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "0"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Branch X > Branch Y in: none -> 0.",
+      "explanationImage": "explanation/DI-RWC-0100.png"
+    },
+    {
+      "questionId": "DI-RWC-0101",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the difference between Firm M and Firm N in 2024?",
+      "questionImage": "question/DI-RWC-0101.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "14"
+        },
+        {
+          "id": "B",
+          "text": "11"
+        },
+        {
+          "id": "C",
+          "text": "30"
+        },
+        {
+          "id": "D",
+          "text": "20"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "In 2024: Firm M = 110, Firm N = 90. Difference = 20.",
+      "explanationImage": "explanation/DI-RWC-0101.png"
+    },
+    {
+      "questionId": "DI-RWC-0102",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the ratio of Firm M in 2024 to Firm N in 2021?",
+      "questionImage": "question/DI-RWC-0101.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "11 : 9"
+        },
+        {
+          "id": "B",
+          "text": "9 : 11"
+        },
+        {
+          "id": "C",
+          "text": "11 : 10"
+        },
+        {
+          "id": "D",
+          "text": "4 : 3"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Ratio = 110 : 90 = 11 : 9.",
+      "explanationImage": "explanation/DI-RWC-0102.png"
+    },
+    {
+      "questionId": "DI-RWC-0103",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nIn how many lesss is Firm M greater than Firm N?",
+      "questionImage": "question/DI-RWC-0101.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "1"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Firm M > Firm N in: 2019, 2021, 2023, 2024 -> 4.",
+      "explanationImage": "explanation/DI-RWC-0103.png"
+    },
+    {
+      "questionId": "DI-RWC-0104",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the total of Firm M over all six years?",
+      "questionImage": "question/DI-RWC-0101.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "508"
+        },
+        {
+          "id": "B",
+          "text": "520"
+        },
+        {
+          "id": "C",
+          "text": "493"
+        },
+        {
+          "id": "D",
+          "text": "491"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Total for Firm M = 60 + 90 + 100 + 50 + 110 + 110 = 520.",
+      "explanationImage": "explanation/DI-RWC-0104.png"
+    },
+    {
+      "questionId": "DI-RWC-0105",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nBy what percent is Firm M in 2021 less than Firm M in 2024?",
+      "questionImage": "question/DI-RWC-0101.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "9.09"
+        },
+        {
+          "id": "B",
+          "text": "10.87"
+        },
+        {
+          "id": "C",
+          "text": "12.69"
+        },
+        {
+          "id": "D",
+          "text": "4.42"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Percent less = |100 - 110| / 110 x 100 = 9.09%.",
+      "explanationImage": "explanation/DI-RWC-0105.png"
+    },
+    {
+      "questionId": "DI-RWC-0106",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nIn which more is the combined value of Institute I and Institute J the highest?",
+      "questionImage": "question/DI-RWC-0106.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "BCA"
+        },
+        {
+          "id": "B",
+          "text": "BA"
+        },
+        {
+          "id": "C",
+          "text": "B.Tech"
+        },
+        {
+          "id": "D",
+          "text": "B.Sc"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Combined values: BCA 170, BBA 110, B.Com 150, B.Sc 200, BA 80, B.Tech 70. Highest: B.Sc.",
+      "explanationImage": "explanation/DI-RWC-0106.png"
+    },
+    {
+      "questionId": "DI-RWC-0107",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the average of Institute J over the six courses?",
+      "questionImage": "question/DI-RWC-0106.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "63.33"
+        },
+        {
+          "id": "B",
+          "text": "69.89"
+        },
+        {
+          "id": "C",
+          "text": "58.45"
+        },
+        {
+          "id": "D",
+          "text": "66.62"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 380 / 6 = 63.33.",
+      "explanationImage": "explanation/DI-RWC-0107.png"
+    },
+    {
+      "questionId": "DI-RWC-0108",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nIn how many mores is Institute I greater than Institute J?",
+      "questionImage": "question/DI-RWC-0106.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "5"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Institute I > Institute J in: BCA, B.Com, B.Tech -> 3.",
+      "explanationImage": "explanation/DI-RWC-0108.png"
+    },
+    {
+      "questionId": "DI-RWC-0109",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the difference between Institute I and Institute J in BBA?",
+      "questionImage": "question/DI-RWC-0106.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "10"
+        },
+        {
+          "id": "B",
+          "text": "14"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "In BBA: Institute I = 50, Institute J = 60. Difference = 10.",
+      "explanationImage": "explanation/DI-RWC-0109.png"
+    },
+    {
+      "questionId": "DI-RWC-0110",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the total of Institute I over all six courses?",
+      "questionImage": "question/DI-RWC-0106.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "400"
+        },
+        {
+          "id": "B",
+          "text": "438"
+        },
+        {
+          "id": "C",
+          "text": "376"
+        },
+        {
+          "id": "D",
+          "text": "368"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Total for Institute I = 100 + 50 + 80 + 90 + 30 + 50 = 400.",
+      "explanationImage": "explanation/DI-RWC-0110.png"
+    },
+    {
+      "questionId": "DI-RWC-0111",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nBy what percent is Plant R in Jul more than Plant R in Oct?",
+      "questionImage": "question/DI-RWC-0111.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "35.86"
+        },
+        {
+          "id": "B",
+          "text": "34.90"
+        },
+        {
+          "id": "C",
+          "text": "28.57"
+        },
+        {
+          "id": "D",
+          "text": "33.37"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Percent more = |90 - 70| / 70 x 100 = 28.57%.",
+      "explanationImage": "explanation/DI-RWC-0111.png"
+    },
+    {
+      "questionId": "DI-RWC-0112",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the difference between Plant R and Plant S in Oct?",
+      "questionImage": "question/DI-RWC-0111.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "15"
+        },
+        {
+          "id": "B",
+          "text": "10"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "17"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "In Oct: Plant R = 70, Plant S = 80. Difference = 10.",
+      "explanationImage": "explanation/DI-RWC-0112.png"
+    },
+    {
+      "questionId": "DI-RWC-0113",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the ratio of Plant R in Oct to Plant S in Jul?",
+      "questionImage": "question/DI-RWC-0111.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "7 : 12"
+        },
+        {
+          "id": "B",
+          "text": "12 : 7"
+        },
+        {
+          "id": "C",
+          "text": "9 : 8"
+        },
+        {
+          "id": "D",
+          "text": "7 : 13"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Ratio = 70 : 120 = 7 : 12.",
+      "explanationImage": "explanation/DI-RWC-0113.png"
+    },
+    {
+      "questionId": "DI-RWC-0114",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nIn which more is the combined value of Plant R and Plant S the highest?",
+      "questionImage": "question/DI-RWC-0111.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jul"
+        },
+        {
+          "id": "B",
+          "text": "Sep"
+        },
+        {
+          "id": "C",
+          "text": "Dec"
+        },
+        {
+          "id": "D",
+          "text": "Oct"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Combined values: Jul 210, Aug 50, Sep 140, Oct 150, Nov 170, Dec 150. Highest: Jul.",
+      "explanationImage": "explanation/DI-RWC-0114.png"
+    },
+    {
+      "questionId": "DI-RWC-0115",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the average of Plant S over the six months?",
+      "questionImage": "question/DI-RWC-0111.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "73.33"
+        },
+        {
+          "id": "B",
+          "text": "79.33"
+        },
+        {
+          "id": "C",
+          "text": "78.54"
+        },
+        {
+          "id": "D",
+          "text": "66.05"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 440 / 6 = 73.33.",
+      "explanationImage": "explanation/DI-RWC-0115.png"
+    },
+    {
+      "questionId": "DI-RWC-0116",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the total of Park U over all six days?",
+      "questionImage": "question/DI-RWC-0116.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "404"
+        },
+        {
+          "id": "B",
+          "text": "370"
+        },
+        {
+          "id": "C",
+          "text": "338"
+        },
+        {
+          "id": "D",
+          "text": "397"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Total for Park U = 70 + 60 + 90 + 60 + 50 + 40 = 370.",
+      "explanationImage": "explanation/DI-RWC-0116.png"
+    },
+    {
+      "questionId": "DI-RWC-0117",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the ratio of Park U in Sat to Park V in Tue?",
+      "questionImage": "question/DI-RWC-0116.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "5 : 4"
+        },
+        {
+          "id": "B",
+          "text": "4 : 5"
+        },
+        {
+          "id": "C",
+          "text": "1 : 2"
+        },
+        {
+          "id": "D",
+          "text": "1 : 1"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 40 : 50 = 4 : 5.",
+      "explanationImage": "explanation/DI-RWC-0117.png"
+    },
+    {
+      "questionId": "DI-RWC-0118",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nBy what percent is Park U in Tue more than Park U in Sat?",
+      "questionImage": "question/DI-RWC-0116.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "68.29"
+        },
+        {
+          "id": "B",
+          "text": "62.03"
+        },
+        {
+          "id": "C",
+          "text": "44.65"
+        },
+        {
+          "id": "D",
+          "text": "50"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Percent more = |60 - 40| / 40 x 100 = 50%.",
+      "explanationImage": "explanation/DI-RWC-0118.png"
+    },
+    {
+      "questionId": "DI-RWC-0119",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the average of Park V over the six days?",
+      "questionImage": "question/DI-RWC-0116.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "77.33"
+        },
+        {
+          "id": "B",
+          "text": "75"
+        },
+        {
+          "id": "C",
+          "text": "67.53"
+        },
+        {
+          "id": "D",
+          "text": "82.08"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 450 / 6 = 75.",
+      "explanationImage": "explanation/DI-RWC-0119.png"
+    },
+    {
+      "questionId": "DI-RWC-0120",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the difference between Park U and Park V in Sat?",
+      "questionImage": "question/DI-RWC-0116.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "36"
+        },
+        {
+          "id": "B",
+          "text": "55"
+        },
+        {
+          "id": "C",
+          "text": "117"
+        },
+        {
+          "id": "D",
+          "text": "80"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "In Sat: Park U = 40, Park V = 120. Difference = 80.",
+      "explanationImage": "explanation/DI-RWC-0120.png"
+    },
+    {
+      "questionId": "DI-RWC-0121",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the difference between Company P and Company Q in May?",
+      "questionImage": "question/DI-RWC-0121.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "80"
+        },
+        {
+          "id": "B",
+          "text": "123"
+        },
+        {
+          "id": "C",
+          "text": "92"
+        },
+        {
+          "id": "D",
+          "text": "46"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "In May: Company P = 100, Company Q = 20. Difference = 80.",
+      "explanationImage": "explanation/DI-RWC-0121.png"
+    },
+    {
+      "questionId": "DI-RWC-0122",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nIn which less is the combined value of Company P and Company Q the highest?",
+      "questionImage": "question/DI-RWC-0121.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Apr"
+        },
+        {
+          "id": "B",
+          "text": "Mar"
+        },
+        {
+          "id": "C",
+          "text": "Jun"
+        },
+        {
+          "id": "D",
+          "text": "May"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Combined values: Jan 140, Feb 110, Mar 110, Apr 210, May 120, Jun 100. Highest: Apr.",
+      "explanationImage": "explanation/DI-RWC-0122.png"
+    },
+    {
+      "questionId": "DI-RWC-0123",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the total of Company P over all six months?",
+      "questionImage": "question/DI-RWC-0121.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "420"
+        },
+        {
+          "id": "B",
+          "text": "437"
+        },
+        {
+          "id": "C",
+          "text": "382"
+        },
+        {
+          "id": "D",
+          "text": "403"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Total for Company P = 80 + 20 + 40 + 120 + 100 + 60 = 420.",
+      "explanationImage": "explanation/DI-RWC-0123.png"
+    },
+    {
+      "questionId": "DI-RWC-0124",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the average of Company Q over the six months?",
+      "questionImage": "question/DI-RWC-0121.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "61.67"
+        },
+        {
+          "id": "B",
+          "text": "54.35"
+        },
+        {
+          "id": "C",
+          "text": "68.50"
+        },
+        {
+          "id": "D",
+          "text": "65.25"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 370 / 6 = 61.67.",
+      "explanationImage": "explanation/DI-RWC-0124.png"
+    },
+    {
+      "questionId": "DI-RWC-0125",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nBy what percent is Company P in Feb less than Company P in May?",
+      "questionImage": "question/DI-RWC-0121.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "55.31"
+        },
+        {
+          "id": "B",
+          "text": "68.17"
+        },
+        {
+          "id": "C",
+          "text": "80"
+        },
+        {
+          "id": "D",
+          "text": "48.87"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Percent less = |20 - 100| / 100 x 100 = 80%.",
+      "explanationImage": "explanation/DI-RWC-0125.png"
+    },
+    {
+      "questionId": "DI-RWC-0126",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nBy what percent is Ravi in Chemistry less than Ravi in Biology?",
+      "questionImage": "question/DI-RWC-0126.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "18.75"
+        },
+        {
+          "id": "B",
+          "text": "23.92"
+        },
+        {
+          "id": "C",
+          "text": "22.98"
+        },
+        {
+          "id": "D",
+          "text": "15.37"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Percent less = |65 - 80| / 80 x 100 = 18.75%.",
+      "explanationImage": "explanation/DI-RWC-0126.png"
+    },
+    {
+      "questionId": "DI-RWC-0127",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the ratio of Ravi in Biology to Sneha in Chemistry?",
+      "questionImage": "question/DI-RWC-0126.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "16 : 19"
+        },
+        {
+          "id": "B",
+          "text": "13 : 19"
+        },
+        {
+          "id": "C",
+          "text": "18 : 19"
+        },
+        {
+          "id": "D",
+          "text": "16 : 21"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Ratio = 80 : 95 = 16 : 19.",
+      "explanationImage": "explanation/DI-RWC-0127.png"
+    },
+    {
+      "questionId": "DI-RWC-0128",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the average of Sneha over the six subjects?",
+      "questionImage": "question/DI-RWC-0126.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "77.99"
+        },
+        {
+          "id": "B",
+          "text": "89.22"
+        },
+        {
+          "id": "C",
+          "text": "85.83"
+        },
+        {
+          "id": "D",
+          "text": "82.63"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Average = 515 / 6 = 85.83.",
+      "explanationImage": "explanation/DI-RWC-0128.png"
+    },
+    {
+      "questionId": "DI-RWC-0129",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the difference between Ravi and Sneha in Biology?",
+      "questionImage": "question/DI-RWC-0126.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "8"
+        },
+        {
+          "id": "B",
+          "text": "15"
+        },
+        {
+          "id": "C",
+          "text": "24"
+        },
+        {
+          "id": "D",
+          "text": "22"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "In Biology: Ravi = 80, Sneha = 95. Difference = 15.",
+      "explanationImage": "explanation/DI-RWC-0129.png"
+    },
+    {
+      "questionId": "DI-RWC-0130",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nIn how many lesss is Ravi greater than Sneha?",
+      "questionImage": "question/DI-RWC-0126.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "6"
+        },
+        {
+          "id": "C",
+          "text": "1"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Ravi > Sneha in: Hindi -> 1.",
+      "explanationImage": "explanation/DI-RWC-0130.png"
+    },
+    {
+      "questionId": "DI-RWC-0131",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the ratio of Store A in Pune to Store B in Jaipur?",
+      "questionImage": "question/DI-RWC-0131.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 : 1"
+        },
+        {
+          "id": "B",
+          "text": "8 : 5"
+        },
+        {
+          "id": "C",
+          "text": "4 : 3"
+        },
+        {
+          "id": "D",
+          "text": "9 : 4"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Ratio = 80 : 40 = 2 : 1.",
+      "explanationImage": "explanation/DI-RWC-0131.png"
+    },
+    {
+      "questionId": "DI-RWC-0132",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the difference between Store A and Store B in Pune?",
+      "questionImage": "question/DI-RWC-0131.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "15"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "10"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "In Pune: Store A = 80, Store B = 90. Difference = 10.",
+      "explanationImage": "explanation/DI-RWC-0132.png"
+    },
+    {
+      "questionId": "DI-RWC-0133",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nIn which more is the combined value of Store A and Store B the highest?",
+      "questionImage": "question/DI-RWC-0131.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kochi"
+        },
+        {
+          "id": "B",
+          "text": "Patna"
+        },
+        {
+          "id": "C",
+          "text": "Mumbai"
+        },
+        {
+          "id": "D",
+          "text": "Jaipur"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Combined values: Delhi 100, Mumbai 150, Pune 170, Jaipur 160, Patna 80, Kochi 200. Highest: Kochi.",
+      "explanationImage": "explanation/DI-RWC-0133.png"
+    },
+    {
+      "questionId": "DI-RWC-0134",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the total of Store A over all six citys?",
+      "questionImage": "question/DI-RWC-0131.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "514"
+        },
+        {
+          "id": "B",
+          "text": "500"
+        },
+        {
+          "id": "C",
+          "text": "527"
+        },
+        {
+          "id": "D",
+          "text": "537"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Total for Store A = 40 + 110 + 80 + 120 + 50 + 100 = 500.",
+      "explanationImage": "explanation/DI-RWC-0134.png"
+    },
+    {
+      "questionId": "DI-RWC-0135",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the average of Store B over the six citys?",
+      "questionImage": "question/DI-RWC-0131.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "60"
+        },
+        {
+          "id": "B",
+          "text": "65.35"
+        },
+        {
+          "id": "C",
+          "text": "57.61"
+        },
+        {
+          "id": "D",
+          "text": "55.80"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 360 / 6 = 60.",
+      "explanationImage": "explanation/DI-RWC-0135.png"
+    },
+    {
+      "questionId": "DI-RWC-0136",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nBy what percent is Branch X in Finance more than Branch X in IT?",
+      "questionImage": "question/DI-RWC-0136.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "85.22"
+        },
+        {
+          "id": "B",
+          "text": "80.41"
+        },
+        {
+          "id": "C",
+          "text": "66.67"
+        },
+        {
+          "id": "D",
+          "text": "74.67"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Percent more = |100 - 60| / 60 x 100 = 66.67%.",
+      "explanationImage": "explanation/DI-RWC-0136.png"
+    },
+    {
+      "questionId": "DI-RWC-0137",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nIn how many mores is Branch X greater than Branch Y?",
+      "questionImage": "question/DI-RWC-0136.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "5"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "1"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Branch X > Branch Y in: HR, IT, Finance -> 3.",
+      "explanationImage": "explanation/DI-RWC-0137.png"
+    },
+    {
+      "questionId": "DI-RWC-0138",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the average of Branch Y over the six departments?",
+      "questionImage": "question/DI-RWC-0136.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "55"
+        },
+        {
+          "id": "B",
+          "text": "60.76"
+        },
+        {
+          "id": "C",
+          "text": "61.86"
+        },
+        {
+          "id": "D",
+          "text": "61.35"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 330 / 6 = 55.",
+      "explanationImage": "explanation/DI-RWC-0138.png"
+    },
+    {
+      "questionId": "DI-RWC-0139",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the ratio of Branch X in IT to Branch Y in Finance?",
+      "questionImage": "question/DI-RWC-0136.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 3"
+        },
+        {
+          "id": "B",
+          "text": "10 : 3"
+        },
+        {
+          "id": "C",
+          "text": "3 : 1"
+        },
+        {
+          "id": "D",
+          "text": "7 : 2"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Ratio = 60 : 20 = 3 : 1.",
+      "explanationImage": "explanation/DI-RWC-0139.png"
+    },
+    {
+      "questionId": "DI-RWC-0140",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the difference between Branch X and Branch Y in IT?",
+      "questionImage": "question/DI-RWC-0136.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "22"
+        },
+        {
+          "id": "B",
+          "text": "30"
+        },
+        {
+          "id": "C",
+          "text": "38"
+        },
+        {
+          "id": "D",
+          "text": "25"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "In IT: Branch X = 60, Branch Y = 30. Difference = 30.",
+      "explanationImage": "explanation/DI-RWC-0140.png"
+    },
+    {
+      "questionId": "DI-RWC-0141",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the difference between Firm M and Firm N in 2022?",
+      "questionImage": "question/DI-RWC-0141.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "139"
+        },
+        {
+          "id": "B",
+          "text": "71"
+        },
+        {
+          "id": "C",
+          "text": "125"
+        },
+        {
+          "id": "D",
+          "text": "90"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "In 2022: Firm M = 20, Firm N = 110. Difference = 90.",
+      "explanationImage": "explanation/DI-RWC-0141.png"
+    },
+    {
+      "questionId": "DI-RWC-0142",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the average of Firm N over the six years?",
+      "questionImage": "question/DI-RWC-0141.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "78.99"
+        },
+        {
+          "id": "B",
+          "text": "71.67"
+        },
+        {
+          "id": "C",
+          "text": "79.13"
+        },
+        {
+          "id": "D",
+          "text": "68.39"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 430 / 6 = 71.67.",
+      "explanationImage": "explanation/DI-RWC-0142.png"
+    },
+    {
+      "questionId": "DI-RWC-0143",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the ratio of Firm M in 2022 to Firm N in 2020?",
+      "questionImage": "question/DI-RWC-0141.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 : 11"
+        },
+        {
+          "id": "B",
+          "text": "11 : 2"
+        },
+        {
+          "id": "C",
+          "text": "10 : 11"
+        },
+        {
+          "id": "D",
+          "text": "1 : 6"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Ratio = 20 : 110 = 2 : 11.",
+      "explanationImage": "explanation/DI-RWC-0143.png"
+    },
+    {
+      "questionId": "DI-RWC-0144",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the total of Firm M over all six years?",
+      "questionImage": "question/DI-RWC-0141.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "320"
+        },
+        {
+          "id": "B",
+          "text": "350"
+        },
+        {
+          "id": "C",
+          "text": "372"
+        },
+        {
+          "id": "D",
+          "text": "316"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Total for Firm M = 70 + 100 + 50 + 20 + 40 + 70 = 350.",
+      "explanationImage": "explanation/DI-RWC-0144.png"
+    },
+    {
+      "questionId": "DI-RWC-0145",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nIn which more is the combined value of Firm M and Firm N the highest?",
+      "questionImage": "question/DI-RWC-0141.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2023"
+        },
+        {
+          "id": "B",
+          "text": "2020"
+        },
+        {
+          "id": "C",
+          "text": "2021"
+        },
+        {
+          "id": "D",
+          "text": "2024"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Combined values: 2019 100, 2020 210, 2021 80, 2022 130, 2023 110, 2024 150. Highest: 2020.",
+      "explanationImage": "explanation/DI-RWC-0145.png"
+    },
+    {
+      "questionId": "DI-RWC-0146",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nIn which less is the combined value of Institute I and Institute J the highest?",
+      "questionImage": "question/DI-RWC-0146.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "B.Sc"
+        },
+        {
+          "id": "B",
+          "text": "B.Tech"
+        },
+        {
+          "id": "C",
+          "text": "BBA"
+        },
+        {
+          "id": "D",
+          "text": "BCA"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Combined values: BCA 200, BBA 140, B.Com 80, B.Sc 70, BA 130, B.Tech 50. Highest: BCA.",
+      "explanationImage": "explanation/DI-RWC-0146.png"
+    },
+    {
+      "questionId": "DI-RWC-0147",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nIn how many lesss is Institute I greater than Institute J?",
+      "questionImage": "question/DI-RWC-0146.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Institute I > Institute J in: BBA, B.Sc, BA, B.Tech -> 4.",
+      "explanationImage": "explanation/DI-RWC-0147.png"
+    },
+    {
+      "questionId": "DI-RWC-0148",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the ratio of Institute I in B.Tech to Institute J in B.Com?",
+      "questionImage": "question/DI-RWC-0146.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 : 1"
+        },
+        {
+          "id": "B",
+          "text": "1 : 2"
+        },
+        {
+          "id": "C",
+          "text": "3 : 7"
+        },
+        {
+          "id": "D",
+          "text": "1 : 1"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 30 : 60 = 1 : 2.",
+      "explanationImage": "explanation/DI-RWC-0148.png"
+    },
+    {
+      "questionId": "DI-RWC-0149",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the total of Institute I over all six courses?",
+      "questionImage": "question/DI-RWC-0146.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "324"
+        },
+        {
+          "id": "B",
+          "text": "386"
+        },
+        {
+          "id": "C",
+          "text": "384"
+        },
+        {
+          "id": "D",
+          "text": "360"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Total for Institute I = 100 + 80 + 20 + 40 + 90 + 30 = 360.",
+      "explanationImage": "explanation/DI-RWC-0149.png"
+    },
+    {
+      "questionId": "DI-RWC-0150",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the average of Institute J over the six courses?",
+      "questionImage": "question/DI-RWC-0146.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "58.93"
+        },
+        {
+          "id": "B",
+          "text": "44.87"
+        },
+        {
+          "id": "C",
+          "text": "51.67"
+        },
+        {
+          "id": "D",
+          "text": "45.04"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Average = 310 / 6 = 51.67.",
+      "explanationImage": "explanation/DI-RWC-0150.png"
+    },
+    {
+      "questionId": "DI-RWC-0151",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the ratio of Plant R in Sep to Plant S in Aug?",
+      "questionImage": "question/DI-RWC-0151.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 1"
+        },
+        {
+          "id": "B",
+          "text": "5 : 6"
+        },
+        {
+          "id": "C",
+          "text": "6 : 5"
+        },
+        {
+          "id": "D",
+          "text": "5 : 7"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 50 : 60 = 5 : 6.",
+      "explanationImage": "explanation/DI-RWC-0151.png"
+    },
+    {
+      "questionId": "DI-RWC-0152",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the total of Plant R over all six months?",
+      "questionImage": "question/DI-RWC-0151.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "370"
+        },
+        {
+          "id": "B",
+          "text": "446"
+        },
+        {
+          "id": "C",
+          "text": "410"
+        },
+        {
+          "id": "D",
+          "text": "378"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Total for Plant R = 120 + 110 + 50 + 50 + 40 + 40 = 410.",
+      "explanationImage": "explanation/DI-RWC-0152.png"
+    },
+    {
+      "questionId": "DI-RWC-0153",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nIn how many mores is Plant R greater than Plant S?",
+      "questionImage": "question/DI-RWC-0151.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "1"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Plant R > Plant S in: Jul, Aug -> 2.",
+      "explanationImage": "explanation/DI-RWC-0153.png"
+    },
+    {
+      "questionId": "DI-RWC-0154",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the difference between Plant R and Plant S in Sep?",
+      "questionImage": "question/DI-RWC-0151.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "11"
+        },
+        {
+          "id": "B",
+          "text": "20"
+        },
+        {
+          "id": "C",
+          "text": "25"
+        },
+        {
+          "id": "D",
+          "text": "26"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "In Sep: Plant R = 50, Plant S = 70. Difference = 20.",
+      "explanationImage": "explanation/DI-RWC-0154.png"
+    },
+    {
+      "questionId": "DI-RWC-0155",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nBy what percent is Plant R in Aug more than Plant R in Sep?",
+      "questionImage": "question/DI-RWC-0151.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "120"
+        },
+        {
+          "id": "B",
+          "text": "140.46"
+        },
+        {
+          "id": "C",
+          "text": "97.74"
+        },
+        {
+          "id": "D",
+          "text": "166.27"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Percent more = |110 - 50| / 50 x 100 = 120%.",
+      "explanationImage": "explanation/DI-RWC-0155.png"
+    },
+    {
+      "questionId": "DI-RWC-0156",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the total of Park U over all six days?",
+      "questionImage": "question/DI-RWC-0156.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "400"
+        },
+        {
+          "id": "B",
+          "text": "430"
+        },
+        {
+          "id": "C",
+          "text": "470"
+        },
+        {
+          "id": "D",
+          "text": "409"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Total for Park U = 80 + 80 + 60 + 70 + 30 + 110 = 430.",
+      "explanationImage": "explanation/DI-RWC-0156.png"
+    },
+    {
+      "questionId": "DI-RWC-0157",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the ratio of Park U in Mon to Park V in Wed?",
+      "questionImage": "question/DI-RWC-0156.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 : 2"
+        },
+        {
+          "id": "B",
+          "text": "2 : 3"
+        },
+        {
+          "id": "C",
+          "text": "2 : 1"
+        },
+        {
+          "id": "D",
+          "text": "8 : 13"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 80 : 120 = 2 : 3.",
+      "explanationImage": "explanation/DI-RWC-0157.png"
+    },
+    {
+      "questionId": "DI-RWC-0158",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the average of Park V over the six days?",
+      "questionImage": "question/DI-RWC-0156.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "62.18"
+        },
+        {
+          "id": "B",
+          "text": "74.60"
+        },
+        {
+          "id": "C",
+          "text": "70"
+        },
+        {
+          "id": "D",
+          "text": "62.04"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Average = 420 / 6 = 70.",
+      "explanationImage": "explanation/DI-RWC-0158.png"
+    },
+    {
+      "questionId": "DI-RWC-0159",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the difference between Park U and Park V in Mon?",
+      "questionImage": "question/DI-RWC-0156.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "61"
+        },
+        {
+          "id": "B",
+          "text": "68"
+        },
+        {
+          "id": "C",
+          "text": "32"
+        },
+        {
+          "id": "D",
+          "text": "50"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "In Mon: Park U = 80, Park V = 30. Difference = 50.",
+      "explanationImage": "explanation/DI-RWC-0159.png"
+    },
+    {
+      "questionId": "DI-RWC-0160",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nIn how many lesss is Park U greater than Park V?",
+      "questionImage": "question/DI-RWC-0156.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Park U > Park V in: Mon, Thu, Sat -> 3.",
+      "explanationImage": "explanation/DI-RWC-0160.png"
+    },
+    {
+      "questionId": "DI-RWC-0161",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the ratio of Company P in May to Company Q in Jun?",
+      "questionImage": "question/DI-RWC-0161.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 1"
+        },
+        {
+          "id": "B",
+          "text": "8 : 3"
+        },
+        {
+          "id": "C",
+          "text": "7 : 6"
+        },
+        {
+          "id": "D",
+          "text": "4 : 3"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Ratio = 70 : 60 = 7 : 6.",
+      "explanationImage": "explanation/DI-RWC-0161.png"
+    },
+    {
+      "questionId": "DI-RWC-0162",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the average of Company Q over the six months?",
+      "questionImage": "question/DI-RWC-0161.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "72.83"
+        },
+        {
+          "id": "B",
+          "text": "64.65"
+        },
+        {
+          "id": "C",
+          "text": "64.47"
+        },
+        {
+          "id": "D",
+          "text": "70"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 420 / 6 = 70.",
+      "explanationImage": "explanation/DI-RWC-0162.png"
+    },
+    {
+      "questionId": "DI-RWC-0163",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nIn how many mores is Company P greater than Company Q?",
+      "questionImage": "question/DI-RWC-0161.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Company P > Company Q in: May, Jun -> 2.",
+      "explanationImage": "explanation/DI-RWC-0163.png"
+    },
+    {
+      "questionId": "DI-RWC-0164",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nBy what percent is Company P in Jun more than Company P in May?",
+      "questionImage": "question/DI-RWC-0161.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "9.14"
+        },
+        {
+          "id": "B",
+          "text": "12.14"
+        },
+        {
+          "id": "C",
+          "text": "10.96"
+        },
+        {
+          "id": "D",
+          "text": "14.29"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Percent more = |80 - 70| / 70 x 100 = 14.29%.",
+      "explanationImage": "explanation/DI-RWC-0164.png"
+    },
+    {
+      "questionId": "DI-RWC-0165",
+      "questionText": "Directions: Study the radar chart below, which shows production of cars (in thousands) by two companies in six months, and answer the question.\n\nWhat is the difference between Company P and Company Q in May?",
+      "questionImage": "question/DI-RWC-0161.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "30"
+        },
+        {
+          "id": "B",
+          "text": "51"
+        },
+        {
+          "id": "C",
+          "text": "40"
+        },
+        {
+          "id": "D",
+          "text": "54"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "In May: Company P = 70, Company Q = 30. Difference = 40.",
+      "explanationImage": "explanation/DI-RWC-0165.png"
+    },
+    {
+      "questionId": "DI-RWC-0166",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the average of Sneha over the six subjects?",
+      "questionImage": "question/DI-RWC-0166.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "78.62"
+        },
+        {
+          "id": "B",
+          "text": "73.33"
+        },
+        {
+          "id": "C",
+          "text": "67.05"
+        },
+        {
+          "id": "D",
+          "text": "80.25"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 440 / 6 = 73.33.",
+      "explanationImage": "explanation/DI-RWC-0166.png"
+    },
+    {
+      "questionId": "DI-RWC-0167",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nWhat is the total of Ravi over all six subjects?",
+      "questionImage": "question/DI-RWC-0166.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "402"
+        },
+        {
+          "id": "B",
+          "text": "443"
+        },
+        {
+          "id": "C",
+          "text": "442"
+        },
+        {
+          "id": "D",
+          "text": "425"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Total for Ravi = 80 + 45 + 90 + 70 + 65 + 75 = 425.",
+      "explanationImage": "explanation/DI-RWC-0167.png"
+    },
+    {
+      "questionId": "DI-RWC-0168",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nIn how many lesss is Ravi greater than Sneha?",
+      "questionImage": "question/DI-RWC-0166.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Ravi > Sneha in: Maths, Chemistry, English -> 3.",
+      "explanationImage": "explanation/DI-RWC-0168.png"
+    },
+    {
+      "questionId": "DI-RWC-0169",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nIn which less is the combined value of Ravi and Sneha the highest?",
+      "questionImage": "question/DI-RWC-0166.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "English"
+        },
+        {
+          "id": "B",
+          "text": "Hindi"
+        },
+        {
+          "id": "C",
+          "text": "Chemistry"
+        },
+        {
+          "id": "D",
+          "text": "Biology"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Combined values: Maths 135, Physics 135, Chemistry 170, English 120, Hindi 150, Biology 155. Highest: Chemistry.",
+      "explanationImage": "explanation/DI-RWC-0169.png"
+    },
+    {
+      "questionId": "DI-RWC-0170",
+      "questionText": "Directions: Study the radar chart below, which shows marks obtained (out of 100) by two students in six subjects, and answer the question.\n\nBy what percent is Ravi in English less than Ravi in Maths?",
+      "questionImage": "question/DI-RWC-0166.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "9.59"
+        },
+        {
+          "id": "B",
+          "text": "18.28"
+        },
+        {
+          "id": "C",
+          "text": "17.30"
+        },
+        {
+          "id": "D",
+          "text": "12.50"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Percent less = |70 - 80| / 80 x 100 = 12.50%.",
+      "explanationImage": "explanation/DI-RWC-0170.png"
+    },
+    {
+      "questionId": "DI-RWC-0171",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the difference between Store A and Store B in Pune?",
+      "questionImage": "question/DI-RWC-0171.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "10"
+        },
+        {
+          "id": "C",
+          "text": "17"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "In Pune: Store A = 60, Store B = 50. Difference = 10.",
+      "explanationImage": "explanation/DI-RWC-0171.png"
+    },
+    {
+      "questionId": "DI-RWC-0172",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nIn how many lesss is Store A greater than Store B?",
+      "questionImage": "question/DI-RWC-0171.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "6"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Store A > Store B in: Delhi, Pune, Jaipur, Patna, Kochi -> 5.",
+      "explanationImage": "explanation/DI-RWC-0172.png"
+    },
+    {
+      "questionId": "DI-RWC-0173",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nBy what percent is Store A in Mumbai less than Store A in Pune?",
+      "questionImage": "question/DI-RWC-0171.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "39.33"
+        },
+        {
+          "id": "B",
+          "text": "38.32"
+        },
+        {
+          "id": "C",
+          "text": "50"
+        },
+        {
+          "id": "D",
+          "text": "65.16"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Percent less = |30 - 60| / 60 x 100 = 50%.",
+      "explanationImage": "explanation/DI-RWC-0173.png"
+    },
+    {
+      "questionId": "DI-RWC-0174",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the ratio of Store A in Pune to Store B in Mumbai?",
+      "questionImage": "question/DI-RWC-0171.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 : 5"
+        },
+        {
+          "id": "B",
+          "text": "4 : 3"
+        },
+        {
+          "id": "C",
+          "text": "7 : 8"
+        },
+        {
+          "id": "D",
+          "text": "3 : 4"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Ratio = 60 : 80 = 3 : 4.",
+      "explanationImage": "explanation/DI-RWC-0174.png"
+    },
+    {
+      "questionId": "DI-RWC-0175",
+      "questionText": "Directions: Study the radar chart below, which shows number of laptops (in hundreds) sold by two stores in six cities, and answer the question.\n\nWhat is the average of Store B over the six citys?",
+      "questionImage": "question/DI-RWC-0171.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "47.02"
+        },
+        {
+          "id": "B",
+          "text": "56.18"
+        },
+        {
+          "id": "C",
+          "text": "48.63"
+        },
+        {
+          "id": "D",
+          "text": "51.67"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Average = 310 / 6 = 51.67.",
+      "explanationImage": "explanation/DI-RWC-0175.png"
+    },
+    {
+      "questionId": "DI-RWC-0176",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nIn which more is the combined value of Branch X and Branch Y the highest?",
+      "questionImage": "question/DI-RWC-0176.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "IT"
+        },
+        {
+          "id": "B",
+          "text": "Admin"
+        },
+        {
+          "id": "C",
+          "text": "HR"
+        },
+        {
+          "id": "D",
+          "text": "Finance"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Combined values: HR 210, IT 120, Sales 190, Finance 120, Legal 190, Admin 170. Highest: HR.",
+      "explanationImage": "explanation/DI-RWC-0176.png"
+    },
+    {
+      "questionId": "DI-RWC-0177",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the ratio of Branch X in IT to Branch Y in HR?",
+      "questionImage": "question/DI-RWC-0176.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 1"
+        },
+        {
+          "id": "B",
+          "text": "9 : 10"
+        },
+        {
+          "id": "C",
+          "text": "4 : 1"
+        },
+        {
+          "id": "D",
+          "text": "10 : 9"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Ratio = 90 : 90 = 1 : 1.",
+      "explanationImage": "explanation/DI-RWC-0177.png"
+    },
+    {
+      "questionId": "DI-RWC-0178",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nBy what percent is Branch X in HR more than Branch X in IT?",
+      "questionImage": "question/DI-RWC-0176.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "40.44"
+        },
+        {
+          "id": "B",
+          "text": "33.33"
+        },
+        {
+          "id": "C",
+          "text": "45.88"
+        },
+        {
+          "id": "D",
+          "text": "25.67"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Percent more = |120 - 90| / 90 x 100 = 33.33%.",
+      "explanationImage": "explanation/DI-RWC-0178.png"
+    },
+    {
+      "questionId": "DI-RWC-0179",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the difference between Branch X and Branch Y in IT?",
+      "questionImage": "question/DI-RWC-0176.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "60"
+        },
+        {
+          "id": "B",
+          "text": "78"
+        },
+        {
+          "id": "C",
+          "text": "38"
+        },
+        {
+          "id": "D",
+          "text": "79"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "In IT: Branch X = 90, Branch Y = 30. Difference = 60.",
+      "explanationImage": "explanation/DI-RWC-0179.png"
+    },
+    {
+      "questionId": "DI-RWC-0180",
+      "questionText": "Directions: Study the radar chart below, which shows number of employees in six departments of two branches, and answer the question.\n\nWhat is the total of Branch X over all six departments?",
+      "questionImage": "question/DI-RWC-0176.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "584"
+        },
+        {
+          "id": "B",
+          "text": "581"
+        },
+        {
+          "id": "C",
+          "text": "595"
+        },
+        {
+          "id": "D",
+          "text": "560"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Total for Branch X = 120 + 90 + 90 + 80 + 80 + 100 = 560.",
+      "explanationImage": "explanation/DI-RWC-0180.png"
+    },
+    {
+      "questionId": "DI-RWC-0181",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the difference between Firm M and Firm N in 2020?",
+      "questionImage": "question/DI-RWC-0181.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "25"
+        },
+        {
+          "id": "B",
+          "text": "23"
+        },
+        {
+          "id": "C",
+          "text": "29"
+        },
+        {
+          "id": "D",
+          "text": "20"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "In 2020: Firm M = 50, Firm N = 70. Difference = 20.",
+      "explanationImage": "explanation/DI-RWC-0181.png"
+    },
+    {
+      "questionId": "DI-RWC-0182",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nIn which less is the combined value of Firm M and Firm N the highest?",
+      "questionImage": "question/DI-RWC-0181.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2020"
+        },
+        {
+          "id": "B",
+          "text": "2023"
+        },
+        {
+          "id": "C",
+          "text": "2024"
+        },
+        {
+          "id": "D",
+          "text": "2021"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Combined values: 2019 140, 2020 120, 2021 70, 2022 90, 2023 100, 2024 210. Highest: 2024.",
+      "explanationImage": "explanation/DI-RWC-0182.png"
+    },
+    {
+      "questionId": "DI-RWC-0183",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nBy what percent is Firm M in 2021 less than Firm M in 2020?",
+      "questionImage": "question/DI-RWC-0181.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "12.76"
+        },
+        {
+          "id": "B",
+          "text": "13.07"
+        },
+        {
+          "id": "C",
+          "text": "20"
+        },
+        {
+          "id": "D",
+          "text": "14.34"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Percent less = |40 - 50| / 50 x 100 = 20%.",
+      "explanationImage": "explanation/DI-RWC-0183.png"
+    },
+    {
+      "questionId": "DI-RWC-0184",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nIn how many lesss is Firm M greater than Firm N?",
+      "questionImage": "question/DI-RWC-0181.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Firm M > Firm N in: 2021, 2022 -> 2.",
+      "explanationImage": "explanation/DI-RWC-0184.png"
+    },
+    {
+      "questionId": "DI-RWC-0185",
+      "questionText": "Directions: Study the radar chart below, which shows revenue (in Rs. crore) of two firms in six years, and answer the question.\n\nWhat is the average of Firm N over the six years?",
+      "questionImage": "question/DI-RWC-0181.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "64.70"
+        },
+        {
+          "id": "B",
+          "text": "68.33"
+        },
+        {
+          "id": "C",
+          "text": "75.10"
+        },
+        {
+          "id": "D",
+          "text": "64.76"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Average = 410 / 6 = 68.33.",
+      "explanationImage": "explanation/DI-RWC-0185.png"
+    },
+    {
+      "questionId": "DI-RWC-0186",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the average of Institute J over the six courses?",
+      "questionImage": "question/DI-RWC-0186.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "66.67"
+        },
+        {
+          "id": "B",
+          "text": "63.86"
+        },
+        {
+          "id": "C",
+          "text": "69.82"
+        },
+        {
+          "id": "D",
+          "text": "68.84"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 400 / 6 = 66.67.",
+      "explanationImage": "explanation/DI-RWC-0186.png"
+    },
+    {
+      "questionId": "DI-RWC-0187",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nWhat is the ratio of Institute I in BBA to Institute J in BCA?",
+      "questionImage": "question/DI-RWC-0186.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "12 : 7"
+        },
+        {
+          "id": "B",
+          "text": "11 : 7"
+        },
+        {
+          "id": "C",
+          "text": "3 : 4"
+        },
+        {
+          "id": "D",
+          "text": "11 : 8"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Ratio = 110 : 70 = 11 : 7.",
+      "explanationImage": "explanation/DI-RWC-0187.png"
+    },
+    {
+      "questionId": "DI-RWC-0188",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nIn which less is the combined value of Institute I and Institute J the highest?",
+      "questionImage": "question/DI-RWC-0186.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "BA"
+        },
+        {
+          "id": "B",
+          "text": "BCA"
+        },
+        {
+          "id": "C",
+          "text": "BBA"
+        },
+        {
+          "id": "D",
+          "text": "B.Sc"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Combined values: BCA 100, BBA 150, B.Com 50, B.Sc 170, BA 190, B.Tech 90. Highest: BA.",
+      "explanationImage": "explanation/DI-RWC-0188.png"
+    },
+    {
+      "questionId": "DI-RWC-0189",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nIn how many lesss is Institute I greater than Institute J?",
+      "questionImage": "question/DI-RWC-0186.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Institute I > Institute J in: BBA, B.Com, B.Tech -> 3.",
+      "explanationImage": "explanation/DI-RWC-0189.png"
+    },
+    {
+      "questionId": "DI-RWC-0190",
+      "questionText": "Directions: Study the radar chart below, which shows number of students enrolled in six courses at two institutes, and answer the question.\n\nBy what percent is Institute I in BCA less than Institute I in BBA?",
+      "questionImage": "question/DI-RWC-0186.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "85.59"
+        },
+        {
+          "id": "B",
+          "text": "50.14"
+        },
+        {
+          "id": "C",
+          "text": "72.73"
+        },
+        {
+          "id": "D",
+          "text": "44.16"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Percent less = |30 - 110| / 110 x 100 = 72.73%.",
+      "explanationImage": "explanation/DI-RWC-0190.png"
+    },
+    {
+      "questionId": "DI-RWC-0191",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nIn which less is the combined value of Plant R and Plant S the highest?",
+      "questionImage": "question/DI-RWC-0191.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aug"
+        },
+        {
+          "id": "B",
+          "text": "Jul"
+        },
+        {
+          "id": "C",
+          "text": "Nov"
+        },
+        {
+          "id": "D",
+          "text": "Oct"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Combined values: Jul 100, Aug 120, Sep 130, Oct 70, Nov 180, Dec 150. Highest: Nov.",
+      "explanationImage": "explanation/DI-RWC-0191.png"
+    },
+    {
+      "questionId": "DI-RWC-0192",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nBy what percent is Plant R in Sep less than Plant R in Nov?",
+      "questionImage": "question/DI-RWC-0191.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "7.97"
+        },
+        {
+          "id": "B",
+          "text": "10.70"
+        },
+        {
+          "id": "C",
+          "text": "12.50"
+        },
+        {
+          "id": "D",
+          "text": "17.33"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Percent less = |70 - 80| / 80 x 100 = 12.50%.",
+      "explanationImage": "explanation/DI-RWC-0192.png"
+    },
+    {
+      "questionId": "DI-RWC-0193",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the ratio of Plant R in Nov to Plant S in Sep?",
+      "questionImage": "question/DI-RWC-0191.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 : 1"
+        },
+        {
+          "id": "B",
+          "text": "6 : 7"
+        },
+        {
+          "id": "C",
+          "text": "7 : 6"
+        },
+        {
+          "id": "D",
+          "text": "4 : 3"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Ratio = 70 : 60 = 7 : 6.",
+      "explanationImage": "explanation/DI-RWC-0193.png"
+    },
+    {
+      "questionId": "DI-RWC-0194",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nIn how many lesss is Plant R greater than Plant S?",
+      "questionImage": "question/DI-RWC-0191.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "5"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "1"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Plant R > Plant S in: Jul, Aug, Sep, Oct, Dec -> 5.",
+      "explanationImage": "explanation/DI-RWC-0194.png"
+    },
+    {
+      "questionId": "DI-RWC-0195",
+      "questionText": "Directions: Study the radar chart below, which shows units of electricity (in MW) generated by two plants in six months, and answer the question.\n\nWhat is the total of Plant R over all six months?",
+      "questionImage": "question/DI-RWC-0191.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "444"
+        },
+        {
+          "id": "B",
+          "text": "435"
+        },
+        {
+          "id": "C",
+          "text": "420"
+        },
+        {
+          "id": "D",
+          "text": "382"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Total for Plant R = 80 + 70 + 70 + 50 + 70 + 80 = 420.",
+      "explanationImage": "explanation/DI-RWC-0195.png"
+    },
+    {
+      "questionId": "DI-RWC-0196",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the total of Park U over all six days?",
+      "questionImage": "question/DI-RWC-0196.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "306"
+        },
+        {
+          "id": "B",
+          "text": "334"
+        },
+        {
+          "id": "C",
+          "text": "320"
+        },
+        {
+          "id": "D",
+          "text": "282"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "Total for Park U = 90 + 20 + 20 + 90 + 20 + 80 = 320.",
+      "explanationImage": "explanation/DI-RWC-0196.png"
+    },
+    {
+      "questionId": "DI-RWC-0197",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the difference between Park U and Park V in Tue?",
+      "questionImage": "question/DI-RWC-0196.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "95"
+        },
+        {
+          "id": "B",
+          "text": "45"
+        },
+        {
+          "id": "C",
+          "text": "60"
+        },
+        {
+          "id": "D",
+          "text": "27"
+        }
+      ],
+      "correctOption": "C",
+      "explanationText": "In Tue: Park U = 20, Park V = 80. Difference = 60.",
+      "explanationImage": "explanation/DI-RWC-0197.png"
+    },
+    {
+      "questionId": "DI-RWC-0198",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nIn how many mores is Park U greater than Park V?",
+      "questionImage": "question/DI-RWC-0196.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "1"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "correctOption": "B",
+      "explanationText": "Park U > Park V in: Mon, Thu, Sat -> 3.",
+      "explanationImage": "explanation/DI-RWC-0198.png"
+    },
+    {
+      "questionId": "DI-RWC-0199",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nWhat is the average of Park V over the six days?",
+      "questionImage": "question/DI-RWC-0196.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "45"
+        },
+        {
+          "id": "B",
+          "text": "37.46"
+        },
+        {
+          "id": "C",
+          "text": "37.37"
+        },
+        {
+          "id": "D",
+          "text": "49.20"
+        }
+      ],
+      "correctOption": "A",
+      "explanationText": "Average = 270 / 6 = 45.",
+      "explanationImage": "explanation/DI-RWC-0199.png"
+    },
+    {
+      "questionId": "DI-RWC-0200",
+      "questionText": "Directions: Study the radar chart below, which shows number of visitors (in thousands) to two parks on six days, and answer the question.\n\nBy what percent is Park U in Thu more than Park U in Tue?",
+      "questionImage": "question/DI-RWC-0196.png",
+      "options": [
+        {
+          "id": "A",
+          "text": "456.02"
+        },
+        {
+          "id": "B",
+          "text": "211.73"
+        },
+        {
+          "id": "C",
+          "text": "282.77"
+        },
+        {
+          "id": "D",
+          "text": "350"
+        }
+      ],
+      "correctOption": "D",
+      "explanationText": "Percent more = |90 - 20| / 20 x 100 = 350%.",
+      "explanationImage": "explanation/DI-RWC-0200.png"
+    }
+  ]
+}

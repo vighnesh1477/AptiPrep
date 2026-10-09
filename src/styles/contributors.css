@@ -1,0 +1,283 @@
+/* ============================================
+   Contributors Page — minimal & professional
+   ============================================ */
+
+.contributors-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 56px 24px 64px;
+}
+
+.contributors-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ---- Header ---- */
+
+.contributors-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.contributors-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.contributors-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+}
+
+.contributors-subtitle {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* ---- Stats Bar ---- */
+
+.contributors-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 44px;
+}
+
+.contributors-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 170px;
+  padding: 16px 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+}
+
+.contributors-stat-number {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.contributors-stat-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--text-tertiary);
+  margin-top: 3px;
+}
+
+/* ---- Grid ---- */
+
+.contributors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 52px;
+}
+
+/* ---- Card ---- */
+
+.contributor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 20px 26px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  text-align: center;
+  animation: contributorFadeIn 0.45s ease both;
+  transition: transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.contributor-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-color-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+@keyframes contributorFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Avatar with ring ---- */
+
+.contributor-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  background: var(--accent);
+  border-radius: 50%;
+  border: 3px solid var(--bg-card);
+  box-shadow: 0 0 0 1.5px var(--border-color-strong);
+  margin-bottom: 18px;
+  transition: box-shadow 0.25s ease;
+}
+
+.contributor-card:hover .contributor-avatar {
+  box-shadow: 0 0 0 1.5px var(--accent);
+}
+
+.contributor-avatar-photo {
+  object-fit: cover;
+  object-position: center 20%; /* keeps the head in frame */
+}
+
+/* ---- Name & verified line ---- */
+
+.contributor-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.contributor-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.contributor-verified svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ---- LinkedIn ---- */
+
+.contributor-linkedin {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: var(--text-tertiary);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  transition: color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+a.contributor-linkedin:hover {
+  color: var(--accent-text);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Person without a LinkedIn profile */
+.contributor-linkedin-none {
+  color: var(--text-tertiary);
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+/* ---- CTA ---- */
+
+.contributors-cta {
+  text-align: center;
+  padding: 32px 24px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+}
+
+.contributors-cta-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.contributors-cta-hint {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  margin-bottom: 18px;
+}
+
+.contributors-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contributors-cta-btn:hover {
+  background: var(--accent-hover);
+  color: var(--accent-text);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 768px) {
+  .contributors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contributors-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contributors-page {
+    padding: 44px 16px 48px;
+  }
+
+  .contributors-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .contributor-card {
+    padding: 28px 16px 22px;
+  }
+
+  .contributors-subtitle {
+    font-size: 0.92rem;
+  }
+}
