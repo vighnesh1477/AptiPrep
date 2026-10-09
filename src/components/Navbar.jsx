@@ -30,7 +30,7 @@ function Navbar() {
         >
           <img
             className="navbar-brand-icon"
-            src="/logo.png"
+            src={`${import.meta.env.BASE_URL}logo.png`}
             alt="AptiPrep logo"
           />
           <span className="navbar-brand-text">AptiPrep</span>
