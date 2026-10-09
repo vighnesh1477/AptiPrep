@@ -1217,7 +1217,7 @@
     },
     {
       "questionId": "DI-PIE-0043",
-      "questionText": "Directions: Study the following graph carefully & answer the questions given below it. Total Number of Employees = 2500 Male and Female Ratio Department Male : Female Administration 7 : 5 Accounts 2 : 3 HR 5 : 3 Marketing 7 : 8 IT 3 : 4 Operations 5 : 4 Logistics 6 : 5 Printing 2 : 1\n\nWhat is the ratio between male employees in Administration and Printing Departments respectively?",
+      "questionText": "Directions: Study the following graph carefully & answer the questions given below it. Total Number of Employees = 2500. Male and Female ratio in each department is shown, as shown in given figure.\n\nWhat is the ratio between male employees in Administration and Printing Departments respectively?",
       "questionImage": "question/DI-PIE-0043.png",
       "options": [
         {
@@ -1247,7 +1247,7 @@
     },
     {
       "questionId": "DI-PIE-0044",
-      "questionText": "Directions: Study the following graph carefully & answer the questions given below it. Total Number of Employees = 2500 Male and Female Ratio Department Male : Female Administration 7 : 5 Accounts 2 : 3 HR 5 : 3 Marketing 7 : 8 IT 3 : 4 Operations 5 : 4 Logistics 6 : 5 Printing 2 : 1\n\nWhat is the difference between total number of employees in IT and Operations Departments?",
+      "questionText": "Directions: Study the following graph carefully & answer the questions given below it. Total Number of Employees = 2500. Male and Female ratio in each department is shown, as shown in given figure.\n\nWhat is the difference between total number of employees in IT and Operations Departments?",
       "questionImage": "question/DI-PIE-0043.png",
       "options": [
         {
@@ -1277,7 +1277,7 @@
     },
     {
       "questionId": "DI-PIE-0045",
-      "questionText": "Directions: Study the following graph carefully & answer the questions given below it. Total Number of Employees = 2500 Male and Female Ratio Department Male : Female Administration 7 : 5 Accounts 2 : 3 HR 5 : 3 Marketing 7 : 8 IT 3 : 4 Operations 5 : 4 Logistics 6 : 5 Printing 2 : 1\n\nWhat is the ratio between total number of males in HR and Marketing and the total number of females in these two departments respectively?",
+      "questionText": "Directions: Study the following graph carefully & answer the questions given below it. Total Number of Employees = 2500. Male and Female ratio in each department is shown, as shown in given figure.\n\nWhat is the ratio between total number of males in HR and Marketing and the total number of females in these two departments respectively?",
       "questionImage": "question/DI-PIE-0043.png",
       "options": [
         {
@@ -1307,7 +1307,7 @@
     },
     {
       "questionId": "DI-PIE-0046",
-      "questionText": "Directions: Study the following graph carefully & answer the questions given below it. Total Number of Employees = 2500 Male and Female Ratio Department Male : Female Administration 7 : 5 Accounts 2 : 3 HR 5 : 3 Marketing 7 : 8 IT 3 : 4 Operations 5 : 4 Logistics 6 : 5 Printing 2 : 1\n\nHow many female employees are there in Accounts Department?",
+      "questionText": "Directions: Study the following graph carefully & answer the questions given below it. Total Number of Employees = 2500. Male and Female ratio in each department is shown, as shown in given figure.\n\nHow many female employees are there in Accounts Department?",
       "questionImage": "question/DI-PIE-0043.png",
       "options": [
         {
@@ -1337,7 +1337,7 @@
     },
     {
       "questionId": "DI-PIE-0047",
-      "questionText": "Directions: Study the following graph carefully & answer the questions given below it. Total Number of Employees = 2500 Male and Female Ratio Department Male : Female Administration 7 : 5 Accounts 2 : 3 HR 5 : 3 Marketing 7 : 8 IT 3 : 4 Operations 5 : 4 Logistics 6 : 5 Printing 2 : 1\n\nWhat is the difference between the male and female employees in Logistics Departments?",
+      "questionText": "Directions: Study the following graph carefully & answer the questions given below it. Total Number of Employees = 2500. Male and Female ratio in each department is shown, as shown in given figure.\n\nWhat is the difference between the male and female employees in Logistics Departments?",
       "questionImage": "question/DI-PIE-0043.png",
       "options": [
         {
@@ -3867,7 +3867,7 @@
     },
     {
       "questionId": "DI-PIE-0132",
-      "questionText": "Directions: Study the following pie chart carefully and answer the following questions given beside. The pie chart given below represents percentage of number of students in five different schools viz. A, B, C, D and E. The total no. of students in all the schools is 1,68,000. The below table shows the ratio of girls and boys in the given five schools. School Girls : Boys A 3 : 4 B 2 : 3 C 5 : 3 D 1 : 2 E 4 : 1\n\nFind the ratio of number of girls from each school.",
+      "questionText": "Directions: Study the following pie chart carefully and answer the following questions given beside. The pie chart given below represents percentage of number of students in five different schools viz. A, B, C, D and E. The total no. of students in all the schools is 1,68,000. The below table shows the ratio of girls and boys in the given five schools, as shown in given figure.\n\nFind the ratio of number of girls from each school.",
       "questionImage": "question/DI-PIE-0132.png",
       "options": [
         {
@@ -3897,7 +3897,7 @@
     },
     {
       "questionId": "DI-PIE-0133",
-      "questionText": "Directions: Study the following pie chart carefully and answer the following questions given beside. The pie chart given below represents percentage of number of students in five different schools viz. A, B, C, D and E. The total no. of students in all the schools is 1,68,000. The below table shows the ratio of girls and boys in the given five schools. School Girls : Boys A 3 : 4 B 2 : 3 C 5 : 3 D 1 : 2 E 4 : 1\n\nIf 14.28% students of school A change their school and go to school D, what will be the percentage change in the number of students of school D.",
+      "questionText": "Directions: Study the following pie chart carefully and answer the following questions given beside. The pie chart given below represents percentage of number of students in five different schools viz. A, B, C, D and E. The total no. of students in all the schools is 1,68,000. The below table shows the ratio of girls and boys in the given five schools, as shown in given figure.\n\nIf 14.28% students of school A change their school and go to school D, what will be the percentage change in the number of students of school D.",
       "questionImage": "question/DI-PIE-0132.png",
       "options": [
         {
@@ -3927,7 +3927,7 @@
     },
     {
       "questionId": "DI-PIE-0134",
-      "questionText": "Directions: Study the following pie chart carefully and answer the following questions given beside. The pie chart given below represents percentage of number of students in five different schools viz. A, B, C, D and E. The total no. of students in all the schools is 1,68,000. The below table shows the ratio of girls and boys in the given five schools. School Girls : Boys A 3 : 4 B 2 : 3 C 5 : 3 D 1 : 2 E 4 : 1\n\nWhat is the ratio of average number of students from school A and D to that of the average number of students from school B, C and E?",
+      "questionText": "Directions: Study the following pie chart carefully and answer the following questions given beside. The pie chart given below represents percentage of number of students in five different schools viz. A, B, C, D and E. The total no. of students in all the schools is 1,68,000. The below table shows the ratio of girls and boys in the given five schools, as shown in given figure.\n\nWhat is the ratio of average number of students from school A and D to that of the average number of students from school B, C and E?",
       "questionImage": "question/DI-PIE-0132.png",
       "options": [
         {
@@ -3957,7 +3957,7 @@
     },
     {
       "questionId": "DI-PIE-0135",
-      "questionText": "Directions: Study the following pie chart carefully and answer the following questions given beside. The pie chart given below represents percentage of number of students in five different schools viz. A, B, C, D and E. The total no. of students in all the schools is 1,68,000. The below table shows the ratio of girls and boys in the given five schools. School Girls : Boys A 3 : 4 B 2 : 3 C 5 : 3 D 1 : 2 E 4 : 1\n\nNumber of students of school E is what percent of the difference of the number of students of school C and school B?",
+      "questionText": "Directions: Study the following pie chart carefully and answer the following questions given beside. The pie chart given below represents percentage of number of students in five different schools viz. A, B, C, D and E. The total no. of students in all the schools is 1,68,000. The below table shows the ratio of girls and boys in the given five schools, as shown in given figure.\n\nNumber of students of school E is what percent of the difference of the number of students of school C and school B?",
       "questionImage": "question/DI-PIE-0132.png",
       "options": [
         {
@@ -3987,7 +3987,7 @@
     },
     {
       "questionId": "DI-PIE-0136",
-      "questionText": "Directions: Study the following pie chart carefully and answer the following questions given beside. The pie chart given below represents percentage of number of students in five different schools viz. A, B, C, D and E. The total no. of students in all the schools is 1,68,000. The below table shows the ratio of girls and boys in the given five schools. School Girls : Boys A 3 : 4 B 2 : 3 C 5 : 3 D 1 : 2 E 4 : 1\n\nFind the average number of boys from all the schools.",
+      "questionText": "Directions: Study the following pie chart carefully and answer the following questions given beside. The pie chart given below represents percentage of number of students in five different schools viz. A, B, C, D and E. The total no. of students in all the schools is 1,68,000. The below table shows the ratio of girls and boys in the given five schools, as shown in given figure.\n\nFind the average number of boys from all the schools.",
       "questionImage": "question/DI-PIE-0132.png",
       "options": [
         {
