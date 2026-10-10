@@ -2,37 +2,81 @@ import { useState, useEffect, useContext } from 'react';
 import { NavigationContext } from '../App';
 import { getAllQuestions } from '../utils/questionUtils';
 import topicsData from '../data/topics.json';
+import {
+  Sparkles,
+  ArrowRight,
+  Search,
+  BookOpen,
+  Layers,
+  Terminal,
+  CheckCircle2,
+  TrendingUp,
+  Cpu,
+  BarChart3,
+  Percent,
+  Coins,
+  Clock,
+  Dices,
+  ChevronRight,
+  ExternalLink,
+} from 'lucide-react';
+import { RollingDigits } from '@/components/ui/rolling-digits';
 import '../styles/home.css';
 
 const featuredTopics = [
   {
     id: 'percentages',
     name: 'Percentages',
-    description: 'Percentage values, increases, decreases, and comparisons.',
-    icon: '%',
-    color: '#2563EB',
+    category: 'Quantitative Aptitude',
+    description: 'Percentage values, net change, successive discounts, and base conversions.',
+    icon: Percent,
+    color: '#6366f1',
+    gradient: 'from-indigo-500/20 to-purple-500/10',
+    tags: ['Foundational', 'High Frequency'],
+    questionCount: '45+',
   },
   {
     id: 'profit-loss',
     name: 'Profit and Loss',
-    description: 'Cost price, selling price, profit percentage, and discounts.',
-    icon: '₹',
-    color: '#16A34A',
+    category: 'Quantitative Aptitude',
+    description: 'Cost price, markup percentage, marked price, and faulty weights.',
+    icon: Coins,
+    color: '#10b981',
+    gradient: 'from-emerald-500/20 to-teal-500/10',
+    tags: ['Formulas', 'Tricks'],
+    questionCount: '40+',
   },
   {
     id: 'time-work',
     name: 'Time and Work',
-    description: 'Work efficiency, combined work, and pipe problems.',
-    icon: '⏱',
-    color: '#0891B2',
+    category: 'Quantitative Aptitude',
+    description: 'Efficiency ratios, combined work, wages, and negative work (pipes & cisterns).',
+    icon: Clock,
+    color: '#06b6d4',
+    gradient: 'from-cyan-500/20 to-blue-500/10',
+    tags: ['LCM Method', 'Core'],
+    questionCount: '50+',
   },
   {
     id: 'probability',
-    name: 'Probability',
-    description: 'Basic probability, conditional probability, and Bayes theorem.',
-    icon: '🎲',
-    color: '#7C3AED',
+    name: 'Probability & P&C',
+    category: 'Quantitative Aptitude',
+    description: 'Independent events, conditional probability, dice, cards, and arrangements.',
+    icon: Dices,
+    color: '#a855f7',
+    gradient: 'from-purple-500/20 to-pink-500/10',
+    tags: ['Analytical', 'Advanced'],
+    questionCount: '35+',
   },
+];
+
+const categoryPills = [
+  { name: 'All Categories', path: '/topics' },
+  { name: 'Quantitative Aptitude', path: '/topics' },
+  { name: 'Data Interpretation', path: '/topics' },
+  { name: 'Logical Reasoning', path: '/topics' },
+  { name: 'Verbal Ability', path: '/topics' },
+  { name: 'Company Tests', path: '/practice' },
 ];
 
 function countAllSubtopics(data) {
@@ -45,62 +89,6 @@ function countAllSubtopics(data) {
   return count;
 }
 
-function CountUp({ checkpoints, suffix, delay }) {
-  const suff = suffix || '';
-    const del = delay || 0;
-  const [display, setDisplay] = useState(0);
-  const [started, setStarted] = useState(false);
-
-  useEffect(() => {
-    const t = setTimeout(() => setStarted(true), del);
-    return () => clearTimeout(t);
-  }, [del]);
-
-  useEffect(() => {
-    if (!started) return;
-    let seg = 0;
-    let start = null;
-    let phase = 'animate';
-    let pauseStart = null;
-    let raf;
-    const tick = (ts) => {
-      if (!start) start = ts;
-      if (phase === 'animate') {
-        const from = checkpoints[seg];
-        const to = checkpoints[seg + 1];
-        const dur = 2000;
-        const p = Math.min((ts - start) / dur, 1);
-        const eased = 1 - Math.pow(1 - p, 3);
-        setDisplay(Math.round(from + (to - from) * eased));
-        if (p >= 1) {
-          if (seg + 2 < checkpoints.length) {
-            phase = 'pause';
-            pauseStart = ts;
-          } else {
-            setDisplay(to);
-            return;
-          }
-        }
-      } else {
-        if (ts - pauseStart >= 200) {
-          seg++;
-          phase = 'animate';
-          start = ts;
-        }
-      }
-      raf = requestAnimationFrame(tick);
-    };
-    setDisplay(checkpoints[0]);
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [started, checkpoints]);
-
-  return (
-    <>
-      {display}{suff}
-    </>
-  );
-}
 
 function Home() {
   const { navigate } = useContext(NavigationContext);
@@ -108,104 +96,258 @@ function Home() {
   const topicCount = countAllSubtopics(topicsData);
 
   return (
-    <div className="home-page">
+    <div className="home-page dot-grid">
+      {/* 21st.dev Ambient Radial Light */}
+      <div className="ambient-glow" />
+
+      {/* Hero Section */}
       <section className="hero">
         <div className="hero-container">
-          <div className="hero-badge">Placement Ready</div>
+          {/* Shimmer Announcement Pill */}
+          <div className="hero-badge-pill" onClick={() => navigate('/topics')} role="button" tabIndex={0}>
+            <span className="hero-badge-dot" />
+            <Sparkles size={13} className="text-indigo-400" />
+            <span>The living library of aptitude questions</span>
+            <ChevronRight size={13} className="hero-badge-chevron" />
+          </div>
+
           <h1 className="hero-title">
-            Master Aptitude
-            <br />
-            for Placements
+            Master Aptitude for{' '}
+            <span className="hero-title-gradient">Modern Tech Placements.</span>
           </h1>
+
           <p className="hero-subtitle">
-            Practice aptitude questions with step-by-step handwritten solutions.
-            Track your accuracy, speed, and progress — all in one place.
+            An open-source catalog of placement aptitude problems with verified step-by-step solutions,
+            company patterns, and interactive test simulators.
           </p>
+
+          {/* Action Buttons */}
           <div className="hero-actions">
-            <button className="hero-btn hero-btn-primary" onClick={() => navigate('/topics')} type="button">
-              Start Practice
-              <span className="hero-btn-arrow">→</span>
+            <button className="btn-primary-21st" onClick={() => navigate('/topics')} type="button">
+              <span>Start Practicing</span>
+              <ArrowRight size={16} />
             </button>
-            <button className="hero-btn hero-btn-outline" onClick={() => navigate('/practice')} type="button">
-              Company List
+            <button className="btn-secondary-21st" onClick={() => navigate('/practice')} type="button">
+              <span>Company Profiles</span>
             </button>
           </div>
-        </div>
-      </section>
 
-      <section className="home-stats">
-        <div className="home-stats-container">
-          <div className="home-stat">
-            <span className="home-stat-number">
-              <CountUp checkpoints={[0, 5, 10, topicCount]} suffix="+" delay={0} />
-            </span>
-            <span className="home-stat-label">Topics</span>
-          </div>
-          <div className="home-stat-divider" />
-          <div className="home-stat">
-            <span className="home-stat-number">
-              <CountUp
-                checkpoints={[0, Math.floor(questions.length / 2), Math.floor(questions.length * 0.8), questions.length]}
-                suffix="+"
-                delay={100}
-              />
-            </span>
-            <span className="home-stat-label">Questions</span>
-          </div>
-          <div className="home-stat-divider" />
-          <div className="home-stat">
-            <span className="home-stat-number">
-              <CountUp checkpoints={[0, 40, 75, 100]} suffix="%" delay={200} />
-            </span>
-            <span className="home-stat-label">Free</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="home-featured">
-        <div className="home-featured-container">
-          <h2 className="home-section-title">Popular Topics</h2>
-          <p className="home-section-subtitle">
-            Start with these essential topics for placement preparation.
-          </p>
-          <div className="home-featured-grid">
-            {featuredTopics.map((topic) => (
+          {/* Category Chips River (21st.dev style filter bar) */}
+          <div className="hero-category-river">
+            {categoryPills.map((pill, idx) => (
               <button
-                key={topic.id}
-                className="featured-topic-card"
-                style={{ '--card-color': topic.color }}
-                onClick={() => navigate('/topics')}
+                key={pill.name}
+                className={`hero-category-chip ${idx === 0 ? 'hero-category-chip-active' : ''}`}
+                onClick={() => navigate(pill.path)}
                 type="button"
               >
-                <div className="featured-topic-icon" style={{ backgroundColor: topic.color }}>
-                  {topic.icon}
-                </div>
-                <div className="featured-topic-content">
-                  <h3 className="featured-topic-name">{topic.name}</h3>
-                  <p className="featured-topic-desc">{topic.description}</p>
-                </div>
+                {pill.name}
               </button>
             ))}
           </div>
-          <div className="home-featured-cta">
-            <button className="home-browse-btn" onClick={() => navigate('/topics')} type="button">
-              Browse All {topicCount} Topics
-              <span className="hero-btn-arrow">→</span>
-            </button>
+        </div>
+      </section>
+
+      {/* Stats Ribbon (21st.dev Glass Bar) */}
+      <section className="home-stats-section">
+        <div className="home-stats-container container">
+          <div className="home-stats-card">
+            <div className="home-stat-item">
+              <div className="home-stat-icon-wrap">
+                <Layers size={18} className="text-indigo-400" />
+              </div>
+              <div className="home-stat-details">
+                <span className="home-stat-val inline-flex items-center">
+                  <RollingDigits value={topicCount} duration={1800} delay={200} />
+                  <span>+</span>
+                </span>
+                <span className="home-stat-lbl">Subtopics Catalogued</span>
+              </div>
+            </div>
+
+            <div className="home-stat-sep" />
+
+            <div className="home-stat-item">
+              <div className="home-stat-icon-wrap">
+                <BookOpen size={18} className="text-emerald-400" />
+              </div>
+              <div className="home-stat-details">
+                <span className="home-stat-val inline-flex items-center">
+                  <RollingDigits value={questions.length} duration={2200} delay={250} />
+                  <span>+</span>
+                </span>
+                <span className="home-stat-lbl">Verified Problems</span>
+              </div>
+            </div>
+
+            <div className="home-stat-sep" />
+
+            <div className="home-stat-item">
+              <div className="home-stat-icon-wrap">
+                <Terminal size={18} className="text-cyan-400" />
+              </div>
+              <div className="home-stat-details">
+                <span className="home-stat-val inline-flex items-center">
+                  <RollingDigits value={100} duration={1900} delay={300} />
+                  <span>%</span>
+                </span>
+                <span className="home-stat-lbl">Free & Open Source</span>
+              </div>
+            </div>
+
+            <div className="home-stat-sep" />
+
+            <div className="home-stat-item">
+              <div className="home-stat-icon-wrap">
+                <CheckCircle2 size={18} className="text-purple-400" />
+              </div>
+              <div className="home-stat-details">
+                <span className="home-stat-val">Detailed</span>
+                <span className="home-stat-lbl">Handwritten Solutions</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="home-cta">
-        <div className="home-cta-container">
-          <h2 className="home-cta-title">Ready to Ace Your Aptitude?</h2>
-          <p className="home-cta-desc">
-            Start practicing now and track your progress across all topics.
-          </p>
-          <button className="hero-btn hero-btn-white" onClick={() => navigate('/topics')} type="button">
-            Get Started
-            <span className="hero-btn-arrow">→</span>
-          </button>
+      {/* Featured Registry Components / Topics */}
+      <section className="home-featured-section">
+        <div className="container">
+          <div className="section-header-row">
+            <div>
+              <div className="section-pill-tag">
+                <Cpu size={12} />
+                <span>Featured Modules</span>
+              </div>
+              <h2 className="section-title">Popular Topics Ready to Practice</h2>
+              <p className="section-subtitle">
+                Core quantitative modules frequently tested by recruitment assessments.
+              </p>
+            </div>
+            <button className="view-all-link-btn" onClick={() => navigate('/topics')} type="button">
+              <span>View all {topicCount} topics</span>
+              <ArrowRight size={14} />
+            </button>
+          </div>
+
+          {/* 21st.dev Registry Component Cards */}
+          <div className="registry-cards-grid">
+            {featuredTopics.map((topic) => {
+              const IconComp = topic.icon;
+              return (
+                <div
+                  key={topic.id}
+                  className="registry-topic-card"
+                  onClick={() => navigate('/topics')}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <div className="registry-card-top">
+                    <div className="registry-card-icon-box" style={{ color: topic.color }}>
+                      <IconComp size={22} />
+                    </div>
+                    <div className="registry-card-meta">
+                      <span className="registry-card-category">{topic.category}</span>
+                      <h3 className="registry-card-title">{topic.name}</h3>
+                    </div>
+                  </div>
+
+                  <p className="registry-card-desc">{topic.description}</p>
+
+                  <div className="registry-card-tags">
+                    {topic.tags.map((tag) => (
+                      <span key={tag} className="registry-tag-chip">
+                        {tag}
+                      </span>
+                    ))}
+                    <span className="registry-count-chip">{topic.questionCount} Questions</span>
+                  </div>
+
+                  <div className="registry-card-footer">
+                    <span className="registry-card-action">
+                      <span>Practice Module</span>
+                      <ArrowRight size={14} className="registry-card-arrow" />
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* 21st.dev Style Architecture & Features */}
+      <section className="home-features-section">
+        <div className="container">
+          <div className="features-header text-center">
+            <div className="section-pill-tag mx-auto">
+              <TrendingUp size={12} />
+              <span>Placement Framework</span>
+            </div>
+            <h2 className="section-title">Designed for Fast Learning & High Retention</h2>
+            <p className="section-subtitle mx-auto">
+              Built specifically to eliminate confusion during on-campus and off-campus placement tests.
+            </p>
+          </div>
+
+          <div className="features-grid">
+            <div className="feature-card">
+              <div className="feature-icon-box">
+                <BarChart3 size={20} className="text-indigo-400" />
+              </div>
+              <h3 className="feature-title">Handwritten Visual Explanations</h3>
+              <p className="feature-desc">
+                Don't get stuck on abstract algebra. Every problem includes clean visual step-by-step
+                solutions to master shortcut techniques.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon-box">
+                <Terminal size={20} className="text-emerald-400" />
+              </div>
+              <h3 className="feature-title">Company Pattern Roadmaps</h3>
+              <p className="feature-desc">
+                Filtered groupings for IT Services, Analytics & Fintech, and Core Engineering firms,
+                matching exact recruitment syllabi.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <div className="feature-icon-box">
+                <CheckCircle2 size={20} className="text-cyan-400" />
+              </div>
+              <h3 className="feature-title">Timed Exam Simulation</h3>
+              <p className="feature-desc">
+                Practice in realistic timed conditions. Review accurate score breakdowns and identify
+                areas for immediate improvement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bottom CTA Banner (21st.dev Style Radiant Card) */}
+      <section className="home-bottom-cta">
+        <div className="container">
+          <div className="bottom-cta-card">
+            <div className="bottom-cta-content">
+              <div className="bottom-cta-badge">
+                <Sparkles size={12} />
+                <span>Zero Subscription • 100% Free</span>
+              </div>
+              <h2 className="bottom-cta-heading">Ready to Start Preparing?</h2>
+              <p className="bottom-cta-subtext">
+                Browse through all categories, pick a topic, and strengthen your problem solving today.
+              </p>
+              <div className="bottom-cta-actions">
+                <button className="btn-primary-21st" onClick={() => navigate('/topics')} type="button">
+                  <span>Explore All Topics</span>
+                  <ArrowRight size={16} />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
