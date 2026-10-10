@@ -3,35 +3,43 @@ import '../styles/contributors.css';
 
 /* ─────────────────────────────────────────────
    Contributor data
-   - `questions` = dataset questions verified
+   - `questions` = dataset questions verified (level × 300)
    - List is auto-sorted, highest questions first
    - Photos live in public/Contributers/<file>.jpg
      — missing photo falls back to the initial letter
    ───────────────────────────────────────────── */
 const contributors = [
+  // ── 1500 verified ──
+  { name: 'Dhanraj V H', questions: 1500, linkedin: 'https://www.linkedin.com/in/dhanraj-vh-3733ab362', photo: '/Contributers/dhanraj.jpg' },
+
   // ── 1200 verified ──
+  { name: 'Tharun.N', questions: 1200, linkedin: 'https://www.linkedin.com/in/tharun-n-86b212330', photo: '/Contributers/tharun.jpg' },
   { name: 'Sowrav', questions: 1200, linkedin: 'https://linkedin.com/in/sourav-poojary-94666333b', photo: '/Contributers/sowrav.jpg' },
+  { name: 'Adithya', questions: 1200, linkedin: 'https://www.linkedin.com/in/adithya-poojary-b67a70333', photo: '/Contributers/adithya.jpg' },
 
   // ── 900 verified ──
-  { name: 'Sagar', questions: 900, linkedin: 'https://www.linkedin.com/in/srikar-manvi-4b06a9391', photo: '/Contributers/sagar-srikar.jpg' }, // ⚠️ URL slug says "srikar-manvi" — confirm name
-  { name: 'Tharun.N', questions: 900, linkedin: 'https://www.linkedin.com/in/tharun-n-86b212330', photo: '/Contributers/tharun.jpg' },
+  { name: 'Srikar', questions: 900, linkedin: 'https://www.linkedin.com/in/srikar-manvi-4b06a9391', photo: '/Contributers/srikar.jpg' },
   { name: 'Pramod', questions: 900, linkedin: 'https://www.linkedin.com/in/pramod-devadig-a09676392', photo: '/Contributers/pramod.jpg' },
   { name: 'Umar Sahad', questions: 900, linkedin: 'https://www.linkedin.com/in/umar-sahad-44775333b', photo: '/Contributers/umar.jpg' },
-  { name: 'Adithya', questions: 900, linkedin: 'https://www.linkedin.com/in/adithya-poojary-b67a70333', photo: '/Contributers/adithya.jpg' },
   { name: 'Vijnan Hegde K', questions: 900, linkedin: 'https://www.linkedin.com/in/vijnan-hegde-k-810aab341/', photo: '/Contributers/vijnan.jpg' },
   { name: 'Samruddhi K S', questions: 900, linkedin: 'https://www.linkedin.com/in/samruddhi-gowda-754462393', photo: '/Contributers/samruddhi.jpg' },
   { name: 'Shamith B A', questions: 900, linkedin: 'https://www.linkedin.com/in/shamith-b-a-2a9699333', photo: '/Contributers/shamith.jpg' },
   { name: 'Vaishnavi H S', questions: 900, linkedin: 'https://www.linkedin.com/in/vaishnavi-hs-89341a393', photo: '/Contributers/vaishnavi.jpg' },
   { name: 'Vaibhavi S Savant', questions: 900, linkedin: 'https://www.linkedin.com/in/vaibhavi-s-savant-3a2516334', photo: '/Contributers/vaibhavi.jpg' },
+  { name: 'Swasthik', questions: 900, linkedin: 'https://www.linkedin.com/in/swasthik-p-254842442', photo: '/Contributers/swasthik.jpg' },
 
   // ── 600 verified ──
-  { name: 'Sagar', questions: 600, linkedin: 'https://www.linkedin.com/in/akashn049', photo: '/Contributers/sagar-akash.jpg' }, // ⚠️ URL slug says "akashn049" — confirm name
+  { name: 'Akash', questions: 600, linkedin: 'https://www.linkedin.com/in/akashn049', photo: '/Contributers/akash.jpg' },
   { name: 'Sameeksha', questions: 600, linkedin: 'https://www.linkedin.com/in/sameeksha-shetty-909b86344', photo: '/Contributers/sameeksha.jpg' },
-  { name: 'Ayush Prasanna Kanade', questions: 600, linkedin: 'https://www.linkedin.com/in/ayush-kanade-63a626385', photo: '/Contributers/ayush.jpg' },
+  { name: 'Ayush Prasanna Kanade', questions: 600, linkedin: 'https://www.linkedin.com/in/ayush-kanade-63a626385', photo: '/Contributers/ayush-kanade.jpg' },
 
   // ── 300 verified ──
   { name: 'Sagar', questions: 300, linkedin: null, photo: '/Contributers/sagar.jpg' },
   { name: 'Sravan A P', questions: 300, linkedin: 'https://www.linkedin.com/in/sravan-sujith-b5973929b', photo: '/Contributers/sravan.jpg' },
+  { name: 'Koushik Poojary', questions: 300, linkedin: 'https://www.linkedin.com/in/koushik-poojary-1a0192290', photo: '/Contributers/koushik.jpg' },
+  { name: 'Sujnan', questions: 300, linkedin: 'https://www.linkedin.com/in/sujnan-jain-2075a1397', photo: '/Contributers/sujnan.jpg' },
+  { name: 'Ayush Shetty', questions: 300, linkedin: 'https://www.linkedin.com/in/ayush-shetty-702482252', photo: '/Contributers/ayush-shetty.jpg' },
+  { name: 'Sourabh Poojary', questions: 300, linkedin: 'https://www.linkedin.com/in/sourabh-poojary-448576330', photo: '/Contributers/sourabh.jpg' },
 ];
 
 function CheckIcon() {
@@ -44,7 +52,7 @@ function CheckIcon() {
 
 function LinkedInIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.139 1.45-2.139 2.935v5.671H9.351V9h3.414v1.56h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.287zM5.332 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.544V9h3.575v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
     </svg>
   );
@@ -142,7 +150,7 @@ function Contributors() {
           </p>
           <a
             className="contributors-cta-btn"
-            href="https://github.com/vighnesh1477/TechPrep"
+            href="https://github.com/vighnesh1477/AptiPrep"
             target="_blank"
             rel="noopener noreferrer"
           >

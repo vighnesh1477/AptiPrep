@@ -677,7 +677,7 @@ function TestQuiz() {
                 </button>
               </div>
 
-              {currentQ.explanation && (
+                            {currentQ.explanation && (
                 <div className="quiz-explanation">
                   <span className="quiz-explanation-icon">💡</span>
                   <p>{currentQ.explanation}</p>
@@ -691,15 +691,28 @@ function TestQuiz() {
                     onClick={function () { setShowSolution(!showSolution); }}
                     type="button"
                   >
-                    {showSolution ? 'Hide Solution' : 'View Solution'}
+                    {showSolution ? 'Hide Handwritten Solution' : 'View Handwritten Solution'}
                   </button>
                   {showSolution && !imageErrors.solution && (
-                    <img
-                      className="quiz-solution-image"
-                      src={currentQ.explanationImage}
-                      alt="Solution"
-                      onError={function () { handleImageError('solution'); }}
-                    />
+                    <a
+                      className="quiz-solution-image-link"
+                      href={currentQ.explanationImage}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Click to open full size"
+                    >
+                      <img
+                        className="quiz-solution-image"
+                        src={currentQ.explanationImage}
+                        alt="Handwritten solution"
+                        onError={function () { handleImageError('solution'); }}
+                      />
+                    </a>
+                  )}
+                  {showSolution && imageErrors.solution && (
+                    <p className="quiz-solution-missing">
+                      Solution image could not be loaded.
+                    </p>
                   )}
                 </div>
               )}

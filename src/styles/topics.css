@@ -159,9 +159,10 @@
 }
 
 .topics-category-icon {
-  font-size: 1.5rem;
-  line-height: 1;
-  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cat-color); /* SVG stroke follows this */
 }
 
 .topics-category-info {
