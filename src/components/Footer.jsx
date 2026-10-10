@@ -143,17 +143,6 @@ function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 border-t border-[var(--border-color)] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[var(--text-tertiary)]">
           <p>&copy; {currentYear} AptiPrep. Open-source placement preparation for engineers.</p>
-          <div className="flex items-center gap-1.5">
-            <span>Built with inspiration from</span>
-            <a
-              href="https://21st.dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-[var(--accent)] hover:underline"
-            >
-              21st.dev
-            </a>
-          </div>
         </div>
       </div>
     </footer>
