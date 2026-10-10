@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { NavigationContext } from '../App';
+import { ExternalLink } from 'lucide-react';
 import '../styles/footer.css';
 
 function GithubIcon({ size = 15, className = '' }) {
@@ -70,6 +71,15 @@ function Footer() {
             >
               About
             </button>
+            <a
+              href="https://tech-prep-3h7b.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="site-footer-link"
+            >
+              <span>TechPrep</span>
+              <ExternalLink size={12} className="site-footer-ext-icon" />
+            </a>
             <a
               href="https://github.com/vighnesh1477/AptiPrep"
               target="_blank"

@@ -64,6 +64,16 @@
   color: var(--text-primary);
 }
 
+.site-footer-ext-icon {
+  opacity: 0.65;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.site-footer-link:hover .site-footer-ext-icon {
+  opacity: 1;
+  transform: translate(1px, -1px);
+}
+
 .site-footer-bottom {
   padding-top: 16px;
   border-top: 1px solid var(--border-color);
