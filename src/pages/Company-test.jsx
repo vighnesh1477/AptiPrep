@@ -301,6 +301,11 @@ function CompanyTest() {
       <div className="ct-page">
         <div className="ct-card">
           <div className="ct-card-accent" style={{ background: comp.groupColor }} />
+          {comp.logo && (
+            <div className="ct-logo-box">
+              <img src={comp.logo} alt={comp.name} className="ct-logo-img" />
+            </div>
+          )}
           <h1 className="ct-card-title">{comp.name}</h1>
           <p className="ct-card-sub">{comp.groupName}</p>
           <div className="ct-field">

@@ -80,10 +80,6 @@ function Navbar() {
               />
             </div>
             <span className="navbar-brand-text">AptiPrep</span>
-            <span className="navbar-version-badge">
-              <Sparkles size={10} className="text-indigo-400" />
-              v2.0
-            </span>
           </button>
         </div>
 

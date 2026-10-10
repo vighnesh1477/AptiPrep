@@ -1,5 +1,5 @@
 /* ============================================
-   Topics Page — 21st.dev Registry Catalog Style
+   Topics Page Styles
    ============================================ */
 
 .topics-page {
@@ -17,6 +17,10 @@
 
 /* Header */
 .topics-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
   margin-bottom: 32px;
 }
 

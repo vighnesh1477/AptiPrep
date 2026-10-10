@@ -2,6 +2,36 @@ import { useState, useMemo, useContext, useRef } from 'react';
 import { NavigationContext } from '../App';
 import '../styles/practice.css';
 
+function CompanyLogo({ src, name, color }) {
+  const [error, setError] = useState(false);
+  const initial = (name || 'C').charAt(0).toUpperCase();
+
+  if (error || !src) {
+    return (
+      <div
+        className="company-card-logo-fallback"
+        style={{
+          backgroundColor: color ? `${color}18` : 'rgba(37, 99, 235, 0.1)',
+          color: color || '#2563EB',
+        }}
+        aria-hidden="true"
+      >
+        {initial}
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={src}
+      alt={`${name} logo`}
+      className="company-card-logo-img"
+      onError={function () { setError(true); }}
+      loading="lazy"
+    />
+  );
+}
+
 const groups = [
   {
     id: 'A',
@@ -9,16 +39,16 @@ const groups = [
     subtitle: 'Tech & MCA Recruiters',
     color: '#2563EB',
     companies: [
-      { name: 'Cogitate', depts: ['CSE-Allied'] },
-      { name: 'Arctic Wolf', depts: ['CSE-Allied'] },
-      { name: 'MPHASIS', depts: ['All'] },
-      { name: 'ITC Infotech', depts: ['All'] },
-      { name: 'Dextris', depts: ['CSE-Allied', 'ECE'] },
-      { name: 'TechFabric LLC', depts: ['MCA', 'CSE-Allied'] },
-      { name: 'Invenger', depts: ['All'] },
-      { name: 'Sasken', depts: ['All'] },
-      { name: 'XTransMatrix', depts: ['All'] },
-      { name: 'Kaizentrix', depts: ['All'] },
+      { name: 'Cogitate', logo: '/logos/Cogitate.png', depts: ['CSE-Allied'] },
+      { name: 'Arctic Wolf', logo: '/logos/Arctic_Wolf_dark.png', depts: ['CSE-Allied'] },
+      { name: 'MPHASIS', logo: '/logos/Mphasis.png', depts: ['All'] },
+      { name: 'ITC Infotech', logo: '/logos/ITC_Infotech.png', depts: ['All'] },
+      { name: 'Dextris', logo: '/logos/Dextris.png', depts: ['CSE-Allied', 'ECE'] },
+      { name: 'TechFabric LLC', logo: '/logos/TechFabric_dark.png', depts: ['MCA', 'CSE-Allied'] },
+      { name: 'Invenger', logo: '/logos/Invenger.png', depts: ['All'] },
+      { name: 'Sasken', logo: '/logos/Sasken.png', depts: ['All'] },
+      { name: 'XTransMatrix', logo: '/logos/XTransMatrix.png', depts: ['All'] },
+      { name: 'Kaizentrix', logo: '/logos/Kaizentrix.png', depts: ['All'] },
     ],
     topics: {
       'Quantitative Aptitude': [
@@ -46,13 +76,13 @@ const groups = [
     subtitle: 'High-End Analytical Firms',
     color: '#7C3AED',
     companies: [
-      { name: 'Mu-Sigma', depts: ['All'] },
-      { name: 'Finzly', depts: ['All'] },
-      { name: 'ABSYZ', depts: ['All'] },
-      { name: 'Info Edge', depts: ['All'] },
-      { name: 'Accorian', depts: ['All'] },
-      { name: 'YuniQ', depts: ['All'] },
-      { name: 'Winman', depts: ['All'] },
+      { name: 'Mu-Sigma', logo: '/logos/Mu_Sigma.png', depts: ['All'] },
+      { name: 'Finzly', logo: '/logos/Finzly.png', depts: ['All'] },
+      { name: 'ABSYZ', logo: '/logos/ABSYZ.png', depts: ['All'] },
+      { name: 'Info Edge', logo: '/logos/Info_Edge.png', depts: ['All'] },
+      { name: 'Accorian', logo: '/logos/Accorian.png', depts: ['All'] },
+      { name: 'YuniQ', logo: '/logos/YuniQ.png', depts: ['All'] },
+      { name: 'Winman', logo: '/logos/Winman.png', depts: ['All'] },
     ],
     topics: {
       'Quantitative Aptitude': [
@@ -80,20 +110,20 @@ const groups = [
     subtitle: 'Electronics & Automotive',
     color: '#0891B2',
     companies: [
-      { name: 'Toyota Industries', depts: ['MECH', 'MTR'] },
-      { name: 'HL Mando Anand', depts: ['MECH', 'MTR', 'ECE'] },
-      { name: 'Delphi TVS', depts: ['MECH', 'MTR', 'ECE'] },
-      { name: 'CoreEL', depts: ['ECE'] },
-      { name: 'KarMic', depts: ['ECE'] },
-      { name: 'Veer-O-Metals', depts: ['MECH', 'MTR', 'ECE'] },
-      { name: 'Virtual Simutech', depts: ['MECH', 'MTR'] },
-      { name: 'Qlar Technologies', depts: ['MECH', 'MTR'] },
-      { name: 'Pinnacle', depts: ['MECH', 'MTR'] },
-      { name: 'Ankit Aerospace', depts: ['MTR', 'MECH', 'AERO'] },
-      { name: 'WPG India Electronics', depts: ['ECE', 'MTR'] },
-      { name: 'Ennovi Mobility', depts: ['ECE', 'MTR', 'MECH'] },
-      { name: 'Trempplin', depts: ['CSE-Allied', 'ECE', 'MTR'] },
-      { name: 'Larsen & Toubro', depts: ['All'] },
+      { name: 'Toyota Industries', logo: '/logos/Toyota_Industries.png', depts: ['MECH', 'MTR'] },
+      { name: 'HL Mando Anand', logo: '/logos/HL_Mando_Anand.png', depts: ['MECH', 'MTR', 'ECE'] },
+      { name: 'Delphi TVS', logo: '/logos/Delphi_TVS.png', depts: ['MECH', 'MTR', 'ECE'] },
+      { name: 'CoreEL', logo: '/logos/CoreEL.png', depts: ['ECE'] },
+      { name: 'KarMic', logo: '/logos/KarMic.png', depts: ['ECE'] },
+      { name: 'Veer-O-Metals', logo: '/logos/Veer_O_Metals_dark.png', depts: ['MECH', 'MTR', 'ECE'] },
+      { name: 'Virtual Simutech', logo: '/logos/Virtual_Simutech.png', depts: ['MECH', 'MTR'] },
+      { name: 'Qlar Technologies', logo: '/logos/Qlar.png', depts: ['MECH', 'MTR'] },
+      { name: 'Pinnacle', logo: '/logos/Pinnacle_Industries.png', depts: ['MECH', 'MTR'] },
+      { name: 'Ankit Aerospace', logo: '/logos/Ankit_Aerospace_Ankit_Group.png', depts: ['MTR', 'MECH', 'AERO'] },
+      { name: 'WPG India Electronics', logo: '/logos/WPG_India_Electronics_WPG_Holdings.png', depts: ['ECE', 'MTR'] },
+      { name: 'Ennovi Mobility', logo: '/logos/Ennovi_Mobility.png', depts: ['ECE', 'MTR', 'MECH'] },
+      { name: 'Trempplin', logo: '/logos/Trempplin.png', depts: ['CSE-Allied', 'ECE', 'MTR'] },
+      { name: 'Larsen & Toubro', logo: '/logos/Larsen_Toubro_dark.png', depts: ['All'] },
     ],
     topics: {
       'Quantitative Aptitude': [
@@ -117,11 +147,11 @@ const groups = [
     subtitle: 'Content, Media & Broad Recruiters',
     color: '#16A34A',
     companies: [
-      { name: 'Innodata India', depts: ['MCA', 'All'] },
-      { name: 'TVS Credit', depts: ['All'] },
-      { name: 'Dr. Reddy', depts: ['All'] },
-      { name: 'Codeyoung', depts: ['All'] },
-      { name: 'SIMS', depts: ['MECH', 'MTR'] },
+      { name: 'Innodata India', logo: '/logos/Innodata.png', depts: ['MCA', 'All'] },
+      { name: 'TVS Credit', logo: '/logos/TVS_Credit.png', depts: ['All'] },
+      { name: 'Dr. Reddy', logo: '/logos/Dr_Reddy_s.png', depts: ['All'] },
+      { name: 'Codeyoung', logo: '/logos/Codeyoung.png', depts: ['All'] },
+      { name: 'SIMS', logo: '/logos/SIMS_Samundra_Institute_of_Maritime_Studies.png', depts: ['MECH', 'MTR'] },
     ],
     topics: {
       'Quantitative Aptitude': [
@@ -179,6 +209,7 @@ function Practice() {
       return group.companies.map(function (company) {
         return {
           name: company.name,
+          logo: company.logo,
           depts: company.depts,
           groupId: group.id,
           groupName: group.name,
@@ -223,6 +254,7 @@ function Practice() {
     if (!selectedCompany) return;
     localStorage.setItem('aptiprep-company-test', JSON.stringify({
       name: selectedCompany.name,
+      logo: selectedCompany.logo,
       groupName: selectedCompany.groupName,
       groupSubtitle: selectedCompany.groupSubtitle,
       groupColor: selectedCompany.groupColor,
@@ -276,6 +308,9 @@ function Practice() {
               return (
                 <button key={company.name} className="company-card" style={{ '--card-color': company.groupColor, animationDelay: (index * 25) + 'ms' }} onClick={function () { handleOpenCompany(company); }} type="button">
                   <div className="company-card-accent" />
+                  <div className="company-card-logo-box">
+                    <CompanyLogo src={company.logo} name={company.name} color={company.groupColor} />
+                  </div>
                   <div className="company-card-body">
                     <span className="company-card-name">{company.name}</span>
                     <span className="company-card-group">{company.groupName}</span>
@@ -308,8 +343,13 @@ function Practice() {
 
             <div className="modal-topbar">
               <div className="modal-topbar-left">
-                <div className="modal-indicator" />
-                <h2 className="modal-title">{mc.name}</h2>
+                <div className="modal-logo-box">
+                  <CompanyLogo src={mc.logo} name={mc.name} color={mc.groupColor} />
+                </div>
+                <div className="modal-title-group">
+                  <h2 className="modal-title">{mc.name}</h2>
+                  <span className="modal-topbar-group">{mc.groupName}</span>
+                </div>
               </div>
               <button className="modal-close" onClick={handleCloseModal} type="button">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>

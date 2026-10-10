@@ -1,7 +1,7 @@
 import { useState, useMemo, useContext } from 'react';
 import { NavigationContext } from '../App';
 import { setQuizParams } from '../utils/storage';
-import { Search, X, ChevronDown, Sparkles, Layers, ArrowUpRight } from 'lucide-react';
+import { Search, X, ChevronDown, ArrowUpRight } from 'lucide-react';
 import '../styles/topics.css';
 
 const categories = [
@@ -324,7 +324,14 @@ function SearchIcon() {
 
 function Topics() {
   const { navigate } = useContext(NavigationContext);
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState(() => {
+    const saved = sessionStorage.getItem('aptiprep_topic_search');
+    if (saved) {
+      sessionStorage.removeItem('aptiprep_topic_search');
+      return saved;
+    }
+    return '';
+  });
   const [activeCategoryFilter, setActiveCategoryFilter] = useState('all');
   const [expanded, setExpanded] = useState(new Set(['quantitative_aptitude']));
 
@@ -376,16 +383,10 @@ function Topics() {
   const totalTopics = categories.reduce((sum, cat) => sum + getTopicCount(cat), 0);
 
   return (
-    <div className="topics-page dot-grid">
-      <div className="ambient-glow" />
-
+    <div className="topics-page">
       <div className="topics-container container">
         {/* Header */}
         <div className="topics-header">
-          <div className="section-pill-tag">
-            <Sparkles size={12} />
-            <span>Registry Catalog</span>
-          </div>
           <h1 className="topics-title">Topics & Practice Modules</h1>
           <p className="topics-subtitle">
             Explore {categories.length} core categories and {totalTopics} specialized subtopics with
