@@ -7,7 +7,7 @@ const categories = [
   {
     id: 'quantitative_aptitude',
     name: 'Quantitative Aptitude',
-    icon: '🔢',
+    icon: CalculatorIcon,
     color: '#2563EB',
     subcategories: [
       {
@@ -132,7 +132,7 @@ const categories = [
   {
     id: 'logical_reasoning',
     name: 'Logical Reasoning',
-    icon: '🧠',
+    icon: PuzzleIcon,
     color: '#7C3AED',
     subcategories: [
       {
@@ -182,7 +182,7 @@ const categories = [
   {
     id: 'data_interpretation',
     name: 'Data Interpretation',
-    icon: '📊',
+    icon: BarChartIcon,
     color: '#16A34A',
     subcategories: [
       {
@@ -203,7 +203,7 @@ const categories = [
   {
     id: 'verbal_ability',
     name: 'Verbal Ability',
-    icon: '🔤',
+    icon: BookIcon,
     color: '#DC2626',
     subcategories: [
       {
@@ -245,6 +245,54 @@ function getTopicCount(category) {
   return category.subcategories.reduce(
     (sum, sub) => sum + sub.topics.length,
     0
+  );
+}
+
+/* ---- Category Icons (stroke style, follows CSS color) ---- */
+
+function CalculatorIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="4" y="2" width="16" height="20" rx="2" />
+      <line x1="8" y1="6" x2="16" y2="6" />
+      <line x1="8" y1="10" x2="8.01" y2="10" />
+      <line x1="12" y1="10" x2="12.01" y2="10" />
+      <line x1="16" y1="10" x2="16.01" y2="10" />
+      <line x1="8" y1="14" x2="8.01" y2="14" />
+      <line x1="12" y1="14" x2="12.01" y2="14" />
+      <line x1="16" y1="14" x2="16.01" y2="14" />
+      <line x1="8" y1="18" x2="8.01" y2="18" />
+      <line x1="12" y1="18" x2="12.01" y2="18" />
+      <line x1="16" y1="18" x2="16.01" y2="18" />
+    </svg>
+  );
+}
+
+function PuzzleIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.23 8.77c.24-.24.581-.353.917-.303.515.077.877.528 1.073 1.01a2.5 2.5 0 1 0 3.259-3.259c-.482-.196-.933-.558-1.01-1.073-.05-.336.062-.676.303-.917l1.525-1.525A2.402 2.402 0 0 1 12 1.998c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02Z" />
+    </svg>
+  );
+}
+
+function BarChartIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 3v18h18" />
+      <path d="M8 17v-3" />
+      <path d="M13 17V5" />
+      <path d="M18 17V9" />
+    </svg>
+  );
+}
+
+function BookIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+    </svg>
   );
 }
 
@@ -331,12 +379,13 @@ function Topics() {
             {filteredCategories.map((category, catIndex) => {
               const isExpanded = effectiveExpanded.has(category.id);
               const count = getTopicCount(category);
+              const CategoryIcon = category.icon;
 
               return (
                 <div key={category.id} className="topics-category" style={{ '--cat-color': category.color, animationDelay: `${catIndex * 60}ms` }}>
                   <button className="topics-category-header" onClick={() => toggleCategory(category.id)} type="button" aria-expanded={isExpanded}>
                     <div className="topics-category-left">
-                      <span className="topics-category-icon">{category.icon}</span>
+                      <span className="topics-category-icon"><CategoryIcon /></span>
                       <div className="topics-category-info">
                         <span className="topics-category-name">{category.name}</span>
                         <span className="topics-category-count">{count} topic{count !== 1 ? 's' : ''}</span>

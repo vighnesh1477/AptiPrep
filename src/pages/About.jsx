@@ -134,7 +134,7 @@ function About() {
           <div className="about-contribute-cta">
             <a
               className="about-github-btn"
-              href="https://github.com/vighnesh1477/TechPrep"
+              href="https://github.com/vighnesh1477/AptiPrep"
               target="_blank"
               rel="noopener noreferrer"
             >

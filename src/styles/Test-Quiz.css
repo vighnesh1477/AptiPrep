@@ -1076,3 +1076,31 @@
     font-size: 1.25rem;
   }
 }
+
+/* Explanation text — keep the PDF line breaks */
+.quiz-explanation p {
+  white-space: pre-line;
+}
+
+/* Solution image: clickable, zoom cursor, hover hint */
+.quiz-solution-image-link {
+  display: block;
+  margin-top: 12px;
+  cursor: zoom-in;
+}
+
+.quiz-solution-image-link:hover .quiz-solution-image {
+  border-color: var(--accent);
+}
+
+.quiz-solution-image {
+  transition: border-color 0.15s ease;
+}
+
+.quiz-solution-missing {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  font-style: italic;
+  text-align: center;
+}
