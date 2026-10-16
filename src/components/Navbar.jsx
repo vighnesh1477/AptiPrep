@@ -1,7 +1,7 @@
 import { useState, useContext, useEffect } from 'react';
 import { NavigationContext } from '../App';
 import { ThemeToggle } from '@/components/ui/be-ui-theme-toggle';
-import { Search, Menu, X, Sparkles } from 'lucide-react';
+import { Search, Menu, X } from 'lucide-react';
 import '../styles/navbar.css';
 
 function GithubIcon({ size = 17, className = '' }) {
@@ -40,20 +40,31 @@ function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    window.addEventListener('scroll', handleScroll, {
+      passive: true,
+    });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
-  // Keyboard shortcut ⌘K / Ctrl+K listener to jump to topics/search
+  // Ctrl+K / Cmd+K opens Topics
   useEffect(() => {
     const handleKeyDown = (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
         navigate('/topics');
+        setMenuOpen(false);
       }
     };
+
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, [navigate]);
 
   function handleNav(path) {
@@ -62,7 +73,9 @@ function Navbar() {
   }
 
   return (
-    <header className={`navbar-header ${scrolled ? 'navbar-scrolled' : ''}`}>
+    <header
+      className={`navbar-header ${scrolled ? 'navbar-scrolled' : ''}`}
+    >
       <div className="navbar-container container">
         {/* Brand */}
         <div className="navbar-brand-section">
@@ -79,18 +92,27 @@ function Navbar() {
                 alt="AptiPrep logo"
               />
             </div>
+
             <span className="navbar-brand-text">AptiPrep</span>
           </button>
         </div>
 
-        {/* Center Nav Links */}
-        <nav className="navbar-center-nav" aria-label="Main navigation">
+        {/* Center Navigation */}
+        <nav
+          className="navbar-center-nav"
+          aria-label="Main navigation"
+        >
           {navLinks.map((link) => {
-            const isActive = currentPath === link.path || (link.path === '/' && currentPath === '/home');
+            const isActive =
+              currentPath === link.path ||
+              (link.path === '/' && currentPath === '/home');
+
             return (
               <button
                 key={link.path}
-                className={`navbar-nav-item ${isActive ? 'navbar-nav-item-active' : ''}`}
+                className={`navbar-nav-item ${
+                  isActive ? 'navbar-nav-item-active' : ''
+                }`}
                 onClick={() => handleNav(link.path)}
                 type="button"
               >
@@ -102,19 +124,26 @@ function Navbar() {
 
         {/* Right Actions */}
         <div className="navbar-right-actions">
-          {/* 21st.dev style Quick Search Trigger */}
+          {/* Search */}
           <button
             className="navbar-search-trigger"
             onClick={() => handleNav('/topics')}
             type="button"
-            title="Search topics (⌘K / Ctrl+K)"
+            title="Search topics (Ctrl+K / Cmd+K)"
           >
-            <Search size={14} className="navbar-search-icon" />
-            <span className="navbar-search-placeholder">Search topics...</span>
+            <Search
+              size={14}
+              className="navbar-search-icon"
+            />
+
+            <span className="navbar-search-placeholder">
+              Search topics...
+            </span>
+
             <kbd className="navbar-search-kbd">⌘K</kbd>
           </button>
 
-          {/* GitHub Repo Link */}
+          {/* GitHub */}
           <a
             href="https://github.com/vighnesh1477/AptiPrep"
             target="_blank"
@@ -126,7 +155,7 @@ function Navbar() {
             <GithubIcon size={17} />
           </a>
 
-          {/* Theme Toggle Button */}
+          {/* Theme Toggle */}
           <div className="navbar-toggle-wrapper">
             <ThemeToggle
               variant="circle-blur"
@@ -136,7 +165,7 @@ function Navbar() {
             />
           </div>
 
-          {/* Mobile Hamburger */}
+          {/* Mobile Menu Toggle */}
           <button
             className="navbar-mobile-toggle"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -149,16 +178,21 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Drawer */}
       {menuOpen && (
         <div className="navbar-mobile-drawer">
           <div className="navbar-mobile-links">
             {navLinks.map((link) => {
-              const isActive = currentPath === link.path || (link.path === '/' && currentPath === '/home');
+              const isActive =
+                currentPath === link.path ||
+                (link.path === '/' && currentPath === '/home');
+
               return (
                 <button
                   key={link.path}
-                  className={`navbar-mobile-link ${isActive ? 'navbar-mobile-link-active' : ''}`}
+                  className={`navbar-mobile-link ${
+                    isActive ? 'navbar-mobile-link-active' : ''
+                  }`}
                   onClick={() => handleNav(link.path)}
                   type="button"
                 >
@@ -166,7 +200,9 @@ function Navbar() {
                 </button>
               );
             })}
+
             <div className="navbar-mobile-divider" />
+
             <button
               className="navbar-mobile-search-btn"
               onClick={() => handleNav('/topics')}
@@ -180,6 +216,7 @@ function Navbar() {
         </div>
       )}
 
+      {/* Mobile Backdrop */}
       {menuOpen && (
         <div
           className="navbar-backdrop"

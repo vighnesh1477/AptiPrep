@@ -167,7 +167,7 @@ function Home() {
           </h1>
 
           <p className="hero-supporting-text">
-            An open-source collection of placement aptitude questions with step-by-step solutions,
+            An collection of placement aptitude questions with step-by-step solutions,
             company patterns, and practice tests.
           </p>
 

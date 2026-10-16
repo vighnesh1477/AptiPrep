@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef, useContext } from 'react';
+import { useState, useEffect, useRef, useContext } from 'react';
 import { NavigationContext } from '../App';
 import { getQuizParams, clearQuizParams, savePracticeResult } from '../utils/storage';
 import { getQuestionsByExactSubtopic, getRandomQuestions } from '../utils/questionUtils';
@@ -87,6 +87,40 @@ function getScoreColor(accuracy) {
   return 'var(--error)';
 }
 
+/* ── Compute final stats from the answers record ──
+   status: 'answered' | 'timeout' | 'read'  (missing = never visited = skipped) */
+function computeStats(answerList, totalQuestions) {
+  var correct = 0;
+  var wrong = 0;
+  var skipped = 0;
+  var attempted = 0;
+  var totalTime = 0;
+
+  for (var i = 0; i < totalQuestions; i++) {
+    var a = answerList[i];
+    if (a && a.status === 'answered') {
+      attempted++;
+      totalTime += a.timeSpent || 0;
+      if (a.isCorrect) correct++;
+      else wrong++;
+    } else {
+      skipped++;
+      if (a && a.timeSpent) totalTime += a.timeSpent;
+    }
+  }
+
+  return {
+    total: totalQuestions,
+    attempted: attempted,
+    correct: correct,
+    wrong: wrong,
+    skipped: skipped,
+    totalTime: totalTime,
+    accuracy: attempted > 0 ? Math.round((correct / attempted) * 100) : 0,
+    avgTime: totalQuestions > 0 ? Math.round(totalTime / totalQuestions) : 0,
+  };
+}
+
 /* ── Animated counter hook ── */
 function useAnimatedValue(target, duration) {
   if (duration === undefined) duration = 1200;
@@ -164,7 +198,11 @@ function StatCard(_ref) {
 function TestQuiz() {
   var navContext = useContext(NavigationContext);
   var navigate = navContext.navigate;
+
+  /* Timestamp of when the user arrived at the current question (this visit) */
   var questionStartRef = useRef(Date.now());
+  /* Seconds already accumulated per question from PREVIOUS visits */
+  var timeSpentRef = useRef([]);
 
   var phaseState = useState('loading');
   var phase = phaseState[0];
@@ -194,25 +232,10 @@ function TestQuiz() {
   var currentIndex = currentIndexState[0];
   var setCurrentIndex = currentIndexState[1];
 
-  var selectedOptionState = useState(null);
-  var selectedOption = selectedOptionState[0];
-  var setSelectedOption = selectedOptionState[1];
-
-  var isAnsweredState = useState(false);
-  var isAnswered = isAnsweredState[0];
-  var setIsAnswered = isAnsweredState[1];
-
-  var scoreState = useState(0);
-  var score = scoreState[0];
-  var setScore = scoreState[1];
-
-  var skippedState = useState(0);
-  var skipped = skippedState[0];
-  var setSkipped = skippedState[1];
-
-  var timerState = useState(30);
-  var timer = timerState[0];
-  var setTimer = timerState[1];
+  /* ── PER-QUESTION TIMERS: timers[i] = seconds remaining for question i ── */
+  var timersState = useState([]);
+  var timers = timersState[0];
+  var setTimers = timersState[1];
 
   var answersState = useState([]);
   var answers = answersState[0];
@@ -233,6 +256,13 @@ function TestQuiz() {
   var savedQuoteState = useState(null);
   var savedQuote = savedQuoteState[0];
   var setSavedQuote = savedQuoteState[1];
+
+  /* ── Derived state for the current question ── */
+  var currentAnswer = answers[currentIndex] || null;
+  var isLocked = !!(currentAnswer && currentAnswer.status !== 'read');
+  var selectedOption = currentAnswer ? currentAnswer.selected : null;
+  var isLastQuestion = currentIndex === questions.length - 1;
+  var timer = timers[currentIndex] !== undefined ? timers[currentIndex] : timerDuration;
 
   useEffect(function () {
     var params = getQuizParams();
@@ -257,44 +287,97 @@ function TestQuiz() {
     }
   }, []);
 
+  /* ── Tick ONLY the current question's timer. Stops when locked (answered/timeout). ── */
   useEffect(function () {
-    if (phase !== 'quiz' || isAnswered) return;
-    if (timer <= 0) {
+    if (phase !== 'quiz' || isLocked) return;
+    var remaining = timers[currentIndex];
+    if (remaining === undefined) return;
+
+    if (remaining <= 0) {
       handleTimeout();
       return;
     }
-    var interval = setInterval(function () { setTimer(function (t) { return t - 1; }); }, 1000);
-    return function () { clearInterval(interval); };
-  }, [phase, timer, isAnswered]);
 
-  function recordAnswer(selected, timedOut) {
-    var timeSpent = Math.round((Date.now() - questionStartRef.current) / 1000);
-    var q = questions[currentIndex];
-    var isCorrect = selected === q.correctIndex;
-    if (isCorrect && !timedOut) setScore(function (s) { return s + 1; });
-    if (timedOut) setSkipped(function (s) { return s + 1; });
+    var interval = setInterval(function () {
+      setTimers(function (prev) {
+        var next = prev.slice();
+        next[currentIndex] = Math.max(0, (next[currentIndex] || 0) - 1);
+        return next;
+      });
+    }, 1000);
+
+    return function () { clearInterval(interval); };
+  }, [phase, isLocked, currentIndex, timers]);
+
+  /* ── Helpers ── */
+  function getVisitSeconds() {
+    return Math.max(0, Math.round((Date.now() - questionStartRef.current) / 1000));
+  }
+
+  /* ── Answer recording (time accumulates across visits) ── */
+  function recordAnswer(index, status, selected) {
+    var q = questions[index];
+    var timeSpent = (timeSpentRef.current[index] || 0) + getVisitSeconds();
     setAnswers(function (prev) {
-      return prev.concat([{
+      var next = prev.slice();
+      next[index] = {
         question: q,
         selected: selected,
         correct: q.correctIndex,
-        isCorrect: isCorrect,
-        timedOut: timedOut,
+        isCorrect: status === 'answered' && selected === q.correctIndex,
+        status: status,
         timeSpent: timeSpent,
-      }]);
+      };
+      return next;
     });
   }
 
   function handleTimeout() {
-    setIsAnswered(true);
-    recordAnswer(null, true);
+    /* Guard: don't double-record (e.g. if already answered, or effect re-fires) */
+    if (currentAnswer && currentAnswer.status !== 'read') return;
+    recordAnswer(currentIndex, 'timeout', null);
   }
 
-  function handleSelect(index) {
-    if (isAnswered) return;
-    setSelectedOption(index);
-    setIsAnswered(true);
-    recordAnswer(index, false);
+  function handleSelect(optionIndex) {
+    if (isLocked) return;
+    recordAnswer(currentIndex, 'answered', optionIndex);
+  }
+
+  /* ── Navigation (bank the time spent on the question we're leaving) ── */
+  function navigateTo(index) {
+    if (index < 0 || index >= questions.length || index === currentIndex) return;
+
+    /* Accumulate time spent on the current question during this visit */
+    timeSpentRef.current[currentIndex] = (timeSpentRef.current[currentIndex] || 0) + getVisitSeconds();
+    questionStartRef.current = Date.now();
+
+    setCurrentIndex(index);
+    setShowEndConfirm(false);
+    setShowSolution(false);
+    setImageErrors({});
+    /* NOTE: no timer reset — each question keeps its own remaining time */
+  }
+
+  function goToPrevious() {
+    navigateTo(currentIndex - 1);
+  }
+
+  function goToNext() {
+    if (isLastQuestion) {
+      finishQuiz();
+    } else {
+      navigateTo(currentIndex + 1);
+    }
+  }
+
+  /* Skip = mark as read (if untouched) and move next. On the last question it just marks it. */
+  function handleMarkAsRead() {
+    if (!currentAnswer) {
+      recordAnswer(currentIndex, 'read', null);
+    }
+    if (!isLastQuestion) {
+      navigateTo(currentIndex + 1);
+    }
   }
 
   function startQuiz() {
@@ -302,54 +385,37 @@ function TestQuiz() {
     var picked = getRandomQuestions(allQuestions, count);
     var processed = picked.map(shuffleOptions);
 
+    /* Initialize a fresh timer for every question */
+    var initialTimers = [];
+    for (var i = 0; i < processed.length; i++) initialTimers.push(timerDuration);
+
     setQuestions(processed);
+    setTimers(initialTimers);
     setCurrentIndex(0);
-    setSelectedOption(null);
-    setIsAnswered(false);
-    setScore(0);
-    setSkipped(0);
-    setTimer(timerDuration);
     setAnswers([]);
+    timeSpentRef.current = [];
+    questionStartRef.current = Date.now();
     setShowEndConfirm(false);
     setShowSolution(false);
     setImageErrors({});
     setPhase('quiz');
-    questionStartRef.current = Date.now();
-  }
-
-  function handleNext() {
-    if (currentIndex < questions.length - 1) {
-      setCurrentIndex(function (i) { return i + 1; });
-      setSelectedOption(null);
-      setIsAnswered(false);
-      setTimer(timerDuration);
-      setShowSolution(false);
-      setImageErrors({});
-      questionStartRef.current = Date.now();
-    } else {
-      finishQuiz();
-    }
   }
 
   function finishQuiz() {
-    var totalTime = answers.reduce(function (sum, a) { return sum + a.timeSpent; }, 0);
-    var correct = answers.filter(function (a) { return a.isCorrect; }).length;
-    var wrongCount = answers.filter(function (a) { return !a.isCorrect && !a.timedOut; }).length;
-    var skippedCount = answers.filter(function (a) { return a.timedOut; }).length;
-    var acc = answers.length > 0 ? Math.round((correct / answers.length) * 100) : 0;
-    var avg = answers.length > 0 ? Math.round(totalTime / answers.length) : 0;
+    var stats = computeStats(answers, questions.length);
     var quote = getRandomQuote();
     setSavedQuote(quote);
 
     var result = {
       topicName: topicName,
-      total: answers.length,
-      correct: correct,
-      wrong: wrongCount,
-      skipped: skippedCount,
-      accuracy: acc,
-      totalTime: totalTime,
-      avgTime: avg,
+      total: stats.total,
+      attempted: stats.attempted,
+      correct: stats.correct,
+      wrong: stats.wrong,
+      skipped: stats.skipped,
+      accuracy: stats.accuracy,
+      totalTime: stats.totalTime,
+      avgTime: stats.avgTime,
       timerDuration: timerDuration,
       answers: answers,
       quote: quote,
@@ -470,14 +536,22 @@ function TestQuiz() {
           <div className="quiz-setup-section">
             <div className="quiz-setup-detail">
               <span className="quiz-setup-detail-icon">⏱</span>
-              <span>{formatDuration(timerDuration)} per question</span>
+              <span>{formatDuration(timerDuration)} per question — each question has its own timer</span>
+            </div>
+            <div className="quiz-setup-detail">
+              <span className="quiz-setup-detail-icon">⏸</span>
+              <span>Timer pauses when you navigate away and resumes when you return</span>
             </div>
             <div className="quiz-setup-detail">
               <span className="quiz-setup-detail-icon">✓</span>
               <span>Instant feedback with explanations</span>
             </div>
             <div className="quiz-setup-detail">
-              <span className="quiz-setup-detail-icon">→</span>
+              <span className="quiz-setup-detail-icon">⇄</span>
+              <span>Navigate freely — previous, skip or next</span>
+            </div>
+            <div className="quiz-setup-detail">
+              <span className="quiz-setup-detail-icon">🔀</span>
               <span>Options are shuffled each attempt</span>
             </div>
           </div>
@@ -491,18 +565,12 @@ function TestQuiz() {
 
   // --- RESULTS ---
   if (phase === 'results') {
-    var totalTime = answers.reduce(function (sum, a) { return sum + a.timeSpent; }, 0);
-    var correctCount = answers.filter(function (a) { return a.isCorrect; }).length;
-    var wrongCount = answers.filter(function (a) { return !a.isCorrect && !a.timedOut; }).length;
-    var skippedCount = answers.filter(function (a) { return a.timedOut; }).length;
-    var total = answers.length;
-    var acc = total > 0 ? Math.round((correctCount / total) * 100) : 0;
-    var avg = total > 0 ? Math.round(totalTime / total) : 0;
+    var stats = computeStats(answers, questions.length);
+    var acc = stats.accuracy;
+    var correctPct = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
+    var wrongPct = stats.total > 0 ? (stats.wrong / stats.total) * 100 : 0;
+    var skippedPct = stats.total > 0 ? (stats.skipped / stats.total) * 100 : 0;
     var quote = savedQuote;
-
-    var correctPct = total > 0 ? (correctCount / total) * 100 : 0;
-    var wrongPct = total > 0 ? (wrongCount / total) * 100 : 0;
-    var skippedPct = total > 0 ? (skippedCount / total) * 100 : 0;
 
     return (
       <div className="quiz-page quiz-page--results">
@@ -523,9 +591,9 @@ function TestQuiz() {
                   <div className="qr-dist-fill qr-dist-fill--skipped" style={{ width: skippedPct + '%' }} />
                 </div>
                 <div className="qr-dist-legend">
-                  <span className="qr-dist-item"><span className="qr-dist-dot qr-dist-dot--correct" />Correct {correctCount}</span>
-                  <span className="qr-dist-item"><span className="qr-dist-dot qr-dist-dot--wrong" />Wrong {wrongCount}</span>
-                  <span className="qr-dist-item"><span className="qr-dist-dot qr-dist-dot--skipped" />Skipped {skippedCount}</span>
+                  <span className="qr-dist-item"><span className="qr-dist-dot qr-dist-dot--correct" />Correct {stats.correct}</span>
+                  <span className="qr-dist-item"><span className="qr-dist-dot qr-dist-dot--wrong" />Wrong {stats.wrong}</span>
+                  <span className="qr-dist-item"><span className="qr-dist-dot qr-dist-dot--skipped" />Skipped {stats.skipped}</span>
                 </div>
               </div>
             </div>
@@ -533,12 +601,12 @@ function TestQuiz() {
 
           {/* Stat Cards */}
           <div className="stat-grid">
-            <StatCard icon="✓" value={correctCount} label="Correct" variant="success" delay={0} />
-            <StatCard icon="✗" value={wrongCount} label="Wrong" variant="error" delay={80} />
-            <StatCard icon="⊘" value={skippedCount} label="Skipped" variant="warning" delay={160} />
-            <StatCard icon="⚡" value={formatDuration(avg)} label="Avg. Time / Q" variant="accent" delay={240} />
-            <StatCard icon="🕐" value={formatDuration(totalTime)} label="Total Time" variant="default" delay={320} />
-            <StatCard icon="📊" value={total} label="Questions" variant="default" delay={400} />
+            <StatCard icon="✓" value={stats.correct} label="Correct" variant="success" delay={0} />
+            <StatCard icon="✗" value={stats.wrong} label="Wrong" variant="error" delay={80} />
+            <StatCard icon="⊘" value={stats.skipped} label="Skipped" variant="warning" delay={160} />
+            <StatCard icon="⚡" value={formatDuration(stats.avgTime)} label="Avg. Time / Q" variant="accent" delay={240} />
+            <StatCard icon="🕐" value={formatDuration(stats.totalTime)} label="Total Time" variant="default" delay={320} />
+            <StatCard icon="📊" value={stats.total} label="Questions" variant="default" delay={400} />
           </div>
 
           {/* Quote */}
@@ -551,7 +619,6 @@ function TestQuiz() {
               </div>
               <p className="qr-quote-text">{quote.quote}</p>
               <div className="qr-quote-author-row">
-                
                 <span className="qr-quote-author">— {quote.author}</span>
               </div>
             </div>
@@ -587,19 +654,29 @@ function TestQuiz() {
 
     var correctIndex = currentQ.correctIndex;
     var options = currentQ.options;
-    var progressPercent = ((currentIndex + (isAnswered ? 1 : 0)) / questions.length) * 100;
+    var progressPercent = ((currentIndex + 1) / questions.length) * 100;
     var timerColor = timer <= 5 ? 'quiz-timer-danger' : timer <= 10 ? 'quiz-timer-warning' : 'quiz-timer-normal';
     var timerWidth = (timer / timerDuration) * 100;
+    var skipDisabled = !!currentAnswer;
+
+    var answeredCount = 0;
+    for (var qi = 0; qi < answers.length; qi++) {
+      if (answers[qi] && answers[qi].status === 'answered') answeredCount++;
+    }
 
     return (
       <div className="quiz-page">
         <div className="quiz-container">
+
+          {/* Top Bar */}
           <div className="quiz-top-bar">
             <div className="quiz-top-left">
               <span className="quiz-topic-label">{topicName}</span>
             </div>
             <div className="quiz-top-right">
-              <div className="quiz-timer-wrap">
+              <span className="quiz-q-count">{currentIndex + 1} / {questions.length}</span>
+              <div className={'quiz-timer-wrap' + (isLocked ? ' quiz-timer-wrap--paused' : '')}
+                   title={isLocked ? 'Timer stopped for this question' : 'Time remaining for this question'}>
                 <span className={'quiz-timer-text ' + timerColor}>{timer}s</span>
                 <div className="quiz-timer-track">
                   <div className={'quiz-timer-fill ' + timerColor} style={{ width: timerWidth + '%' }} />
@@ -611,7 +688,7 @@ function TestQuiz() {
 
           {showEndConfirm && (
             <div className="quiz-end-confirm">
-              <p>End quiz? {answers.length} question{answers.length !== 1 ? 's' : ''} answered.</p>
+              <p>End quiz? {answeredCount} of {questions.length} answered. Unanswered questions count as skipped.</p>
               <div className="quiz-end-confirm-actions">
                 <button className="quiz-btn quiz-btn-ghost-sm" onClick={function () { setShowEndConfirm(false); }} type="button">Cancel</button>
                 <button className="quiz-btn quiz-btn-danger" onClick={handleEndQuiz} type="button">End Quiz</button>
@@ -619,11 +696,50 @@ function TestQuiz() {
             </div>
           )}
 
+          {/* Progress */}
           <div className="quiz-progress-track">
             <div className="quiz-progress-fill" style={{ width: progressPercent + '%' }} />
           </div>
-          <div className="quiz-progress-text">Question {currentIndex + 1} of {questions.length}</div>
 
+          {/* Question Palette — jump to any question */}
+          <div className={'quiz-palette' + (questions.length > 30 ? ' quiz-palette--compact' : '')}>
+            {questions.map(function (_, idx) {
+              var pa = answers[idx];
+              var cls = 'quiz-palette-item';
+              if (idx === currentIndex) cls += ' quiz-palette-item--current';
+              else if (pa && pa.status === 'answered') cls += ' quiz-palette-item--answered';
+              else if (pa) cls += ' quiz-palette-item--skipped';
+
+              var stateLabel = 'Not answered';
+              if (idx === currentIndex) stateLabel = 'Current';
+              else if (pa && pa.status === 'answered') stateLabel = 'Answered';
+              else if (pa) stateLabel = 'Marked as read';
+
+              return (
+                <button
+                  key={idx}
+                  type="button"
+                  className={cls}
+                  title={'Question ' + (idx + 1) + ' — ' + stateLabel}
+                  onClick={function () { navigateTo(idx); }}
+                >
+                  {idx + 1}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Marked as read badge */}
+          {currentAnswer && currentAnswer.status === 'read' && (
+            <div className="quiz-read-badge">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M4 2.5H12C12.552 2.5 13 2.948 13 3.5V13.5L8 10.4L3 13.5V3.5C3 2.948 3.448 2.5 4 2.5Z" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Marked as read — you can still answer this question
+            </div>
+          )}
+
+          {/* Question */}
           <div className="quiz-question-card">
             {currentQ.questionImage && !imageErrors.question && (
               <img
@@ -641,43 +757,40 @@ function TestQuiz() {
             )}
           </div>
 
+          {/* Options */}
           <div className="quiz-options-grid">
             {options.map(function (option, idx) {
               var optClass = 'quiz-option';
-              if (isAnswered) {
+              if (isLocked) {
                 if (idx === correctIndex) optClass += ' quiz-option-correct';
                 else if (idx === selectedOption && idx !== correctIndex) optClass += ' quiz-option-wrong';
                 else optClass += ' quiz-option-dimmed';
               }
               return (
-                <button key={idx} className={optClass} onClick={function () { handleSelect(idx); }} disabled={isAnswered} type="button">
+                <button key={idx} className={optClass} onClick={function () { handleSelect(idx); }} disabled={isLocked} type="button">
                   <span className="quiz-option-letter">{String.fromCharCode(65 + idx)}</span>
                   <span className="quiz-option-text">{option}</span>
-                  {isAnswered && idx === correctIndex && <span className="quiz-option-check">✓</span>}
-                  {isAnswered && idx === selectedOption && idx !== correctIndex && <span className="quiz-option-cross">✗</span>}
+                  {isLocked && idx === correctIndex && <span className="quiz-option-check">✓</span>}
+                  {isLocked && idx === selectedOption && idx !== correctIndex && <span className="quiz-option-cross">✗</span>}
                 </button>
               );
             })}
           </div>
 
-          {isAnswered && (
+          {/* Feedback (shown when answered or timed out) */}
+          {isLocked && currentAnswer && (
             <div className="quiz-feedback-area">
               <div className="quiz-feedback">
-                <div className="quiz-feedback-left">
-                  {selectedOption === null ? (
-                    <p className="quiz-feedback-msg quiz-feedback-timeout">Time is up! Correct answer highlighted.</p>
-                  ) : selectedOption === correctIndex ? (
-                    <p className="quiz-feedback-msg quiz-feedback-correct">Correct!</p>
-                  ) : (
-                    <p className="quiz-feedback-msg quiz-feedback-wrong">Incorrect. Correct answer highlighted.</p>
-                  )}
-                </div>
-                <button className="quiz-btn quiz-btn-primary" onClick={handleNext} type="button">
-                  {currentIndex === questions.length - 1 ? 'View Results' : 'Next →'}
-                </button>
+                {currentAnswer.status === 'timeout' ? (
+                  <p className="quiz-feedback-msg quiz-feedback-timeout">Time is up! Correct answer highlighted.</p>
+                ) : currentAnswer.isCorrect ? (
+                  <p className="quiz-feedback-msg quiz-feedback-correct">Correct!</p>
+                ) : (
+                  <p className="quiz-feedback-msg quiz-feedback-wrong">Incorrect. Correct answer highlighted.</p>
+                )}
               </div>
 
-                            {currentQ.explanation && (
+              {currentQ.explanation && (
                 <div className="quiz-explanation">
                   <span className="quiz-explanation-icon">💡</span>
                   <p>{currentQ.explanation}</p>
@@ -719,20 +832,47 @@ function TestQuiz() {
             </div>
           )}
 
-          <div className="quiz-score-bar">
-            <div className="quiz-score-item">
-              <span className="quiz-score-correct">✓</span>
-              <span>{score}</span>
-            </div>
-            <div className="quiz-score-item">
-              <span className="quiz-score-wrong">✗</span>
-              <span>{currentIndex + 1 - score - (isAnswered && selectedOption === null ? 1 : 0)}</span>
-            </div>
-            <div className="quiz-score-item">
-              <span className="quiz-score-skip">⏱</span>
-              <span>{skipped}</span>
-            </div>
+          {/* Bottom Navigation — Previous / Mark as Read / Next */}
+          <div className="quiz-nav-bar">
+            <button
+              className="quiz-nav-btn"
+              onClick={goToPrevious}
+              disabled={currentIndex === 0}
+              type="button"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M10 3L5 8L10 13" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Previous
+            </button>
+
+            <button
+              className="quiz-nav-btn quiz-nav-btn--skip"
+              onClick={handleMarkAsRead}
+              disabled={skipDisabled}
+              title={skipDisabled ? 'Already handled' : 'Mark as read and move to the next question'}
+              type="button"
+            >
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
+                <path d="M4 2.5H12C12.552 2.5 13 2.948 13 3.5V13.5L8 10.4L3 13.5V3.5C3 2.948 3.448 2.5 4 2.5Z" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Mark as Read
+            </button>
+
+            <button className="quiz-nav-btn quiz-nav-btn--primary" onClick={goToNext} type="button">
+              {isLastQuestion ? 'View Results' : 'Next'}
+              {isLastQuestion ? (
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              ) : (
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              )}
+            </button>
           </div>
+
         </div>
       </div>
     );

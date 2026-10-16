@@ -5,28 +5,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 10?",
+      "questionText": "What is the unit digit of 6^85?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "2"
-        },
-        {
-          "id": "B",
-          "text": "0"
-        },
-        {
-          "id": "C",
-          "text": "5"
-        },
-        {
-          "id": "D",
-          "text": "1"
-        }
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "4" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "2" }
       ],
-      "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 0.",
+      "correctOption": "A",
+      "explanationText": "Unit digits of powers of a number ending in 6 always remain 6, regardless of the exponent. So the required unit digit is 6.",
       "explanationImage": null
     },
     {
@@ -34,28 +22,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 13?",
+      "questionText": "What is the unit digit of 5^47?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "4"
-        },
-        {
-          "id": "B",
-          "text": "3"
-        },
-        {
-          "id": "C",
-          "text": "8"
-        },
-        {
-          "id": "D",
-          "text": "5"
-        }
+        { "id": "A", "text": "0" },
+        { "id": "B", "text": "5" },
+        { "id": "C", "text": "1" },
+        { "id": "D", "text": "6" }
       ],
       "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 3.",
+      "explanationText": "Unit digits of powers of a number ending in 5 always remain 5, regardless of the exponent. So the required unit digit is 5.",
       "explanationImage": null
     },
     {
@@ -63,28 +39,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 16?",
+      "questionText": "What is the unit digit of 2^35?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "7"
-        },
-        {
-          "id": "B",
-          "text": "1"
-        },
-        {
-          "id": "C",
-          "text": "6"
-        },
-        {
-          "id": "D",
-          "text": "8"
-        }
+        { "id": "A", "text": "2" },
+        { "id": "B", "text": "6" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "4" }
       ],
       "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 6.",
+      "explanationText": "Unit digits of powers of a number ending in 2 cycle as 2, 4, 8, 6. Since 35 mod 4 = 3, the required unit digit is 8.",
       "explanationImage": null
     },
     {
@@ -92,28 +56,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 19?",
+      "questionText": "What is the unit digit of 3^81?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "1"
-        },
-        {
-          "id": "B",
-          "text": "4"
-        },
-        {
-          "id": "C",
-          "text": "0"
-        },
-        {
-          "id": "D",
-          "text": "9"
-        }
+        { "id": "A", "text": "9" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "7" },
+        { "id": "D", "text": "3" }
       ],
       "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 9.",
+      "explanationText": "Unit digits of powers of a number ending in 3 cycle as 3, 9, 7, 1. Since 81 mod 4 = 1, the required unit digit is 3.",
       "explanationImage": null
     },
     {
@@ -121,28 +73,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 22?",
+      "questionText": "What is the unit digit of 7^203?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "7"
-        },
-        {
-          "id": "B",
-          "text": "2"
-        },
-        {
-          "id": "C",
-          "text": "4"
-        },
-        {
-          "id": "D",
-          "text": "3"
-        }
+        { "id": "A", "text": "3" },
+        { "id": "B", "text": "7" },
+        { "id": "C", "text": "9" },
+        { "id": "D", "text": "1" }
       ],
-      "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 2.",
+      "correctOption": "A",
+      "explanationText": "Unit digits of powers of a number ending in 7 cycle as 7, 9, 3, 1. Since 203 mod 4 = 3, the required unit digit is 3.",
       "explanationImage": null
     },
     {
@@ -150,28 +90,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 25?",
+      "questionText": "What is the unit digit of 8^92?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "0"
-        },
-        {
-          "id": "B",
-          "text": "7"
-        },
-        {
-          "id": "C",
-          "text": "5"
-        },
-        {
-          "id": "D",
-          "text": "6"
-        }
+        { "id": "A", "text": "8" },
+        { "id": "B", "text": "6" },
+        { "id": "C", "text": "2" },
+        { "id": "D", "text": "4" }
       ],
-      "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 5.",
+      "correctOption": "B",
+      "explanationText": "Unit digits of powers of a number ending in 8 cycle as 8, 4, 2, 6. Since 92 mod 4 = 0, the exponent falls on the last position of the cycle, so the required unit digit is 6.",
       "explanationImage": null
     },
     {
@@ -179,28 +107,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 28?",
+      "questionText": "What is the unit digit of 4^58?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "9"
-        },
-        {
-          "id": "B",
-          "text": "8"
-        },
-        {
-          "id": "C",
-          "text": "3"
-        },
-        {
-          "id": "D",
-          "text": "0"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "2" },
+        { "id": "C", "text": "6" },
+        { "id": "D", "text": "8" }
       ],
-      "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 8.",
+      "correctOption": "C",
+      "explanationText": "Unit digits of powers of a number ending in 4 cycle as 4, 6. Since 58 is even, the exponent falls on the second position of the cycle, so the required unit digit is 6.",
       "explanationImage": null
     },
     {
@@ -208,28 +124,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 31?",
+      "questionText": "What is the unit digit of 9^77?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "1"
-        },
-        {
-          "id": "B",
-          "text": "2"
-        },
-        {
-          "id": "C",
-          "text": "6"
-        },
-        {
-          "id": "D",
-          "text": "3"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "9" },
+        { "id": "C", "text": "3" },
+        { "id": "D", "text": "7" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 1.",
+      "correctOption": "B",
+      "explanationText": "Unit digits of powers of a number ending in 9 cycle as 9, 1. Since 77 is odd, the required unit digit is 9.",
       "explanationImage": null
     },
     {
@@ -237,28 +141,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 34?",
+      "questionText": "What is the unit digit of 12^101?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "6"
-        },
-        {
-          "id": "B",
-          "text": "9"
-        },
-        {
-          "id": "C",
-          "text": "4"
-        },
-        {
-          "id": "D",
-          "text": "5"
-        }
+        { "id": "A", "text": "2" },
+        { "id": "B", "text": "4" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "6" }
       ],
-      "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 4.",
+      "correctOption": "A",
+      "explanationText": "Only the unit digit of the base matters, so this is the same as finding the unit digit of 2^101. Powers of 2 cycle as 2, 4, 8, 6. Since 101 mod 4 = 1, the required unit digit is 2.",
       "explanationImage": null
     },
     {
@@ -266,28 +158,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 37?",
+      "questionText": "What is the unit digit of 27^140?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "8"
-        },
-        {
-          "id": "B",
-          "text": "7"
-        },
-        {
-          "id": "C",
-          "text": "2"
-        },
-        {
-          "id": "D",
-          "text": "9"
-        }
+        { "id": "A", "text": "7" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "9" },
+        { "id": "D", "text": "3" }
       ],
       "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 7.",
+      "explanationText": "This is the same as finding the unit digit of 7^140. Powers of 7 cycle as 7, 9, 3, 1. Since 140 mod 4 = 0, the exponent falls on the last position of the cycle, so the required unit digit is 1.",
       "explanationImage": null
     },
     {
@@ -295,28 +175,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 40?",
+      "questionText": "What is the unit digit of 38^53?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "5"
-        },
-        {
-          "id": "B",
-          "text": "0"
-        },
-        {
-          "id": "C",
-          "text": "2"
-        },
-        {
-          "id": "D",
-          "text": "1"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "2" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "6" }
       ],
-      "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 0.",
+      "correctOption": "C",
+      "explanationText": "This is the same as finding the unit digit of 8^53. Powers of 8 cycle as 8, 4, 2, 6. Since 53 mod 4 = 1, the required unit digit is 8.",
       "explanationImage": null
     },
     {
@@ -324,28 +192,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 43?",
+      "questionText": "What is the unit digit of 44^61?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "4"
-        },
-        {
-          "id": "B",
-          "text": "8"
-        },
-        {
-          "id": "C",
-          "text": "5"
-        },
-        {
-          "id": "D",
-          "text": "3"
-        }
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "8" },
+        { "id": "C", "text": "2" },
+        { "id": "D", "text": "4" }
       ],
       "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 3.",
+      "explanationText": "This is the same as finding the unit digit of 4^61. Powers of 4 cycle as 4, 6. Since 61 is odd, the required unit digit is 4.",
       "explanationImage": null
     },
     {
@@ -353,28 +209,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 46?",
+      "questionText": "What is the unit digit of 59^88?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "7"
-        },
-        {
-          "id": "B",
-          "text": "8"
-        },
-        {
-          "id": "C",
-          "text": "1"
-        },
-        {
-          "id": "D",
-          "text": "6"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "9" },
+        { "id": "C", "text": "3" },
+        { "id": "D", "text": "7" }
       ],
-      "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 6.",
+      "correctOption": "A",
+      "explanationText": "This is the same as finding the unit digit of 9^88. Powers of 9 cycle as 9, 1. Since 88 is even, the required unit digit is 1.",
       "explanationImage": null
     },
     {
@@ -382,28 +226,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 49?",
+      "questionText": "What is the unit digit of 76^94?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "1"
-        },
-        {
-          "id": "B",
-          "text": "4"
-        },
-        {
-          "id": "C",
-          "text": "0"
-        },
-        {
-          "id": "D",
-          "text": "9"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "6" },
+        { "id": "C", "text": "0" },
+        { "id": "D", "text": "2" }
       ],
-      "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 9.",
+      "correctOption": "B",
+      "explanationText": "Unit digits of powers of a number ending in 6 always remain 6, regardless of the exponent. So the required unit digit is 6.",
       "explanationImage": null
     },
     {
@@ -411,28 +243,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 52?",
+      "questionText": "What is the unit digit of 83^216?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "7"
-        },
-        {
-          "id": "B",
-          "text": "3"
-        },
-        {
-          "id": "C",
-          "text": "2"
-        },
-        {
-          "id": "D",
-          "text": "4"
-        }
+        { "id": "A", "text": "3" },
+        { "id": "B", "text": "9" },
+        { "id": "C", "text": "1" },
+        { "id": "D", "text": "7" }
       ],
       "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 2.",
+      "explanationText": "This is the same as finding the unit digit of 3^216. Powers of 3 cycle as 3, 9, 7, 1. Since 216 mod 4 = 0, the exponent falls on the last position of the cycle, so the required unit digit is 1.",
       "explanationImage": null
     },
     {
@@ -440,28 +260,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 55?",
+      "questionText": "What is the unit digit of 97^310?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "7"
-        },
-        {
-          "id": "B",
-          "text": "6"
-        },
-        {
-          "id": "C",
-          "text": "0"
-        },
-        {
-          "id": "D",
-          "text": "5"
-        }
+        { "id": "A", "text": "7" },
+        { "id": "B", "text": "3" },
+        { "id": "C", "text": "1" },
+        { "id": "D", "text": "9" }
       ],
       "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 5.",
+      "explanationText": "This is the same as finding the unit digit of 7^310. Powers of 7 cycle as 7, 9, 3, 1. Since 310 mod 4 = 2, the required unit digit is 9.",
       "explanationImage": null
     },
     {
@@ -469,28 +277,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 58?",
+      "questionText": "What is the unit digit of 118^777?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "8"
-        },
-        {
-          "id": "B",
-          "text": "3"
-        },
-        {
-          "id": "C",
-          "text": "0"
-        },
-        {
-          "id": "D",
-          "text": "9"
-        }
+        { "id": "A", "text": "8" },
+        { "id": "B", "text": "6" },
+        { "id": "C", "text": "4" },
+        { "id": "D", "text": "2" }
       ],
       "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 8.",
+      "explanationText": "This is the same as finding the unit digit of 8^777. Powers of 8 cycle as 8, 4, 2, 6. Since 777 mod 4 = 1, the required unit digit is 8.",
       "explanationImage": null
     },
     {
@@ -498,28 +294,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 61?",
+      "questionText": "What is the unit digit of 229^501?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "2"
-        },
-        {
-          "id": "B",
-          "text": "3"
-        },
-        {
-          "id": "C",
-          "text": "1"
-        },
-        {
-          "id": "D",
-          "text": "6"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "9" },
+        { "id": "C", "text": "7" },
+        { "id": "D", "text": "3" }
       ],
-      "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 1.",
+      "correctOption": "B",
+      "explanationText": "This is the same as finding the unit digit of 9^501. Powers of 9 cycle as 9, 1. Since 501 is odd, the required unit digit is 9.",
       "explanationImage": null
     },
     {
@@ -527,28 +311,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 64?",
+      "questionText": "What is the unit digit of 334^612?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "5"
-        },
-        {
-          "id": "B",
-          "text": "4"
-        },
-        {
-          "id": "C",
-          "text": "6"
-        },
-        {
-          "id": "D",
-          "text": "9"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "2" },
+        { "id": "C", "text": "6" },
+        { "id": "D", "text": "8" }
       ],
-      "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 4.",
+      "correctOption": "C",
+      "explanationText": "This is the same as finding the unit digit of 4^612. Powers of 4 cycle as 4, 6. Since 612 is even, the required unit digit is 6.",
       "explanationImage": null
     },
     {
@@ -556,28 +328,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 67?",
+      "questionText": "What is the unit digit of 445^333?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "2"
-        },
-        {
-          "id": "B",
-          "text": "8"
-        },
-        {
-          "id": "C",
-          "text": "9"
-        },
-        {
-          "id": "D",
-          "text": "7"
-        }
+        { "id": "A", "text": "0" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "6" },
+        { "id": "D", "text": "5" }
       ],
       "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 7.",
+      "explanationText": "Unit digits of powers of a number ending in 5 always remain 5, regardless of the exponent. So the required unit digit is 5.",
       "explanationImage": null
     },
     {
@@ -585,28 +345,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 70?",
+      "questionText": "What is the unit digit of 556^199?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "5"
-        },
-        {
-          "id": "B",
-          "text": "2"
-        },
-        {
-          "id": "C",
-          "text": "1"
-        },
-        {
-          "id": "D",
-          "text": "0"
-        }
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "8" },
+        { "id": "C", "text": "4" },
+        { "id": "D", "text": "2" }
       ],
-      "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 0.",
+      "correctOption": "A",
+      "explanationText": "Unit digits of powers of a number ending in 6 always remain 6, regardless of the exponent. So the required unit digit is 6.",
       "explanationImage": null
     },
     {
@@ -614,28 +362,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 73?",
+      "questionText": "What is the unit digit of 667^424?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "8"
-        },
-        {
-          "id": "B",
-          "text": "3"
-        },
-        {
-          "id": "C",
-          "text": "4"
-        },
-        {
-          "id": "D",
-          "text": "5"
-        }
+        { "id": "A", "text": "7" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "3" },
+        { "id": "D", "text": "9" }
       ],
       "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 3.",
+      "explanationText": "This is the same as finding the unit digit of 7^424. Powers of 7 cycle as 7, 9, 3, 1. Since 424 mod 4 = 0, the exponent falls on the last position of the cycle, so the required unit digit is 1.",
       "explanationImage": null
     },
     {
@@ -643,28 +379,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 76?",
+      "questionText": "What is the unit digit of 778^808?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "6"
-        },
-        {
-          "id": "B",
-          "text": "8"
-        },
-        {
-          "id": "C",
-          "text": "7"
-        },
-        {
-          "id": "D",
-          "text": "1"
-        }
+        { "id": "A", "text": "8" },
+        { "id": "B", "text": "2" },
+        { "id": "C", "text": "4" },
+        { "id": "D", "text": "6" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 6.",
+      "correctOption": "D",
+      "explanationText": "This is the same as finding the unit digit of 8^808. Powers of 8 cycle as 8, 4, 2, 6. Since 808 mod 4 = 0, the exponent falls on the last position of the cycle, so the required unit digit is 6.",
       "explanationImage": null
     },
     {
@@ -672,28 +396,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 79?",
+      "questionText": "What is the unit digit of 889^999?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "9"
-        },
-        {
-          "id": "B",
-          "text": "1"
-        },
-        {
-          "id": "C",
-          "text": "4"
-        },
-        {
-          "id": "D",
-          "text": "0"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "7" },
+        { "id": "C", "text": "9" },
+        { "id": "D", "text": "3" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 9.",
+      "correctOption": "C",
+      "explanationText": "This is the same as finding the unit digit of 9^999. Powers of 9 cycle as 9, 1. Since 999 is odd, the required unit digit is 9.",
       "explanationImage": null
     },
     {
@@ -701,28 +413,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 82?",
+      "questionText": "What is the unit digit of 991^1234?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "2"
-        },
-        {
-          "id": "B",
-          "text": "4"
-        },
-        {
-          "id": "C",
-          "text": "7"
-        },
-        {
-          "id": "D",
-          "text": "3"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "3" },
+        { "id": "C", "text": "7" },
+        { "id": "D", "text": "9" }
       ],
       "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 2.",
+      "explanationText": "Unit digits of powers of a number ending in 1 always remain 1, regardless of the exponent. So the required unit digit is 1.",
       "explanationImage": null
     },
     {
@@ -730,28 +430,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 85?",
+      "questionText": "What is the unit digit of 3^33 × 7^77?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "7"
-        },
-        {
-          "id": "B",
-          "text": "6"
-        },
-        {
-          "id": "C",
-          "text": "5"
-        },
-        {
-          "id": "D",
-          "text": "0"
-        }
+        { "id": "A", "text": "3" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "7" },
+        { "id": "D", "text": "9" }
       ],
-      "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 5.",
+      "correctOption": "B",
+      "explanationText": "Unit digit of 3^33 is 3 (cycle 3, 9, 7, 1 and 33 mod 4 = 1). Unit digit of 7^77 is 7 (cycle 7, 9, 3, 1 and 77 mod 4 = 1). Their product ends in 3 × 7 = 21, so the unit digit is 1.",
       "explanationImage": null
     },
     {
@@ -759,28 +447,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 88?",
+      "questionText": "What is the unit digit of 2^20 × 3^30?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "9"
-        },
-        {
-          "id": "B",
-          "text": "0"
-        },
-        {
-          "id": "C",
-          "text": "3"
-        },
-        {
-          "id": "D",
-          "text": "8"
-        }
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "8" },
+        { "id": "C", "text": "4" },
+        { "id": "D", "text": "2" }
       ],
-      "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 8.",
+      "correctOption": "C",
+      "explanationText": "Unit digit of 2^20 is 6 (cycle 2, 4, 8, 6 and 20 mod 4 = 0). Unit digit of 3^30 is 9 (cycle 3, 9, 7, 1 and 30 mod 4 = 2). Their product ends in 6 × 9 = 54, so the unit digit is 4.",
       "explanationImage": null
     },
     {
@@ -788,28 +464,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 91?",
+      "questionText": "What is the unit digit of 7^7 × 8^8?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "2"
-        },
-        {
-          "id": "B",
-          "text": "1"
-        },
-        {
-          "id": "C",
-          "text": "6"
-        },
-        {
-          "id": "D",
-          "text": "3"
-        }
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "4" },
+        { "id": "C", "text": "2" },
+        { "id": "D", "text": "8" }
       ],
-      "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 1.",
+      "correctOption": "D",
+      "explanationText": "Unit digit of 7^7 is 3 (cycle 7, 9, 3, 1 and 7 mod 4 = 3). Unit digit of 8^8 is 6 (cycle 8, 4, 2, 6 and 8 mod 4 = 0). Their product ends in 3 × 6 = 18, so the unit digit is 8.",
       "explanationImage": null
     },
     {
@@ -817,28 +481,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 94?",
+      "questionText": "What is the unit digit of 12^12 × 13^13?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "5"
-        },
-        {
-          "id": "B",
-          "text": "6"
-        },
-        {
-          "id": "C",
-          "text": "4"
-        },
-        {
-          "id": "D",
-          "text": "9"
-        }
+        { "id": "A", "text": "8" },
+        { "id": "B", "text": "4" },
+        { "id": "C", "text": "6" },
+        { "id": "D", "text": "2" }
       ],
-      "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 4.",
+      "correctOption": "A",
+      "explanationText": "12^12 reduces to the unit digit of 2^12, which is 6 (12 mod 4 = 0). 13^13 reduces to the unit digit of 3^13, which is 3 (13 mod 4 = 1). Their product ends in 6 × 3 = 18, so the unit digit is 8.",
       "explanationImage": null
     },
     {
@@ -846,28 +498,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 97?",
+      "questionText": "What is the unit digit of 5^100 + 5^101?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "7"
-        },
-        {
-          "id": "B",
-          "text": "9"
-        },
-        {
-          "id": "C",
-          "text": "2"
-        },
-        {
-          "id": "D",
-          "text": "8"
-        }
+        { "id": "A", "text": "5" },
+        { "id": "B", "text": "0" },
+        { "id": "C", "text": "1" },
+        { "id": "D", "text": "6" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 7.",
+      "correctOption": "B",
+      "explanationText": "Every power of a number ending in 5 ends in 5. So the sum ends in 5 + 5 = 10, giving a unit digit of 0.",
       "explanationImage": null
     },
     {
@@ -875,28 +515,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 1237?",
+      "questionText": "What is the unit digit of 7^1 + 7^2 + 7^3 + 7^4?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "2"
-        },
-        {
-          "id": "B",
-          "text": "8"
-        },
-        {
-          "id": "C",
-          "text": "9"
-        },
-        {
-          "id": "D",
-          "text": "7"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "0" },
+        { "id": "D", "text": "9" }
       ],
-      "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 7.",
+      "correctOption": "C",
+      "explanationText": "The unit digits of 7^1, 7^2, 7^3 and 7^4 are 7, 9, 3 and 1. Their sum is 7 + 9 + 3 + 1 = 20, so the unit digit is 0.",
       "explanationImage": null
     },
     {
@@ -904,28 +532,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 9842?",
+      "questionText": "What is the unit digit of 3^1 + 3^2 + 3^3 + ... + 3^10?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "3"
-        },
-        {
-          "id": "B",
-          "text": "7"
-        },
-        {
-          "id": "C",
-          "text": "2"
-        },
-        {
-          "id": "D",
-          "text": "4"
-        }
+        { "id": "A", "text": "0" },
+        { "id": "B", "text": "4" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "2" }
       ],
-      "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 2.",
+      "correctOption": "D",
+      "explanationText": "The unit digits of powers of 3 cycle as 3, 9, 7, 1, and each full cycle sums to 20. Ten terms give two full cycles (40) plus 3 and 9 (12), a total of 52, so the unit digit is 2.",
       "explanationImage": null
     },
     {
@@ -933,28 +549,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 76543?",
+      "questionText": "What is the unit digit of 1! + 2! + 3! + ... + 10!?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "4"
-        },
-        {
-          "id": "B",
-          "text": "5"
-        },
-        {
-          "id": "C",
-          "text": "8"
-        },
-        {
-          "id": "D",
-          "text": "3"
-        }
+        { "id": "A", "text": "3" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "5" },
+        { "id": "D", "text": "7" }
       ],
-      "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 3.",
+      "correctOption": "A",
+      "explanationText": "1! + 2! + 3! + 4! = 1 + 2 + 6 + 24 = 33, and every factorial from 5! onwards ends in 0. So the unit digit of the sum is 3.",
       "explanationImage": null
     },
     {
@@ -962,28 +566,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 10008?",
+      "questionText": "What is the unit digit of 100!?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "8"
-        },
-        {
-          "id": "B",
-          "text": "3"
-        },
-        {
-          "id": "C",
-          "text": "0"
-        },
-        {
-          "id": "D",
-          "text": "9"
-        }
+        { "id": "A", "text": "2" },
+        { "id": "B", "text": "0" },
+        { "id": "C", "text": "4" },
+        { "id": "D", "text": "6" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 8.",
+      "correctOption": "B",
+      "explanationText": "Every factorial from 5! onwards contains both 2 and 5 as factors, making it divisible by 10. So 100! ends in 0.",
       "explanationImage": null
     },
     {
@@ -991,28 +583,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 99997?",
+      "questionText": "What is the unit digit of 2^10 × 5^10?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "7"
-        },
-        {
-          "id": "B",
-          "text": "9"
-        },
-        {
-          "id": "C",
-          "text": "8"
-        },
-        {
-          "id": "D",
-          "text": "2"
-        }
+        { "id": "A", "text": "2" },
+        { "id": "B", "text": "5" },
+        { "id": "C", "text": "0" },
+        { "id": "D", "text": "1" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 7.",
+      "correctOption": "C",
+      "explanationText": "2^10 × 5^10 = (2 × 5)^10 = 10^10, which is a 1 followed by ten zeros. So the unit digit is 0.",
       "explanationImage": null
     },
     {
@@ -1020,28 +600,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 456789?",
+      "questionText": "What is the unit digit of 123 × 456 × 789?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "1"
-        },
-        {
-          "id": "B",
-          "text": "4"
-        },
-        {
-          "id": "C",
-          "text": "0"
-        },
-        {
-          "id": "D",
-          "text": "9"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "6" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "2" }
       ],
       "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 9.",
+      "explanationText": "Only the unit digits matter: 3 × 6 × 9 = 162. So the unit digit of the product is 2.",
       "explanationImage": null
     },
     {
@@ -1049,28 +617,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 700002?",
+      "questionText": "What is the unit digit of 27 × 38 × 49?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "3"
-        },
-        {
-          "id": "B",
-          "text": "2"
-        },
-        {
-          "id": "C",
-          "text": "4"
-        },
-        {
-          "id": "D",
-          "text": "7"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "2" },
+        { "id": "C", "text": "6" },
+        { "id": "D", "text": "8" }
       ],
-      "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 2.",
+      "correctOption": "A",
+      "explanationText": "Only the unit digits matter: 7 × 8 × 9 = 504. So the unit digit of the product is 4.",
       "explanationImage": null
     },
     {
@@ -1078,28 +634,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 88018?",
+      "questionText": "What is the unit digit of 33^43 × 34^44?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "9"
-        },
-        {
-          "id": "B",
-          "text": "3"
-        },
-        {
-          "id": "C",
-          "text": "0"
-        },
-        {
-          "id": "D",
-          "text": "8"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "2" },
+        { "id": "C", "text": "6" },
+        { "id": "D", "text": "8" }
       ],
-      "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 8.",
+      "correctOption": "B",
+      "explanationText": "Unit digit of 33^43 is the unit digit of 3^43, which is 7 (43 mod 4 = 3). Unit digit of 34^44 is the unit digit of 4^44, which is 6 (44 is even). Their product ends in 7 × 6 = 42, so the unit digit is 2.",
       "explanationImage": null
     },
     {
@@ -1107,28 +651,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 310005?",
+      "questionText": "What is the unit digit of 6^2 × 6^3 × 6^4?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "6"
-        },
-        {
-          "id": "B",
-          "text": "0"
-        },
-        {
-          "id": "C",
-          "text": "5"
-        },
-        {
-          "id": "D",
-          "text": "7"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "2" },
+        { "id": "C", "text": "6" },
+        { "id": "D", "text": "8" }
       ],
       "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 5.",
+      "explanationText": "The product equals 6^9, and every power of a number ending in 6 ends in 6. So the unit digit is 6.",
       "explanationImage": null
     },
     {
@@ -1136,28 +668,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 620014?",
+      "questionText": "What is the unit digit of 2^50?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "6"
-        },
-        {
-          "id": "B",
-          "text": "9"
-        },
-        {
-          "id": "C",
-          "text": "5"
-        },
-        {
-          "id": "D",
-          "text": "4"
-        }
+        { "id": "A", "text": "2" },
+        { "id": "B", "text": "6" },
+        { "id": "C", "text": "8" },
+        { "id": "D", "text": "4" }
       ],
       "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 4.",
+      "explanationText": "Unit digits of powers of a number ending in 2 cycle as 2, 4, 8, 6. Since 50 mod 4 = 2, the required unit digit is 4.",
       "explanationImage": null
     },
     {
@@ -1165,28 +685,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 431?",
+      "questionText": "What is the unit digit of 3^444?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "1"
-        },
-        {
-          "id": "B",
-          "text": "6"
-        },
-        {
-          "id": "C",
-          "text": "2"
-        },
-        {
-          "id": "D",
-          "text": "3"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "9" },
+        { "id": "C", "text": "7" },
+        { "id": "D", "text": "3" }
       ],
       "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 1.",
+      "explanationText": "Unit digits of powers of a number ending in 3 cycle as 3, 9, 7, 1. Since 444 mod 4 = 0, the exponent falls on the last position of the cycle, so the required unit digit is 1.",
       "explanationImage": null
     },
     {
@@ -1194,28 +702,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 572?",
+      "questionText": "What is the unit digit of 7^64?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "7"
-        },
-        {
-          "id": "B",
-          "text": "2"
-        },
-        {
-          "id": "C",
-          "text": "4"
-        },
-        {
-          "id": "D",
-          "text": "3"
-        }
+        { "id": "A", "text": "7" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "3" },
+        { "id": "D", "text": "9" }
       ],
       "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 2.",
+      "explanationText": "Unit digits of powers of a number ending in 7 cycle as 7, 9, 3, 1. Since 64 mod 4 = 0, the exponent falls on the last position of the cycle, so the required unit digit is 1.",
       "explanationImage": null
     },
     {
@@ -1223,28 +719,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 683?",
+      "questionText": "What is the unit digit of 8^31?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "5"
-        },
-        {
-          "id": "B",
-          "text": "4"
-        },
-        {
-          "id": "C",
-          "text": "8"
-        },
-        {
-          "id": "D",
-          "text": "3"
-        }
+        { "id": "A", "text": "8" },
+        { "id": "B", "text": "4" },
+        { "id": "C", "text": "2" },
+        { "id": "D", "text": "6" }
       ],
-      "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 3.",
+      "correctOption": "C",
+      "explanationText": "Unit digits of powers of a number ending in 8 cycle as 8, 4, 2, 6. Since 31 mod 4 = 3, the required unit digit is 2.",
       "explanationImage": null
     },
     {
@@ -1252,28 +736,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 794?",
+      "questionText": "What is the unit digit of 9^99 × 9^100?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "9"
-        },
-        {
-          "id": "B",
-          "text": "6"
-        },
-        {
-          "id": "C",
-          "text": "5"
-        },
-        {
-          "id": "D",
-          "text": "4"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "3" },
+        { "id": "C", "text": "7" },
+        { "id": "D", "text": "9" }
       ],
       "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 4.",
+      "explanationText": "Unit digit of 9^99 is 9 (99 is odd) and unit digit of 9^100 is 1 (100 is even). Their product ends in 9 × 1 = 9, so the unit digit is 9.",
       "explanationImage": null
     },
     {
@@ -1281,28 +753,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 805?",
+      "questionText": "What is the unit digit of 4^30 + 4^31?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "6"
-        },
-        {
-          "id": "B",
-          "text": "7"
-        },
-        {
-          "id": "C",
-          "text": "5"
-        },
-        {
-          "id": "D",
-          "text": "0"
-        }
+        { "id": "A", "text": "0" },
+        { "id": "B", "text": "4" },
+        { "id": "C", "text": "6" },
+        { "id": "D", "text": "2" }
       ],
-      "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 5.",
+      "correctOption": "A",
+      "explanationText": "Unit digit of 4^30 is 6 (30 is even) and unit digit of 4^31 is 4 (31 is odd). Their sum is 6 + 4 = 10, so the unit digit is 0.",
       "explanationImage": null
     },
     {
@@ -1310,28 +770,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 916?",
+      "questionText": "What is the unit digit of 1^2 + 2^2 + 3^2 + ... + 9^2?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "6"
-        },
-        {
-          "id": "B",
-          "text": "7"
-        },
-        {
-          "id": "C",
-          "text": "1"
-        },
-        {
-          "id": "D",
-          "text": "8"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "5" },
+        { "id": "C", "text": "9" },
+        { "id": "D", "text": "3" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 6.",
+      "correctOption": "B",
+      "explanationText": "The sum 1 + 4 + 9 + 16 + 25 + 36 + 49 + 64 + 81 = 285, so the unit digit is 5.",
       "explanationImage": null
     },
     {
@@ -1339,28 +787,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 1021?",
+      "questionText": "What is the unit digit of (7^5)^6?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "1"
-        },
-        {
-          "id": "B",
-          "text": "6"
-        },
-        {
-          "id": "C",
-          "text": "3"
-        },
-        {
-          "id": "D",
-          "text": "2"
-        }
+        { "id": "A", "text": "7" },
+        { "id": "B", "text": "3" },
+        { "id": "C", "text": "9" },
+        { "id": "D", "text": "1" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 1.",
+      "correctOption": "C",
+      "explanationText": "(7^5)^6 = 7^30. Unit digits of powers of a number ending in 7 cycle as 7, 9, 3, 1. Since 30 mod 4 = 2, the required unit digit is 9.",
       "explanationImage": null
     },
     {
@@ -1368,28 +804,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 2028?",
+      "questionText": "What is the unit digit of 2^(3^4)?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "0"
-        },
-        {
-          "id": "B",
-          "text": "3"
-        },
-        {
-          "id": "C",
-          "text": "9"
-        },
-        {
-          "id": "D",
-          "text": "8"
-        }
+        { "id": "A", "text": "8" },
+        { "id": "B", "text": "4" },
+        { "id": "C", "text": "6" },
+        { "id": "D", "text": "2" }
       ],
       "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 8.",
+      "explanationText": "First compute the exponent: 3^4 = 81, so we need the unit digit of 2^81. Powers of 2 cycle as 2, 4, 8, 6. Since 81 mod 4 = 1, the required unit digit is 2.",
       "explanationImage": null
     },
     {
@@ -1397,28 +821,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 3035?",
+      "questionText": "What is the unit digit of 11^11 + 12^12?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "6"
-        },
-        {
-          "id": "B",
-          "text": "7"
-        },
-        {
-          "id": "C",
-          "text": "0"
-        },
-        {
-          "id": "D",
-          "text": "5"
-        }
+        { "id": "A", "text": "7" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "3" },
+        { "id": "D", "text": "9" }
       ],
-      "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 5.",
+      "correctOption": "A",
+      "explanationText": "11^11 ends in 1 (powers of numbers ending in 1 always end in 1). 12^12 reduces to the unit digit of 2^12, which is 6 (12 mod 4 = 0). Their sum is 1 + 6 = 7, so the unit digit is 7.",
       "explanationImage": null
     },
     {
@@ -1426,28 +838,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 4042?",
+      "questionText": "What is the unit digit of 13^4 × 17^4?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "2"
-        },
-        {
-          "id": "B",
-          "text": "3"
-        },
-        {
-          "id": "C",
-          "text": "7"
-        },
-        {
-          "id": "D",
-          "text": "4"
-        }
+        { "id": "A", "text": "3" },
+        { "id": "B", "text": "1" },
+        { "id": "C", "text": "7" },
+        { "id": "D", "text": "9" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 2.",
+      "correctOption": "B",
+      "explanationText": "Unit digit of 13^4 is the unit digit of 3^4, which is 1 (4 mod 4 = 0). Unit digit of 17^4 is the unit digit of 7^4, which is 1 (4 mod 4 = 0). Their product ends in 1 × 1 = 1, so the unit digit is 1.",
       "explanationImage": null
     },
     {
@@ -1455,28 +855,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 5059?",
+      "questionText": "What is the unit digit of 6^1 + 6^2 + 6^3 + ... + 6^50?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "9"
-        },
-        {
-          "id": "B",
-          "text": "1"
-        },
-        {
-          "id": "C",
-          "text": "0"
-        },
-        {
-          "id": "D",
-          "text": "4"
-        }
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "2" },
+        { "id": "C", "text": "0" },
+        { "id": "D", "text": "4" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 9.",
+      "correctOption": "C",
+      "explanationText": "Every power of a number ending in 6 ends in 6. There are 50 terms, so the sum of unit digits is 50 × 6 = 300, giving a unit digit of 0.",
       "explanationImage": null
     },
     {
@@ -1484,28 +872,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 6066?",
+      "questionText": "What is the unit digit of 5^10 + 6^10 + 7^10?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "6"
-        },
-        {
-          "id": "B",
-          "text": "8"
-        },
-        {
-          "id": "C",
-          "text": "7"
-        },
-        {
-          "id": "D",
-          "text": "1"
-        }
+        { "id": "A", "text": "5" },
+        { "id": "B", "text": "8" },
+        { "id": "C", "text": "1" },
+        { "id": "D", "text": "0" }
       ],
-      "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 6.",
+      "correctOption": "D",
+      "explanationText": "Unit digit of 5^10 is 5, unit digit of 6^10 is 6, and unit digit of 7^10 is 9 (cycle 7, 9, 3, 1 and 10 mod 4 = 2). Their sum is 5 + 6 + 9 = 20, so the unit digit is 0.",
       "explanationImage": null
     },
     {
@@ -1513,28 +889,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 7073?",
+      "questionText": "What is the unit digit of 7^35 × 3^71?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "3"
-        },
-        {
-          "id": "B",
-          "text": "5"
-        },
-        {
-          "id": "C",
-          "text": "8"
-        },
-        {
-          "id": "D",
-          "text": "4"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "3" },
+        { "id": "C", "text": "7" },
+        { "id": "D", "text": "9" }
       ],
       "correctOption": "A",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 3.",
+      "explanationText": "Unit digit of 7^35 is 3 (35 mod 4 = 3) and unit digit of 3^71 is 7 (71 mod 4 = 3). Their product ends in 3 × 7 = 21, so the unit digit is 1.",
       "explanationImage": null
     },
     {
@@ -1542,28 +906,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 8080?",
+      "questionText": "What is the unit digit of 2^1 × 2^2 × 2^3 × ... × 2^10?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "2"
-        },
-        {
-          "id": "B",
-          "text": "1"
-        },
-        {
-          "id": "C",
-          "text": "5"
-        },
-        {
-          "id": "D",
-          "text": "0"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "8" },
+        { "id": "C", "text": "2" },
+        { "id": "D", "text": "6" }
       ],
-      "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 0.",
+      "correctOption": "B",
+      "explanationText": "The product equals 2^(1+2+...+10) = 2^55. Powers of 2 cycle as 2, 4, 8, 6. Since 55 mod 4 = 3, the required unit digit is 8.",
       "explanationImage": null
     },
     {
@@ -1571,28 +923,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 9097?",
+      "questionText": "What is the unit digit of 14^16 − 13^15?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "9"
-        },
-        {
-          "id": "B",
-          "text": "2"
-        },
-        {
-          "id": "C",
-          "text": "7"
-        },
-        {
-          "id": "D",
-          "text": "8"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "3" },
+        { "id": "C", "text": "9" },
+        { "id": "D", "text": "7" }
       ],
       "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 7.",
+      "explanationText": "Unit digit of 14^16 is 6 (4^16 with even exponent) and unit digit of 13^15 is 7 (3^15 with 15 mod 4 = 3). Since 6 is smaller than 7, we borrow: 16 − 7 = 9, so the unit digit is 9.",
       "explanationImage": null
     },
     {
@@ -1600,28 +940,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 11112?",
+      "questionText": "What is the unit digit of 8^10 + 8^11 + 8^12 + 8^13?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "4"
-        },
-        {
-          "id": "B",
-          "text": "7"
-        },
-        {
-          "id": "C",
-          "text": "3"
-        },
-        {
-          "id": "D",
-          "text": "2"
-        }
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "8" },
+        { "id": "C", "text": "2" },
+        { "id": "D", "text": "0" }
       ],
       "correctOption": "D",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 2.",
+      "explanationText": "The unit digits of 8^10, 8^11, 8^12 and 8^13 are 4, 2, 6 and 8 (cycle 8, 4, 2, 6). Their sum is 4 + 2 + 6 + 8 = 20, so the unit digit is 0.",
       "explanationImage": null
     },
     {
@@ -1629,28 +957,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 22223?",
+      "questionText": "What is the unit digit of 47^47 × 48^48?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "5"
-        },
-        {
-          "id": "B",
-          "text": "8"
-        },
-        {
-          "id": "C",
-          "text": "3"
-        },
-        {
-          "id": "D",
-          "text": "4"
-        }
+        { "id": "A", "text": "8" },
+        { "id": "B", "text": "2" },
+        { "id": "C", "text": "4" },
+        { "id": "D", "text": "6" }
       ],
-      "correctOption": "C",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 3.",
+      "correctOption": "A",
+      "explanationText": "Unit digit of 47^47 is the unit digit of 7^47, which is 3 (47 mod 4 = 3). Unit digit of 48^48 is the unit digit of 8^48, which is 6 (48 mod 4 = 0). Their product ends in 3 × 6 = 18, so the unit digit is 8.",
       "explanationImage": null
     },
     {
@@ -1658,28 +974,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 33334?",
+      "questionText": "What is the unit digit of 3^(3^3)?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "9"
-        },
-        {
-          "id": "B",
-          "text": "4"
-        },
-        {
-          "id": "C",
-          "text": "5"
-        },
-        {
-          "id": "D",
-          "text": "6"
-        }
+        { "id": "A", "text": "3" },
+        { "id": "B", "text": "7" },
+        { "id": "C", "text": "9" },
+        { "id": "D", "text": "1" }
       ],
       "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 4.",
+      "explanationText": "First compute the exponent: 3^3 = 27, so we need the unit digit of 3^27. Powers of 3 cycle as 3, 9, 7, 1. Since 27 mod 4 = 3, the required unit digit is 7.",
       "explanationImage": null
     },
     {
@@ -1687,28 +991,16 @@
       "categoryId": "quantitative_aptitude",
       "topicId": "number_system",
       "subtopicId": "unit_digit",
-      "questionText": "What is the unit digit of 44445?",
+      "questionText": "What is the unit digit of 22^22 + 33^33 + 44^44?",
       "questionImage": null,
       "options": [
-        {
-          "id": "A",
-          "text": "7"
-        },
-        {
-          "id": "B",
-          "text": "5"
-        },
-        {
-          "id": "C",
-          "text": "0"
-        },
-        {
-          "id": "D",
-          "text": "6"
-        }
+        { "id": "A", "text": "1" },
+        { "id": "B", "text": "7" },
+        { "id": "C", "text": "3" },
+        { "id": "D", "text": "9" }
       ],
-      "correctOption": "B",
-      "explanationText": "The unit digit is the last digit of the integer, so the answer is 5.",
+      "correctOption": "C",
+      "explanationText": "Unit digit of 22^22 is 4 (2^22 with 22 mod 4 = 2). Unit digit of 33^33 is 3 (3^33 with 33 mod 4 = 1). Unit digit of 44^44 is 6 (4^44 with even exponent). Their sum is 4 + 3 + 6 = 13, so the unit digit is 3.",
       "explanationImage": null
     },
     {

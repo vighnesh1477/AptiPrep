@@ -140,8 +140,7 @@ const categories = [
         id: 'clocks_calendars',
         name: 'Clocks & Calendars',
         topics: [
-          { id: 'clocks', name: 'Clocks' },
-          { id: 'calendars', name: 'Calendars' },
+          { id: 'clocks_calendars', name: 'Clocks & Calendars' },
         ],
       },
     ],
