@@ -643,7 +643,7 @@ function CompanyTest() {
 
   function goToNext() {
     if (isLastQuestion) {
-      setShowEndConfirm(true); /* confirm before final submit */
+      finishExam();
     } else {
       navigateTo(ci + 1);
     }
@@ -715,6 +715,7 @@ function CompanyTest() {
     setSavedQuote(getRandomQuote());
     setShowEndConfirm(false);
     setPhase('results');
+    if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   function handleDownloadPdf() {
@@ -735,6 +736,7 @@ function CompanyTest() {
   }
 
   function retake() {
+    finishedRef.current = false;
     setPhase('setup');
   }
 
