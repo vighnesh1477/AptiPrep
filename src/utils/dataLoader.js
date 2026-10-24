@@ -28,7 +28,7 @@ const questionModules = import.meta.glob(
    for each image (e.g. "/src/data/.../img.png" in dev,
    "/assets/img-xxxx.png" in production build). */
 const imageModules = import.meta.glob(
-  '../data/questions/**/*.{png,j.eg,jpeg,gif,svg,webp}',
+  '../data/questions/**/*.{png,jpg,jpeg,gif,svg,webp}',
   {
     eager: true,
     import: 'default'
@@ -101,8 +101,10 @@ function resolveQuestionImages(questions, modulePath) {
   });
 }
 
+let cachedAllSets = null;
 export function getAllQuestionSets() {
-  return Object.entries(questionModules).map(function (entry) {
+  if (cachedAllSets) return cachedAllSets;
+  cachedAllSets = Object.entries(questionModules).map(function (entry) {
     var path = entry[0];
     var mod = entry[1];
     if (mod && mod.questions) {
@@ -113,12 +115,16 @@ export function getAllQuestionSets() {
     }
     return mod;
   });
+  return cachedAllSets;
 }
 
+let cachedAllQuestions = null;
 export function getQuestionsFromAllSets() {
-  return getAllQuestionSets().flatMap(
+  if (cachedAllQuestions) return cachedAllQuestions;
+  cachedAllQuestions = getAllQuestionSets().flatMap(
     (set) => set.questions || []
   );
+  return cachedAllQuestions;
 }
 
 export function getQuestionSet(

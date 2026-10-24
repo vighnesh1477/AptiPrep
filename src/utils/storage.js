@@ -1,18 +1,26 @@
 const KEYS = {
-  THEME: 'aptiprep_theme',
   QUIZ_CATEGORY: 'aptiprep_quiz_category',
   QUIZ_TOPIC: 'aptiprep_quiz_topic',
   QUIZ_SUBTOPIC: 'aptiprep_quiz_subtopic',
   QUIZ_SUBTOPIC_NAME: 'aptiprep_quiz_subtopic_name',
   PRACTICE_RESULT: 'aptiprep_practice_result',
+  COMPANY_TEST: 'aptiprep-company-test',
 };
 
-export function setTheme(theme) {
-  localStorage.setItem(KEYS.THEME, theme);
+export function saveCompanyTestParams(data) {
+  localStorage.setItem(KEYS.COMPANY_TEST, JSON.stringify(data));
 }
 
-export function getTheme() {
-  return localStorage.getItem(KEYS.THEME);
+export function getCompanyTestParams() {
+  try {
+    return JSON.parse(localStorage.getItem(KEYS.COMPANY_TEST));
+  } catch {
+    return null;
+  }
+}
+
+export function clearCompanyTestParams() {
+  localStorage.removeItem(KEYS.COMPANY_TEST);
 }
 
 export function setQuizParams(categoryId, topicId, subtopicId, subtopicName) {

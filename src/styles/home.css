@@ -144,6 +144,8 @@ html.dark .hero-btn-primary,
   align-items: center;
   gap: 6px;
   text-align: center;
+  flex: 1 1 0;
+  min-width: 0;
   animation: rise-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
 
@@ -180,6 +182,7 @@ html.dark .hero-btn-primary,
 
 .stat-separator {
   width: 1px;
+  flex-shrink: 0;
   background-color: var(--border-color);
 }
 
@@ -467,16 +470,20 @@ html.dark .hero-btn-primary,
   }
 
   .stats-section {
-    padding-top: 40px;
+    padding: 40px 16px 0;
   }
 
   .stats-container {
-    padding: 20px 16px;
-    gap: 16px;
+    padding: 16px 10px;
+    gap: 8px;
   }
 
   .stat-number {
-    font-size: 1.625rem;
+    font-size: clamp(1.2rem, 4.5vw, 1.55rem);
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
   }
 
   .home-topics-section,
@@ -501,6 +508,25 @@ html.dark .hero-btn-primary,
   .benefits-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .stats-section {
+    padding: 32px 8px 0;
+  }
+
+  .stats-container {
+    padding: 12px 6px;
+    gap: 4px;
+  }
+
+  .stat-number {
+    font-size: 1.15rem;
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
   }
 }
 

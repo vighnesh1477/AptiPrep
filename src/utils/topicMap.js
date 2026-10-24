@@ -61,10 +61,10 @@ var topicMap = {
   'Cloze Test': { c: 'verbal_ability', t: 'vocabulary_context', s: 'cloze_test' },
   'Idioms and Phrases': { c: 'verbal_ability', t: 'vocabulary_context', s: 'idioms_phrases' },
   'One-Word Substitutions': { c: 'verbal_ability', t: 'vocabulary_context', s: 'one_word_substitutions' },
-  'Reading Comprehension': { c: 'verbal_ability', t: 'comprehension_arrangements', s: 'reading_comprehension' },
-  'Para Jumbles': { c: 'verbal_ability', t: 'comprehension_arrangements', s: 'para_jumbles' },
-  'Theme Detection': { c: 'verbal_ability', t: 'comprehension_arrangements', s: 'theme_detection' },
-  'Paragraph Completion': { c: 'verbal_ability', t: 'comprehension_arrangements', s: 'paragraph_completion' },
+  'Reading Comprehension': { c: 'verbal_ability', t: 'comprehension_arrangement', s: 'reading_comprehension' },
+  'Para Jumbles': { c: 'verbal_ability', t: 'comprehension_arrangement', s: 'para_jumbles' },
+  'Theme Detection': { c: 'verbal_ability', t: 'comprehension_arrangement', s: 'theme_detection' },
+  'Paragraph Completion': { c: 'verbal_ability', t: 'comprehension_arrangement', s: 'paragraph_completion' },
 };
 
 export function resolveTopic(displayName) {

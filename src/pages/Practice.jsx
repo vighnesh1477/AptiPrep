@@ -1,5 +1,6 @@
 import { useState, useMemo, useContext, useRef } from 'react';
 import { NavigationContext } from '../App';
+import { saveCompanyTestParams } from '../utils/storage';
 import '../styles/practice.css';
 
 function CompanyLogo({ src, name, color }) {
@@ -252,14 +253,14 @@ function Practice() {
 
   function handleTakeTest() {
     if (!selectedCompany) return;
-    localStorage.setItem('aptiprep-company-test', JSON.stringify({
+    saveCompanyTestParams({
       name: selectedCompany.name,
       logo: selectedCompany.logo,
       groupName: selectedCompany.groupName,
       groupSubtitle: selectedCompany.groupSubtitle,
       groupColor: selectedCompany.groupColor,
       topics: selectedCompany.topics,
-    }));
+    });
     navigate('/company-test');
   }
 

@@ -11,4 +11,16 @@ export default defineConfig({
     },
   },
   base: '/',
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('src/data/questions/')) {
+            const match = id.match(/src\/data\/questions\/([^/]+)/);
+            if (match) return `questions-${match[1]}`;
+          }
+        },
+      },
+    },
+  },
 })

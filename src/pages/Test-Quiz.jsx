@@ -37,15 +37,15 @@ function shuffleOptions(question) {
   var correctIndex = question.correctIndex;
   if (!options || options.length <= 1) return question;
 
-  var correctText = options[correctIndex];
-  var shuffled = options.slice();
-  for (var i = shuffled.length - 1; i > 0; i--) {
+  var indexed = options.map(function (opt, idx) { return { opt: opt, idx: idx }; });
+  for (var i = indexed.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
-    var temp = shuffled[i];
-    shuffled[i] = shuffled[j];
-    shuffled[j] = temp;
+    var temp = indexed[i];
+    indexed[i] = indexed[j];
+    indexed[j] = temp;
   }
-  var newCorrectIndex = shuffled.indexOf(correctText);
+  var newCorrectIndex = indexed.findIndex(function (item) { return item.idx === correctIndex; });
+  var shuffled = indexed.map(function (item) { return item.opt; });
 
   return {
     id: question.id,

@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import Topics from './pages/Topics';
 import Practice from './pages/Practice';
 import TestQuiz from './pages/Test-Quiz';
-import Results from './pages/Results';
 import CompanyTest from './pages/Company-test';
 import Contributors from './pages/Contributors';
 import About from './pages/About';
@@ -20,7 +19,6 @@ const routes = {
   '/topics': Topics,
   '/practice': Practice,
   '/quiz': TestQuiz,
-  '/results': Results,
   '/company-test': CompanyTest,
   '/contributors': Contributors,
   '/about': About,

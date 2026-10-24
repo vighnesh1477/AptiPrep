@@ -781,23 +781,28 @@
 
 .cr-ring-glow {
   position: absolute;
-  inset: 10%;
+  inset: -6%;
   border-radius: 50%;
-  opacity: 0.15;
-  filter: blur(24px);
+  opacity: 0.14;
+  filter: blur(20px);
   pointer-events: none;
 }
 
-.cr-ring { width: 100%; height: 100%; position: relative; }
+.cr-ring {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: visible;
+}
 
 .cr-ring-bg {
-  stroke: var(--bg-tertiary);
-  opacity: 0.5;
+  stroke: var(--border-color);
+  opacity: 0.8;
 }
 
 .cr-ring-p {
   transition: stroke-dashoffset 1.4s cubic-bezier(0.22, 1, 0.36, 1);
-  filter: drop-shadow(0 0 6px currentColor);
+  filter: drop-shadow(0 0 5px currentColor);
 }
 
 .cr-ring-text {
@@ -979,6 +984,9 @@
 
   .cr-grid { grid-template-columns: repeat(2, 1fr); }
   .cr-hero { padding: 24px 18px; }
+  .cr-hero-bg {
+    background: radial-gradient(circle at 50% 28%, rgba(99, 102, 241, 0.06) 0%, transparent 70%);
+  }
   .cr-hero-content { flex-direction: column; gap: 20px; }
   .cr-ring-wrap { width: 120px; height: 120px; }
   .cr-ring-val { font-size: 1.8rem; }

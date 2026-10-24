@@ -4,25 +4,8 @@ import { getQuestionsByExactSubtopic } from '../utils/questionUtils';
 import { getCompanySubtopics } from '../utils/topicMap';
 import { jsPDF } from 'jspdf';
 import quotesData from '../data/quotes.json';
+import { getCompanyTestParams, clearCompanyTestParams } from '../utils/storage';
 import '../styles/Company-test.css';
-
-var CK = 'aptiprep-company-test';
-
-export function saveCompanyTestParams(d) {
-  localStorage.setItem(CK, JSON.stringify(d));
-}
-
-export function getCompanyTestParams() {
-  try {
-    return JSON.parse(localStorage.getItem(CK));
-  } catch (e) {
-    return null;
-  }
-}
-
-export function clearCompanyTestParams() {
-  localStorage.removeItem(CK);
-}
 
 function fmt(s) {
   if (s < 60) return s + 's';
@@ -55,17 +38,6 @@ function lbl(i) {
   return String.fromCharCode(65 + i);
 }
 
-function shuf(a) {
-  var b = a.slice();
-  for (var i = b.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var t = b[i];
-    b[i] = b[j];
-    b[j] = t;
-  }
-  return b;
-}
-
 function norm(q, i) {
   var o = q.options || [];
   if (o.length > 0 && typeof o[0] === 'object') {
@@ -93,9 +65,15 @@ function norm(q, i) {
 
 function shufOpts(q) {
   if (!q.options || q.options.length <= 1) return q;
-  var ct = q.options[q.correctIndex];
-  var s = shuf(q.options);
-  var ni = s.indexOf(ct);
+  var indexed = q.options.map(function (opt, idx) { return { opt: opt, idx: idx }; });
+  for (var i = indexed.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = indexed[i];
+    indexed[i] = indexed[j];
+    indexed[j] = t;
+  }
+  var ni = indexed.findIndex(function (item) { return item.idx === q.correctIndex; });
+  var s = indexed.map(function (item) { return item.opt; });
   return {
     id: q.id,
     question: q.question,
@@ -682,34 +660,31 @@ function CompanyTest() {
   }
 
   function startExam() {
-    setPhase('loading');
-    setTimeout(function () {
-      var subs = getCompanySubtopics(comp.topics);
-      var pools = [];
-      for (var i = 0; i < subs.length; i++) {
-        var raw = getQuestionsByExactSubtopic(subs[i].category, subs[i].topic, subs[i].subtopic);
-        if (raw.length > 0) pools.push(raw.map(norm));
-      }
-      if (pools.length === 0) { setPhase('error'); return; }
-      var picked = distribute(pools, qCount);
-      if (picked.length === 0) { setPhase('error'); return; }
+    var subs = getCompanySubtopics(comp.topics);
+    var pools = [];
+    for (var i = 0; i < subs.length; i++) {
+      var raw = getQuestionsByExactSubtopic(subs[i].category, subs[i].topic, subs[i].subtopic);
+      if (raw.length > 0) pools.push(raw.map(norm));
+    }
+    if (pools.length === 0) { setPhase('error'); return; }
+    var picked = distribute(pools, qCount);
+    if (picked.length === 0) { setPhase('error'); return; }
 
-      var totalSecs = tTotal * 60;
-      setQuestions(picked.map(shufOpts));
-      setCi(0);
-      setAnswers([]);
-      timeSpentRef.current = [];
-      questionStartRef.current = Date.now();
-      finishedRef.current = false;
-      setExamTotal(totalSecs);
-      setTimeLeft(totalSecs);
-      setShowEndConfirm(false);
-      setImgErr({});
-      setExamStats(null);
-      setResultAnswers([]);
-      setSavedQuote(null);
-      setPhase('quiz');
-    }, 3000);
+    var totalSecs = tTotal * 60;
+    setQuestions(picked.map(shufOpts));
+    setCi(0);
+    setAnswers([]);
+    timeSpentRef.current = [];
+    questionStartRef.current = Date.now();
+    finishedRef.current = false;
+    setExamTotal(totalSecs);
+    setTimeLeft(totalSecs);
+    setShowEndConfirm(false);
+    setImgErr({});
+    setExamStats(null);
+    setResultAnswers([]);
+    setSavedQuote(null);
+    setPhase('quiz');
   }
 
   function finishExam() {
