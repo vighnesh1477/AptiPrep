@@ -1,6 +1,7 @@
 import { useState, useMemo, useContext } from 'react';
 import { NavigationContext } from '../App';
 import { Search, SearchX } from 'lucide-react';
+import { savePlatformTestParams } from '../utils/storage';
 import '../styles/Platform.css';
 
 /* ── Assessment Platform Directory ── */
@@ -10,9 +11,9 @@ const platforms = [
     name: 'Mercer | Mettl',
     monogram: 'MM',
     category: 'Assessment Suite',
-    sections: 'Aptitude · Coding · Psychometric',
+    sections: 'Aptitude · Logical · Verbal',
     description:
-      'Enterprise assessment suite with AI-powered proctoring. Covers aptitude, logical reasoning, verbal, and role-specific coding tests.',
+      'Enterprise assessment suite with AI-powered proctoring. Covers aptitude, logical reasoning, and verbal tests.',
   },
   {
     id: 'hirepro',
@@ -160,11 +161,10 @@ function Platform() {
 
   const hasQuery = query.trim().length > 0;
 
-  /* ── Card click handler ──
-     Currently navigates to this same page as a placeholder.
-     Later: just change '/platforms' below to your detail page path. */
+  /* ── Card click handler ── */
   function handlePlatformClick(platform) {
-    navigate('/platforms');
+    savePlatformTestParams(platform);
+    navigate('/platform-test');
   }
 
   return (
