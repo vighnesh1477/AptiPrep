@@ -755,6 +755,186 @@
   line-height: 1.65;
   color: var(--text-primary);
   font-weight: 500;
+  white-space: pre-line;
+}
+
+/* ── Formatted Question Hierarchy & Readability ── */
+.pt-formatted-q {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pt-formatted-q--review {
+  gap: 10px;
+}
+
+.pt-q-banner-directions {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(139, 92, 246, 0.08);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.pt-q-banner-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  background: rgba(139, 92, 246, 0.2);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+/* Structured card containers */
+.pt-q-card-structured {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pt-q-card--logic {
+  background: rgba(16, 185, 129, 0.03);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.pt-q-card--steps {
+  background: rgba(59, 130, 246, 0.03);
+  border-color: rgba(59, 130, 246, 0.2);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.92rem;
+}
+
+.pt-q-card--jumbles {
+  background: rgba(245, 158, 11, 0.03);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.pt-q-struct-heading {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+.pt-q-struct-heading:first-child {
+  margin-top: 0;
+}
+
+.pt-q-struct-bullet {
+  padding-left: 12px;
+  line-height: 1.55;
+  color: var(--text-primary);
+  font-size: 0.96rem;
+}
+
+.pt-q-struct-line {
+  line-height: 1.55;
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+}
+
+.pt-q-step-row {
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  color: #38bdf8;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.pt-q-step-note {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-style: italic;
+  padding: 4px 0;
+}
+
+.pt-q-jumble-row {
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 4px;
+  color: var(--text-primary);
+  line-height: 1.55;
+  border-left: 3px solid rgba(245, 158, 11, 0.4);
+}
+
+/* Question Prompt Callout */
+.pt-q-card-prompt {
+  background: rgba(139, 92, 246, 0.06);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.pt-q-prompt-headline {
+  font-weight: 600;
+  color: #f8fafc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.pt-q-sub-option-item {
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Reading Comprehension Passage Box */
+.pt-q-passage-box {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 4px;
+}
+
+.pt-q-passage-para {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+/* Formatted Explanation in Review */
+.pt-rev-exp-formatted {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 1.6;
+}
+
+.pt-exp-step-line {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 4px;
+}
+
+.pt-exp-line {
+  color: var(--text-secondary);
 }
 
 /* Question & Option Diagram Images */
@@ -1527,6 +1707,7 @@
   line-height: 1.6;
   color: var(--text-primary);
   margin-bottom: 16px;
+  white-space: pre-line;
 }
 
 /* Review Options Grid */

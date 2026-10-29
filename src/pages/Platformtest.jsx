@@ -29,6 +29,152 @@ const DEFAULT_PLATFORM = {
   description: 'Enterprise assessment suite with AI-powered proctoring for campus drives and recruitment tests.',
 };
 
+/* ── Formatted Question Component for Readability ── */
+function FormattedQuestion({ text, isReview = false }) {
+  if (!text) return null;
+
+  const paragraphs = text.split(/\n\n+/);
+
+  return (
+    <div className={`pt-formatted-q ${isReview ? 'pt-formatted-q--review' : ''}`}>
+      {paragraphs.map((para, pIdx) => {
+        const trimmed = para.trim();
+        if (!trimmed) return null;
+
+        // 1. Directions Banner
+        if (/^Directions?(?:\s*\([^)]*\))?:/i.test(trimmed)) {
+          return (
+            <div key={pIdx} className="pt-q-banner-directions">
+              <span className="pt-q-banner-tag">Notice</span>
+              <span>{trimmed}</span>
+            </div>
+          );
+        }
+
+        // 2. Logic statements / Syllogisms block
+        if (/^(Statements?\s*:|Conclusions?\s*:)/i.test(trimmed)) {
+          const lines = trimmed.split('\n');
+          return (
+            <div key={pIdx} className="pt-q-card-structured pt-q-card--logic">
+              {lines.map((line, lIdx) => {
+                const lTrim = line.trim();
+                const isHeading = /^(Statements?\s*:|Conclusions?\s*:)/i.test(lTrim);
+                const isBullet = lTrim.startsWith('•') || /^[I|V|X]+\.\s+/i.test(lTrim);
+                return (
+                  <div
+                    key={lIdx}
+                    className={
+                      isHeading
+                        ? 'pt-q-struct-heading'
+                        : isBullet
+                        ? 'pt-q-struct-bullet'
+                        : 'pt-q-struct-line'
+                    }
+                  >
+                    {lTrim}
+                  </div>
+                );
+              })}
+            </div>
+          );
+        }
+
+        // 3. Input & Output machine steps
+        if (/^(Input:|Step\s+(?:[0-9]+|[IVXLCDM]+):)/i.test(trimmed)) {
+          const lines = trimmed.split('\n');
+          return (
+            <div key={pIdx} className="pt-q-card-structured pt-q-card--steps">
+              {lines.map((line, lIdx) => {
+                const lTrim = line.trim();
+                const isStep = /^(Input:|Step\s+(?:[0-9]+|[IVXLCDM]+):)/i.test(lTrim);
+                return (
+                  <div key={lIdx} className={isStep ? 'pt-q-step-row' : 'pt-q-step-note'}>
+                    {lTrim}
+                  </div>
+                );
+              })}
+            </div>
+          );
+        }
+
+        // 4. Para Jumbles sentences
+        if (/^[A-E]:|^[P-S]:|^S[1-6]:/i.test(trimmed)) {
+          const lines = trimmed.split('\n');
+          return (
+            <div key={pIdx} className="pt-q-card-structured pt-q-card--jumbles">
+              {lines.map((line, lIdx) => {
+                const lTrim = line.trim();
+                return (
+                  <div key={lIdx} className="pt-q-jumble-row">
+                    {lTrim}
+                  </div>
+                );
+              })}
+            </div>
+          );
+        }
+
+        // 5. Explicit Question prompt
+        if (/^Question:\s*/i.test(trimmed)) {
+          const lines = trimmed.split('\n');
+          return (
+            <div key={pIdx} className="pt-q-card-prompt">
+              {lines.map((line, lIdx) => {
+                const lTrim = line.trim();
+                const isSubOpt = /^[A-D]\.\s+/i.test(lTrim);
+                return (
+                  <div
+                    key={lIdx}
+                    className={isSubOpt ? 'pt-q-sub-option-item' : 'pt-q-prompt-headline'}
+                  >
+                    {lTrim}
+                  </div>
+                );
+              })}
+            </div>
+          );
+        }
+
+        // 6. Reading Comprehension passage paragraph
+        if (trimmed.length > 250 && !trimmed.endsWith('?')) {
+          return (
+            <div key={pIdx} className="pt-q-passage-box">
+              <p className="pt-q-passage-para">{trimmed}</p>
+            </div>
+          );
+        }
+
+        // 7. Regular paragraph
+        return (
+          <p key={pIdx} className={isReview ? 'pt-rev-qtext' : 'pt-q-text'}>
+            {trimmed}
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
+/* ── Formatted Explanation Component ── */
+function FormattedExplanation({ text }) {
+  if (!text) return null;
+  const lines = text.split(/\n+/);
+  return (
+    <div className="pt-rev-exp-text pt-rev-exp-formatted">
+      {lines.map((line, idx) => {
+        const trimmed = line.trim();
+        if (!trimmed) return null;
+        const isStep = /^(Step\s+[0-9IVX]+:|Input:|Rule:|Answer:|Solution:)/i.test(trimmed);
+        return (
+          <div key={idx} className={isStep ? 'pt-exp-step-line' : 'pt-exp-line'}>
+            {trimmed}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 const SECTION_TABS = ['All Modules', 'Aptitude', 'Logical', 'Verbal'];
 
 // Fisher-Yates array shuffle
@@ -785,7 +931,7 @@ function Platformtest() {
 
                 {/* Question Body */}
                 <div className="pt-q-body">
-                  <p className="pt-q-text">{currentQ.question}</p>
+                  <FormattedQuestion text={currentQ.question} />
                   {currentQ.questionImage && (
                     <div className="pt-q-image-container">
                       <img src={currentQ.questionImage} alt="Question diagram" className="pt-q-image" />
@@ -1128,7 +1274,7 @@ function Platformtest() {
                       </div>
                     </div>
 
-                    <p className="pt-rev-qtext">{question.question}</p>
+                    <FormattedQuestion text={question.question} isReview />
                     {question.questionImage && (
                       <div className="pt-q-image-container">
                         <img src={question.questionImage} alt="Question diagram" className="pt-q-image" />
@@ -1171,7 +1317,7 @@ function Platformtest() {
                           <strong>Step-by-Step Solution</strong>
                         </div>
                         {question.explanation && (
-                          <p className="pt-rev-exp-text">{question.explanation}</p>
+                          <FormattedExplanation text={question.explanation} />
                         )}
                         {question.explanationImages && question.explanationImages.length > 1 ? (
                           <div className="pt-rev-exp-images-grid">
