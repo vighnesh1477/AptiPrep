@@ -5,7 +5,24 @@ const KEYS = {
   QUIZ_SUBTOPIC_NAME: 'aptiprep_quiz_subtopic_name',
   PRACTICE_RESULT: 'aptiprep_practice_result',
   COMPANY_TEST: 'aptiprep-company-test',
+  PLATFORM_TEST: 'aptiprep-platform-test',
 };
+
+export function savePlatformTestParams(data) {
+  localStorage.setItem(KEYS.PLATFORM_TEST, JSON.stringify(data));
+}
+
+export function getPlatformTestParams() {
+  try {
+    return JSON.parse(localStorage.getItem(KEYS.PLATFORM_TEST));
+  } catch {
+    return null;
+  }
+}
+
+export function clearPlatformTestParams() {
+  localStorage.removeItem(KEYS.PLATFORM_TEST);
+}
 
 export function saveCompanyTestParams(data) {
   localStorage.setItem(KEYS.COMPANY_TEST, JSON.stringify(data));
