@@ -27,6 +27,7 @@ const navLinks = [
   { path: '/', label: 'Overview' },
   { path: '/topics', label: 'Topics' },
   { path: '/practice', label: 'Companies' },
+  { path: '/platforms', label: 'Platforms' },   // ← new
   { path: '/about', label: 'About' },
   { path: '/contributors', label: 'Community' },
 ];

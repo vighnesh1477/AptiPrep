@@ -9,6 +9,7 @@ import TestQuiz from './pages/Test-Quiz';
 import CompanyTest from './pages/Company-test';
 import Contributors from './pages/Contributors';
 import About from './pages/About';
+import Platform from './pages/Platform';
 import Admin from './pages/Admin';
 
 export const NavigationContext = createContext(null);
@@ -21,6 +22,7 @@ const routes = {
   '/quiz': TestQuiz,
   '/company-test': CompanyTest,
   '/contributors': Contributors,
+  '/platforms': Platform,
   '/about': About,
   '/admin': Admin,
 };
